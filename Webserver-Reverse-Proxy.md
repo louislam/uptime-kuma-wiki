@@ -36,6 +36,8 @@ server  {
 }
 ```
 
+For ease of use with NGINX use Certbot, which will manage certificates from Let's encrypt. And automatically renew them.
+
 ### Apache
 Without SSL:
 ```apache
