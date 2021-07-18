@@ -37,7 +37,7 @@ server  {
 ```
 
 ### Apache
-Without SSL:
+With SSL:
 ```apache
 <VirtualHost *:443>
   ServerName sub.domain.com
