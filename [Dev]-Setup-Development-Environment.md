@@ -10,7 +10,7 @@ Your IDE should follow the config in ".editorconfig". The most special thing is 
 
 # Project Styles
 
-I personally do not like something need to learn some so much and need to config so much before you can finally start the app. 
+I personally do not like something need to learn so much and need to config so much before you can finally start the app. 
 
 For example, recently, because I am not a python expert, I spent a 2 hours to resolve all problems in order to install and use the Apprise cli. Apprise requires so many hidden requirements, I have to figure out myself how to solve the problems by Google search for my OS. That is painful. I do not want Uptime Kuma to be like this way, so:  
 
