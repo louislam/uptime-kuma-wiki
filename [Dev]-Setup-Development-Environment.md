@@ -1,4 +1,4 @@
-## Project Info
+# Project Info
 
 First of all, thank you everyone who made pull requests for Uptime Kuma, I never thought GitHub Community can be that great! And also because of this, I also never thought other people actually read my code and edit my code. It is not structed and commented so well, lol. Sorry about that.
 
@@ -7,6 +7,17 @@ The project was created with vite.js (vue3). Then I created a sub-directory call
 The frontend code build into "dist" directory. The server uses "dist" as root. This is how production is working.
 
 Your IDE should follow the config in ".editorconfig". The most special thing is I set it to 4 spaces indentation. I know 2 spaces indentation became a kind of standard nowadays for js, but my eyes is not so comfortable for this. In my opinion, there is no callback-hell nowadays, it is good to go back 4 spaces world again.
+
+# Project Styles
+
+I personally do not like something need to learn some so much and need to config so much before you can finally start the app. 
+
+For example, recently, because I am not a python expert, I spent a 2 hours to resolve all problems in order to install and use the Apprise cli. Apprise requires so many hidden requirements, I have to figure out myself how to solve the problems by Google search for my OS. That is painful. I do not want Uptime Kuma to be like this way, so:  
+
+- Easy to install for non-Docker users, no native build dependency is needed (at least for x86_64), no extra config, no extra effort to get it run
+- Single container for Docker users, no very complex docker-composer file. Just map the volume and expose the port, then good to go
+- All settings in frontend.
+- Easy to use
 
 # Tools
 - Node.js >= 14
