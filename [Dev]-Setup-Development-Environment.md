@@ -71,6 +71,8 @@ localStorage.dev = "dev";
 
 So that the frontend will try to connect websocket server in 3001.
 
+Alternately, you can specific NODE_ENV to "development".
+
 
 ## Build the frontend
 
