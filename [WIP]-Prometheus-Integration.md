@@ -5,7 +5,7 @@ If you already use [Prometheus.io](https://prometheus.io) or a platform that sup
 Labels to filter by include:
 
 | Label Name | Description |
-+------------+-------------+
+|------------|-------------|
 |monitor_name| The "Friendly Name" of the monitor |
 |monitor_type| The type (HTTP, keyword, TCP) of monitoring check |
 |monitor_url | The URL to be monitored (HTTP, keyword)
