@@ -12,7 +12,7 @@ Labels to filter by include:
 |monitor_hostname | The Hostname to be monitored (TCP) |
 |monitor_port | The port to be monitored (TCP) |
 
-## Example PromQL queries
+# Example PromQL queries
 
 Assuming we have HTTP monitors in place for bbc.co.uk and google.com:
 
