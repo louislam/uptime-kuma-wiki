@@ -5,6 +5,7 @@ Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more he
 - [Nginx](#nginx)
 - [Apache](#apache)
 - [Caddy](#caddy)
+- [Nginx Proxy Manager](#nginx-proxy-manager)
 - [Synology Builtin Reverse Proxy](#synology-builtin-reverse-proxy)
 - [SSL/HTTPS](#ssl-https)
 
@@ -84,6 +85,12 @@ subdomain.domain.com {
     reverse_proxy 127.0.0.1:3001 :
 }
 ```
+
+# Nginx Proxy Manager
+
+Please enable "WebSockets Supports"
+
+
 
 # Synology Builtin Reverse Proxy
 
