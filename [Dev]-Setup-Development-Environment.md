@@ -92,7 +92,7 @@ The data and socket logic in "src/mixins/socket.js"
 
 # Database Migration
 
-This part is currently not available yet. You cannot change the db schema. This part will be updated. 
+TODO
 
 # Unit Test
 
