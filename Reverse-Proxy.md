@@ -1,6 +1,6 @@
 In order to to expose Uptime Kuma to the web securely, it is recommended to proxy it behind a traditional webserver such as nginx or Apache. Below are some example configurations that you could use.
 
-Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more header **"Upgrade"** and **"Connection"** in order to **reverse proxy WebSocket**.
+Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more headers **"Upgrade"** and **"Connection"** in order to **reverse proxy WebSocket**.
 
 - [Nginx](#nginx)
 - [Apache](#apache)
