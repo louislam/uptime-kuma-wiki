@@ -7,6 +7,7 @@ Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more he
 - [Caddy](#caddy)
 - [Nginx Proxy Manager](#nginx-proxy-manager)
 - [Synology Builtin Reverse Proxy](#synology-builtin-reverse-proxy)
+- [Cloudflare](#cloudflare)
 - [SSL/HTTPS](#ssl-https)
 
 
@@ -95,6 +96,16 @@ Please enable "WebSockets Supports"
 # Synology Builtin Reverse Proxy
 
 https://mlohr.com/websockets-for-synology-dsm/
+
+# Cloudflare
+
+You must enable "WebSockets" in Cloudflare Dashboard:
+
+Cloudflare Dashboard -> Network -> Enable WebSockets
+
+Read more:
+https://github.com/louislam/uptime-kuma/issues/138#issuecomment-890485229
+
 
 # SSL/HTTPS
 
