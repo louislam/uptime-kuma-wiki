@@ -2,6 +2,8 @@ In order to to expose Uptime Kuma to the web securely, it is recommended to prox
 
 Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more headers **"Upgrade"** and **"Connection"** in order to **reverse proxy WebSocket**.
 
+Uptime Kuma **do not supported on subdirectory** reverse proxy. Please prepare a domain or sub-domain to do that.
+
 - [Nginx](#nginx)
 - [Apache](#apache)
 - [Caddy](#caddy)
