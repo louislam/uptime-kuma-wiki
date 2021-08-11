@@ -11,7 +11,7 @@ Uptime Kuma **do not supported on subdirectory** reverse proxy. Please prepare a
 - [Synology Builtin Reverse Proxy](#synology-builtin-reverse-proxy)
 - [Cloudflare](#cloudflare)
 - [SSL/HTTPS](#ssl-https)
-- [Traefik]
+- [Traefik](#Traefik)
 
 
 # Nginx
