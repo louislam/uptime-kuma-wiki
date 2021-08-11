@@ -52,7 +52,7 @@ pm2 stop uptime-kuma
 
 Browse to http://localhost:3001 after started.
 
-### (Optional) One more step for Reverse Proxy
+## (Optional) One more step for Reverse Proxy
 
 This is optional for someone who want to do reverse proxy.
 
