@@ -1,9 +1,12 @@
 ## Installer via cli
 
+Interactive cli installer, supports Docker or without Docker. 
+
+Good for beginners.
+
 ```bash
 curl -o kuma_install.sh https://raw.githubusercontent.com/louislam/uptime-kuma/master/install.sh && sudo bash kuma_install.sh
 ```
-
 
 
 ## Advanced Installation
@@ -65,7 +68,9 @@ pm2 restart uptime-kuma
 pm2 startup
 ```
 
+### Docker Compose Example
 
+https://github.com/louislam/uptime-kuma/blob/master/docker-compose.yml
 
 ## (Optional) One more step for Reverse Proxy
 
