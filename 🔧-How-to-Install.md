@@ -31,7 +31,7 @@ docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/
 
 ### ☸️ Kubernetes
 
-See more [here](kubernetes/README.md) 
+See more [here](https://github.com/louislam/uptime-kuma/blob/master/kubernetes/README.md) 
 
 ### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
