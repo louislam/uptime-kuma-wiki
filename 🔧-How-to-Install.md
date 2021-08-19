@@ -4,7 +4,9 @@
 curl -o kuma_install.sh https://raw.githubusercontent.com/louislam/uptime-kuma/master/install.sh && sudo bash kuma_install.sh
 ```
 
-## Manual Installation
+
+
+## Advanced Installation
 
 ### 🐳 Docker
 
@@ -18,12 +20,17 @@ docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name upti
 
 Browse to http://localhost:3001 after started.
 
+Change Port and Volume
 
-If you want to change **port** and **volume**, or need to browse via a reserve proxy, please read <a href="https://github.com/louislam/uptime-kuma/wiki/Installation#docker">wiki</a>.
+```bash
+docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
+```
 
 ### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
 Required Tools: Node.js >= 14, git and pm2.
+
+(**Not recommended for ARM CPU users.** Since there is no prebuilt for node-sqlite3, it is hard to get it running)
 
 ```bash
 git clone https://github.com/louislam/uptime-kuma.git
@@ -41,6 +48,24 @@ pm2 start npm --name uptime-kuma -- run start-server
 ```
 
 Browse to http://localhost:3001 after started.
+
+```
+# Listen to different port or hostname
+pm2 start npm --name uptime-kuma -- run start-server -- --port=80 --hostname=0.0.0.0
+```
+
+#### Useful Commands
+
+```bash
+pm2 start uptime-kuma
+pm2 stop uptime-kuma
+pm2 restart uptime-kuma
+
+# Run at startup
+pm2 startup
+```
+
+
 
 ## (Optional) One more step for Reverse Proxy
 
