@@ -1,6 +1,12 @@
+## Installer via cli
+
+```bash
+curl -o kuma_install.sh https://raw.githubusercontent.com/louislam/uptime-kuma/master/install.sh && sudo bash kuma_install.sh
+```
+
 ## Manual Installation
 
-### Docker
+### 🐳 Docker
 
 ```bash
 # Create a volume
@@ -12,17 +18,12 @@ docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name upti
 
 Browse to http://localhost:3001 after started.
 
-Change Port and Volume
 
-```bash
-docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
-```
+If you want to change **port** and **volume**, or need to browse via a reserve proxy, please read <a href="https://github.com/louislam/uptime-kuma/wiki/Installation#docker">wiki</a>.
 
-### Without Docker (x86/x64 only)
+### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
 Required Tools: Node.js >= 14, git and pm2.
-
-(**Not recommanded for ARM CPU users.** Since there is no prebuilt for node-sqlite3, it is hard to get it running)
 
 ```bash
 git clone https://github.com/louislam/uptime-kuma.git
@@ -37,17 +38,6 @@ npm run start-server
 # Install PM2 if you don't have: npm install pm2 -g
 pm2 start npm --name uptime-kuma -- run start-server
 
-# Listen to different port or hostname
-pm2 start npm --name uptime-kuma -- run start-server -- --port=80 --hostname=0.0.0.0
-
-```
-
-More useful commands if you have installed.
-
-```bash
-pm2 start uptime-kuma
-pm2 restart uptime-kuma
-pm2 stop uptime-kuma
 ```
 
 Browse to http://localhost:3001 after started.
