@@ -29,6 +29,10 @@ Change Port and Volume
 docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
 
+### ☸️ Kubernetes
+
+See more [here](kubernetes/README.md) 
+
 ### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
 Required Tools: Node.js >= 14, git and pm2.
