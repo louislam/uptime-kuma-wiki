@@ -1,4 +1,4 @@
-### 🆙🐳 Docker
+## 🆙🐳 Docker
 
 Re-pull the latest docker image and create another container with the same volume.
 
@@ -13,7 +13,7 @@ docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name upti
 
 PS: For every new release, it takes some time to build the docker image, please be patient if it is not available yet.
 
-### 🆙 💪🏻 Without Docker
+## 🆙 💪🏻 Without Docker
 
 ```bash
 cd <uptime-kuma-directory>
