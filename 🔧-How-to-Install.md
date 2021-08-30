@@ -1,13 +1,10 @@
-## Installer via cli
+## 🚀 Installer via CLI
 
-Interactive cli installer, supports Docker or without Docker. 
-
-Good for beginners.
+[Ubuntu/CentOS] Interactive CLI installer, supports Docker or without Docker. 
 
 ```bash
-curl -o kuma_install.sh https://raw.githubusercontent.com/louislam/uptime-kuma/master/install.sh && sudo bash kuma_install.sh
+curl -o kuma_install.sh http://git.kuma.pet/install.sh && sudo bash kuma_install.sh
 ```
-
 
 ## Advanced Installation
 
