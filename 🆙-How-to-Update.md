@@ -19,7 +19,7 @@ PS: For every new release, it takes some time to build the docker image, please 
 cd <uptime-kuma-directory>
 git fetch --all
 git checkout 1.3.2 --force
-npm install
+npm install --legacy-peer-deps
 npm run build
 pm2 restart uptime-kuma
 ```
