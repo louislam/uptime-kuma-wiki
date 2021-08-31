@@ -95,7 +95,7 @@ subdomain.domain.com {
 # Https-Portal
 
 Enabling "WEBSOCKET=true", or the equivalent in your docker environment variables will do the trick.  
-Link to https-portal [Websocket under Advanced Usage](https://github.com/SteveLTN/https-portal#configure-nginx-through-environment-variables).
+Link to https-portal Websocket under [Advanced Usage](https://github.com/SteveLTN/https-portal#configure-nginx-through-environment-variables).
 
 # Nginx Proxy Manager
 
