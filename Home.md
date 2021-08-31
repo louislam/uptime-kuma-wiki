@@ -12,3 +12,4 @@ A little bear is watching your website.🐻🐻🐻
 
 * (2021-08-21) Reach 1001 Stargazers, thanks everyone!
 * (2021-08-26) Reach 2066 Stargazers. Grow so fast! That is unexpected!
+* (2021-08-31) Reach 2651 Stargazers. Amazing!
