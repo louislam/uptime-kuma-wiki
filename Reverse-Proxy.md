@@ -7,6 +7,7 @@ Uptime Kuma **do not support the subdirectory reverse proxy** such as `http://ex
 - [Nginx](#nginx)
 - [Apache](#apache)
 - [Caddy](#caddy)
+- [Https-Portal](#https-portal)
 - [Nginx Proxy Manager](#nginx-proxy-manager)
 - [Synology Builtin Reverse Proxy](#synology-builtin-reverse-proxy)
 - [Traefik](#Traefik)
@@ -91,10 +92,14 @@ subdomain.domain.com {
 }
 ```
 
+# Https-Portal
+
+Enabling "WEBSOCKET=true", or the equivalent in your docker environment variables will do the trick.  
+Link to https-portal [Websocket under Advanced Usage](https://github.com/SteveLTN/https-portal#configure-nginx-through-environment-variables).
+
 # Nginx Proxy Manager
 
 Please enable "WebSockets Supports"
-
 
 
 # Synology Builtin Reverse Proxy
