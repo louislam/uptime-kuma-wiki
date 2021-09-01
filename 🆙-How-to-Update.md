@@ -20,6 +20,7 @@ cd <uptime-kuma-directory>
 git fetch --all
 git checkout 1.5.0 --force
 npm install --legacy-peer-deps
+node node_modules/esbuild/install.js
 npm run build
 pm2 restart uptime-kuma
 ```
