@@ -18,7 +18,7 @@ PS: For every new release, it takes some time to build the docker image, please 
 ```bash
 cd <uptime-kuma-directory>
 git fetch --all
-git checkout 1.5.0 --force
+git checkout 1.5.1 --force
 npm install --legacy-peer-deps
 node node_modules/esbuild/install.js
 npm run build
