@@ -73,7 +73,7 @@ pm2 startup
 
 https://github.com/louislam/uptime-kuma/blob/master/docker-compose.yml
 
-### Install on Synology Nas
+### Install on Synology NAS
 
 Unofficial tutorial by Marius Bogdan Lixandru:
 
