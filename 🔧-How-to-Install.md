@@ -73,6 +73,12 @@ pm2 startup
 
 https://github.com/louislam/uptime-kuma/blob/master/docker-compose.yml
 
+### Install on Synology Nas
+
+Unofficial tutorial by Marius Bogdan Lixandru:
+
+https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
+
 ## (Optional) One more step for Reverse Proxy
 
 This is optional for someone who want to do reverse proxy.
