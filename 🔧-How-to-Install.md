@@ -28,10 +28,6 @@ docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/
 
 ⚠️ Please use in a local volume only. Other types such as nfs are not supported.
 
-### ☸️ Kubernetes
-
-See more [here](https://github.com/louislam/uptime-kuma/blob/master/kubernetes/README.md) 
-
 ### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
 Required Tools: Node.js >= 14, git and pm2.
@@ -74,6 +70,12 @@ pm2 startup
 ### Docker Compose Example
 
 https://github.com/louislam/uptime-kuma/blob/master/docker-compose.yml
+
+### ☸️ Kubernetes
+
+⚠ Warning: K8s deployment is provided by contributors. I have no experience with K8s and I can't fix error in the future. I only test Docker and Node.js. Use at your own risk.
+
+See more [here](https://github.com/louislam/uptime-kuma/blob/master/kubernetes/README.md) 
 
 ### Install on Synology NAS
 
