@@ -91,3 +91,8 @@ Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more he
 
 Please read wiki for more info:
 https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
+
+## Experiment
+
+### Install Uptime Kuma server in your Android phone
+https://github.com/louislam/uptime-kuma/issues/423
