@@ -35,6 +35,9 @@ Required Tools: Node.js >= 14, git and pm2.
 (**Not recommended for ARM CPU users.** Since there is no prebuilt for node-sqlite3, it is hard to get it running)
 
 ```bash
+# Update your npm to the latest version
+npm install npm -g
+
 git clone https://github.com/louislam/uptime-kuma.git
 cd uptime-kuma
 npm run setup
