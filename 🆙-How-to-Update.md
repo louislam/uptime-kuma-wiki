@@ -16,9 +16,6 @@ PS: For every new release, it takes some time to build the docker image, please 
 ## 🆙 💪🏻 Without Docker
 
 ```bash
-# Update your npm to the latest version
-npm install npm -g
-
 cd <uptime-kuma-directory>
 git fetch --all
 git checkout 1.7.0 --force
@@ -26,4 +23,10 @@ npm install --legacy-peer-deps
 node node_modules/esbuild/install.js
 npm run build
 pm2 restart uptime-kuma
+```
+
+If you see node-pre-gyp error, please use your npm to the latest version
+```bash
+# Update your npm to the latest version
+npm install npm -g
 ```
