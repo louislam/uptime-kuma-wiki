@@ -16,6 +16,9 @@ PS: For every new release, it takes some time to build the docker image, please 
 ## 🆙 💪🏻 Without Docker
 
 ```bash
+# Update your npm to the latest version
+npm install npm -g
+
 cd <uptime-kuma-directory>
 git fetch --all
 git checkout 1.7.0 --force
