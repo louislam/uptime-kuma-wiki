@@ -120,7 +120,7 @@ services:
       - https-portal-data:/var/lib/https-portal
 
   uptime-kuma:
-    image: louislam/uptime-kuma
+    image: louislam/uptime-kuma:1
     container_name: uptime-kuma
     volumes:
       - ./uptime-kuma:/app/data
