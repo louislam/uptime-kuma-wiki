@@ -97,6 +97,41 @@ subdomain.domain.com {
 Enabling "WEBSOCKET=true", or the equivalent in your docker environment variables will do the trick.  
 Link to https-portal Websocket under [Advanced Usage](https://github.com/SteveLTN/https-portal#configure-nginx-through-environment-variables).
 
+Example docker-compose.yml file using Https-Portal:
+
+```
+version: '3.3'
+
+services:
+  https-portal:
+    image: steveltn/https-portal:1
+    ports:
+      - '80:80'
+      - '443:443'
+    links:
+      - uptime-kuma
+    restart: always
+    environment:
+      DOMAINS: 'status.domain.com -> http://uptime-kuma:3001'
+      STAGE: 'production' # Don't use production until staging works
+      # FORCE_RENEW: 'true'
+      WEBSOCKET: 'true'
+    volumes:
+      - https-portal-data:/var/lib/https-portal
+
+  uptime-kuma:
+    image: louislam/uptime-kuma
+    container_name: uptime-kuma
+    volumes:
+      - ./uptime-kuma:/app/data
+    ports:
+      - 3001:3001
+
+volumes:
+  https-portal-data:
+```
+Only change "status.domain.com" to your domain
+
 # Nginx Proxy Manager
 
 Please enable "WebSockets Supports"
