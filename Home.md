@@ -8,6 +8,10 @@ Kuma（クマ / 熊）means bear 🐻 in Japanese.
 
 A little bear is watching your website.🐻🐻🐻
 
+### Pronunciation 
+
+http://ipa-reader.xyz/?text=%CB%88%CA%8Cpta%C9%AAm%20k%C9%AF%CC%9F%E1%B5%9Dma%CC%A0&voice=Joey
+
 ## History
 
 * (2021-08-21) Reach 1001 Stargazers, thanks everyone!
