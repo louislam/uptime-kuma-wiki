@@ -21,7 +21,7 @@ http://ipa-reader.xyz/?text=%CB%88%CA%8Cpta%C9%AAm%20k%C9%AF%CC%9F%E1%B5%9Dma%CC
 * (2021-09-12) Docker Pull over 1M!
 * (2021-09-17) 🐣 
 
-  <img src="https://user-images.githubusercontent.com/1336778/133796976-1ea682f5-0cfa-4c50-b6fd-7d879744b12f.jpg" width="500" />
+  <img src="https://user-images.githubusercontent.com/1336778/133796976-1ea682f5-0cfa-4c50-b6fd-7d879744b12f.jpg" width="250" />
 * (2021-09-29) Reach 3645 Stargazers. 👍
 * (2021-09-30) Docker Pull over 2M! Crazy🤪
 * (2021-10-07) Reach 4212 🔭✨⭐.
