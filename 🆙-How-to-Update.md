@@ -15,13 +15,14 @@ PS: For every new release, it takes some time to build the docker image, please 
 
 ## 🆙 💪🏻 Without Docker
 
+(1.8.0 Updated!)
+
 ```bash
 cd <uptime-kuma-directory>
 git fetch --all
 git checkout 1.8.0 --force
-npm install --legacy-peer-deps
-node node_modules/esbuild/install.js
-npm run build
+npm ci --production
+npm run download-dist
 pm2 restart uptime-kuma
 ```
 
