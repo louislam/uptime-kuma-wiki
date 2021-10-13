@@ -88,7 +88,7 @@ pm2 startup
 
 ### Docker Compose Example
 
-https://github.com/louislam/uptime-kuma/blob/master/docker-compose.yml
+https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
 
 ### ☸️ Kubernetes
 
