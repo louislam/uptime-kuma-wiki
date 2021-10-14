@@ -88,7 +88,7 @@ Without SSL:
 
 ```nginx
 subdomain.domain.com {
-    reverse_proxy 127.0.0.1:3001 :
+    reverse_proxy 127.0.0.1:3001
 }
 ```
 
