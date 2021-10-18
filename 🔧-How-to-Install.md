@@ -1,3 +1,7 @@
+- [🚀 Installer](#-installer-via-cli)
+- [🐳 Docker](#-docker)
+- [💪🏻 Without Docker](#-without-docker-recommended-for-x86x64-only)
+
 ## 🚀 Installer via CLI
 
 [Ubuntu/CentOS] Interactive CLI installer, supports Docker or without Docker. 
@@ -90,13 +94,13 @@ pm2 startup
 
 https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
 
-### ☸️ Kubernetes
+### ☸️ Kubernetes (Unofficial)
 
 ⚠ Warning: K8s deployment is provided by contributors. I have no experience with K8s and I can't fix error in the future. I only test Docker and Node.js. Use at your own risk.
 
-See more [here](https://github.com/louislam/uptime-kuma/blob/master/kubernetes/README.md) 
+See more [here](https://github.com/louislam/uptime-kuma/tree/k8s-unofficial/kubernetes) 
 
-### Install on Synology NAS
+### Install on Synology NAS (Unofficial)
 
 Unofficial tutorial by Marius Bogdan Lixandru:
 
