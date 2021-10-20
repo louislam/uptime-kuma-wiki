@@ -94,18 +94,6 @@ pm2 startup
 
 https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
 
-### ☸️ Kubernetes (Unofficial)
-
-⚠ Warning: K8s deployment is provided by contributors. I have no experience with K8s and I can't fix error in the future. I only test Docker and Node.js. Use at your own risk.
-
-See more [here](https://github.com/louislam/uptime-kuma/tree/k8s-unofficial/kubernetes) 
-
-### Install on Synology NAS (Unofficial)
-
-Unofficial tutorial by Marius Bogdan Lixandru:
-
-https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
-
 ## (Optional) One more step for Reverse Proxy
 
 This is optional for someone who want to do reverse proxy.
@@ -115,7 +103,36 @@ Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more he
 Please read wiki for more info:
 https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 
-## Experiment
 
-### Install Uptime Kuma server in your Android phone
+# Videos
+
+- [Learn Uptime Kuma in 5 Minutes](https://www.youtube.com/watch?v=muZiPdH2JZ8) by DEVOPS UNLOCKED
+  Install with the docker run command
+- [Meet Uptime Kuma, a Fancy Open Source Uptime Monitor](https://www.youtube.com/watch?v=r_A5NKkAqZM) by Techno Tim
+  Install with docker-compose
+- [Monitor Status with Uptime Kuma - Let's install Uptime Kuma with Docker](https://www.youtube.com/watch?v=rRKvDMGeeBA) by Geeked
+  Install with Portainer
+
+
+## Unofficial & Experiment
+
+⚠ ⚠ ⚠ Warning: Generally, I only test Docker and Node.js. All installation methods here may be broken in the future release. I don't maintain them. Use at your own risk.
+
+
+### ☸️ Kubernetes (Unofficial)
+
+⚠ Warning: K8s deployment is provided by contributors. I have no experience with K8s and I can't fix error in the future.
+
+See more [here](https://github.com/louislam/uptime-kuma/tree/k8s-unofficial/kubernetes) 
+
+### Install on Synology NAS (Unofficial)
+
+Unofficial tutorial by Marius Bogdan Lixandru:
+
+https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
+
+### Termux (Unofficial/Experiment)
+
+Do you have a old Android phone? You could install Uptime Kuma on it!
+
 https://github.com/louislam/uptime-kuma/issues/423
