@@ -8,6 +8,7 @@
 
 
 ### UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN `int`
+
 (1.10.0)
 - 
 - Default Value: `undefined`
