@@ -104,7 +104,7 @@ Please read wiki for more info:
 https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 
 
-# Videos
+## Videos
 
 - [Learn Uptime Kuma in 5 Minutes](https://www.youtube.com/watch?v=muZiPdH2JZ8) by DEVOPS UNLOCKED
   Install with the docker run command
