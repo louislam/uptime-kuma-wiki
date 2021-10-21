@@ -16,13 +16,15 @@ http://ipa-reader.xyz/?text=%CB%88%CA%8Cpta%C9%AAm%20k%C9%AF%CC%9F%E1%B5%9Dma%CC
 * (2021-08-26) Reach 2066 Stargazers. Grow so fast! That is unexpected!
 * (2021-08-31) Reach 2651 Stargazers. Amazing!
 * (2021-09-06) Reach 3066 Stargazers. 👀👏
-* (2021-09-12) Docker Pull over 1M!
+* (2021-09-12) Docker Pull is over 1M!
 * (2021-09-17) 🐣 
 
   <img src="https://user-images.githubusercontent.com/1336778/133796976-1ea682f5-0cfa-4c50-b6fd-7d879744b12f.jpg" width="250" />
 * (2021-09-29) Reach 3645 Stargazers. 👍
-* (2021-09-30) Docker Pull over 2M! Crazy🤪
+* (2021-09-30) Docker Pull is over 2M! Crazy🤪
 * (2021-10-07) Reach 4212 🔭✨⭐.
 * (2021-10-08) Reach 4764 Stargazers. One of trending projects of the day!
 * (2021-10-11) Reach 6658 Stargazers. Is it a rocket🚀?
-* (2021-10-13) Docker Pull over 3M!
+* (2021-10-13) Docker Pull is over 3M!
+* (2021-10-21) Docker Pull is over 4M! ⭐ It's over 8000! https://www.youtube.com/watch?v=TSQqUfeyHF8
+  ![](https://user-images.githubusercontent.com/1336778/138208120-09a6d4b2-ceca-4380-ba59-5456b72a80aa.jpg)
