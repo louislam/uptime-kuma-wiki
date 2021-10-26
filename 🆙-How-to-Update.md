@@ -13,9 +13,7 @@ docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name upti
 
 PS: For every new release, it takes some time to build the docker image, please be patient if it is not available yet.
 
-## 🆙 💪🏻 Without Docker
-
-(1.8.0 Updated!)
+## 🆙 💪🏻 Non-Docker
 
 ```bash
 cd <uptime-kuma-directory>
@@ -30,10 +28,4 @@ npm run download-dist
 
 # Restart
 pm2 restart uptime-kuma
-```
-
-If you see node-pre-gyp error, please use your npm to the latest version
-```bash
-# Update your npm to the latest version
-npm install npm -g
 ```
