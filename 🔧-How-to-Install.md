@@ -76,7 +76,7 @@ Browse to http://localhost:3001 after started.
 
 ```
 # Listen to different port or hostname
-pm2 start server/server.js --name uptime-kuma -- --port=80 --hostname=0.0.0.0
+pm2 start server/server.js --name uptime-kuma -- --port=80 --host=0.0.0.0
 ```
 
 #### Useful Commands
