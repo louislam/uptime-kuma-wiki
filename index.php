@@ -7,8 +7,7 @@
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/themes/vue.min.css">
-    <link rel="icon" type="image/svg+xml" href="beans.svg">
-    <link rel="canonical" href="https://<?=$_SERVER["HTTP_HOST"] . (isset($_SERVER["REDIRECT_URL"]) ? $_SERVER["REDIRECT_URL"] : "") ?>/docs/" />
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg">
     <style>
         .app-name-link img {
             width: 96px;
@@ -28,9 +27,8 @@
         search: 'auto',
         routerMode: 'history',
         executeScript: true,
-        logo: 'https://github.com/louislam/uptime-kuma/raw/master/public/icon.svg',
+        logo: 'https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg',
         relativePath: true,
-        homepage: "Home.md"
     }
 </script>
 
