@@ -34,4 +34,5 @@ https://github.com/louislam/uptime-kuma-wiki
 * (2021-10-13) Docker Pull is over 3M!
 * (2021-10-21) Docker Pull is over 4M! ⭐ It's over 8000! https://www.youtube.com/watch?v=TSQqUfeyHF8
   ![](https://user-images.githubusercontent.com/1336778/138208120-09a6d4b2-ceca-4380-ba59-5456b72a80aa.jpg)
-* (2021-10-27) Docker Pull is over 5M!  
+* (2021-10-27) Docker Pull is over 5M!
+* (2021-11-08) Docker Pull is over 6.7M! 9242 Stargazers!
