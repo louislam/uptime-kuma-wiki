@@ -26,6 +26,7 @@ https://github.com/louislam/uptime-kuma-wiki
 * (2021-09-17) 🐣 
 
   <img src="https://user-images.githubusercontent.com/1336778/133796976-1ea682f5-0cfa-4c50-b6fd-7d879744b12f.jpg" width="250" />
+
 * (2021-09-29) Reach 3645 Stargazers. 👍
 * (2021-09-30) Docker Pull is over 2M! Crazy🤪
 * (2021-10-07) Reach 4212 🔭✨⭐.
@@ -33,6 +34,8 @@ https://github.com/louislam/uptime-kuma-wiki
 * (2021-10-11) Reach 6658 Stargazers. Is it a rocket🚀?
 * (2021-10-13) Docker Pull is over 3M!
 * (2021-10-21) Docker Pull is over 4M! ⭐ It's over 8000! https://www.youtube.com/watch?v=TSQqUfeyHF8
-  ![](https://user-images.githubusercontent.com/1336778/138208120-09a6d4b2-ceca-4380-ba59-5456b72a80aa.jpg)
+
+  <img src="https://user-images.githubusercontent.com/1336778/138208120-09a6d4b2-ceca-4380-ba59-5456b72a80aa.jpg" width="250" />
+
 * (2021-10-27) Docker Pull is over 5M!
 * (2021-11-08) Docker Pull is over 6.7M! 9242 Stargazers!
