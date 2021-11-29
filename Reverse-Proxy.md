@@ -167,6 +167,12 @@ https://github.com/louislam/uptime-kuma/issues/138#issuecomment-890485229
 
 Create a new virtual host through the graphical admin like you normally would.
 
+## Basic tab
+
+- Name: `uptime-kuma`
+- Virtual Host Root:	`/path/to/uptime-kuma`
+- Enable Scripts/ExtApps:	`Yes`
+
 ## External app tab
 
 - Add a `web server` app type
