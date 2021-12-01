@@ -12,6 +12,7 @@ Uptime Kuma **does not support a subdirectory** such as `http://example.com/upti
 - [Synology Builtin Reverse Proxy](#synology-builtin-reverse-proxy)
 - [Traefik](#Traefik)
 - [Cloudflare](#cloudflare)
+- [OpenLiteSpeed](#openlitespeed)
 - Others
   - [SSL/HTTPS](#sslhttps)
 
@@ -161,6 +162,46 @@ Cloudflare Dashboard -> Network -> Enable WebSockets
 
 Read more:
 https://github.com/louislam/uptime-kuma/issues/138#issuecomment-890485229
+
+# OpenLiteSpeed
+
+Create a new virtual host through the graphical admin like you normally would.
+
+**Basic tab**
+- Name: `uptime-kuma`
+- Virtual Host Root:	`/path/to/uptime-kuma`
+- Enable Scripts/ExtApps:	`Yes`
+
+**External app tab**
+- Add a `web server` app type
+- Name: `uptime-kuma`
+- Address:	`http://localhost:3001`
+
+**Context tab**
+
+- Add a `proxy` context
+- URI:	`/`
+- Web Server:	`[VHost Level]: uptime-kuma`
+- Header Operations:
+  ```
+  Upgrade websocket
+  Connection upgrade
+  ```
+- Access Allowed:	`*`
+
+**Web Socket Proxy tab**
+
+- Add a `Web Socket Proxy Setup`
+- URI:	`/`
+- Address: `127.0.0.1:3001`
+
+**SSL tab (if needeed)**
+
+- Private Key File: `/path/to/ssl/key/privkey.pem`
+- Certificate File: `/path/to/ssl/cert/fullchain.pem`
+- Chained Certificate: `yes`
+
+Perform a graceful restart and launch uptime-kuma.
 
 # Others
 
