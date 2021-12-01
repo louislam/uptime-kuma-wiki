@@ -1,5 +1,7 @@
 Welcome to the Uptime Kuma wiki!
 
+This wiki is also available on https://uptime.kuma.pet/docs/
+
 ## 🐻?
 
 Kuma（クマ / 熊）means bear 🐻 in Japanese.
