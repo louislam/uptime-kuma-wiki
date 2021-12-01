@@ -167,19 +167,17 @@ https://github.com/louislam/uptime-kuma/issues/138#issuecomment-890485229
 
 Create a new virtual host through the graphical admin like you normally would.
 
-## Basic tab
-
+**Basic tab**
 - Name: `uptime-kuma`
 - Virtual Host Root:	`/path/to/uptime-kuma`
 - Enable Scripts/ExtApps:	`Yes`
 
-## External app tab
-
+**External app tab**
 - Add a `web server` app type
 - Name: `uptime-kuma`
 - Address:	`http://localhost:3001`
 
-## Context tab
+**Context tab**
 
 - Add a `proxy` context
 - URI:	`/`
@@ -191,13 +189,13 @@ Create a new virtual host through the graphical admin like you normally would.
   ```
 - Access Allowed:	`*`
 
-## Web Socket Proxy tab
+**Web Socket Proxy tab**
 
 - Add a `Web Socket Proxy Setup`
 - URI:	`/`
 - Address: `127.0.0.1:3001`
 
-## SSL tab (if needeed)
+**SSL tab (if needeed)**
 
 - Private Key File: `/path/to/ssl/key/privkey.pem`
 - Certificate File: `/path/to/ssl/cert/fullchain.pem`
