@@ -30,7 +30,7 @@ Change Port and Volume
 docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
 
-⚠️ Please use in a local volume only. Other types such as nfs are not supported.
+⚠️ Please use a **local volume** only. Other types such as NFS are not supported.
 
 #### Docker Tags Description
 <table>
