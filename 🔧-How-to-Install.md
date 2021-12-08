@@ -43,7 +43,7 @@ docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/
 <tbody>
 <tr><td>latest, 1, 1.*</td><td>latest stable - debian</td></tr>
 <tr><td>debian, 1-debian, 1.*-debian</td><td>latest stable - debian</td></tr>
-<tr><td>alpine, 1-alpine, 1.*-alpine</td><td>latest stable - alpine</td></tr>
+<tr><td>❌alpine, 1-alpine, 1.*-alpine</td><td>(❌Deprecated due to DNS issues) latest stable - alpine</td></tr>
 <tr><td>nightly*</td><td>development build, unstable</td></tr>
 </tbody>
 </table>
