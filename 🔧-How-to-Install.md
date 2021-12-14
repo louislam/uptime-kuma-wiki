@@ -125,6 +125,10 @@ https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 
 See more [here](https://github.com/louislam/uptime-kuma/tree/k8s-unofficial/kubernetes) 
 
+### Ansible (Unofficial)
+
+https://github.com/louislam/uptime-kuma/tree/ansible-unofficial/ansible
+
 ### Install on Synology NAS (Unofficial)
 
 Unofficial tutorial by Marius Bogdan Lixandru:
@@ -133,6 +137,6 @@ https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
 
 ### Termux (Unofficial/Experiment)
 
-Do you have a old Android phone? You could install Uptime Kuma on it!
+Do you have an old Android phone? You could install Uptime Kuma on it!
 
 https://github.com/louislam/uptime-kuma/issues/423
