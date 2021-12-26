@@ -137,7 +137,7 @@ Do you have a old Android phone? You could install Uptime Kuma on it!
 
 https://github.com/louislam/uptime-kuma/issues/423
 
-### Install on Azure Container Instance
+### Install on Azure Container Instance with TLS endpoint
 
 Unofficial tutorial by Stefan:
-https://haci.io/posts/uptime-kuma-azure-container/
+https://haci.io/posts/uptime-kuma-azure-container-instance/
