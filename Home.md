@@ -44,5 +44,5 @@ https://github.com/louislam/uptime-kuma-wiki
 * (2021-11-18) Docker Pull is over 8M!
 * (2021-12-01) Docker Pull is over 10M! 
 * (2021-12-02) Reach 10,076 Stargazers!
-
+* (2022-01-21) Reach 12,059 Stargazers!
 
