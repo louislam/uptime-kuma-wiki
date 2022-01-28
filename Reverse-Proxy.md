@@ -13,6 +13,7 @@ Uptime Kuma **does not support a subdirectory** such as `http://example.com/upti
 - [Traefik](#Traefik)
 - [Cloudflare](#cloudflare)
 - [OpenLiteSpeed](#openlitespeed)
+- [HAProxy](#haproxy)
 - Others
   - [SSL/HTTPS](#sslhttps)
 
@@ -202,6 +203,17 @@ Create a new virtual host through the graphical admin like you normally would.
 - Chained Certificate: `yes`
 
 Perform a graceful restart and launch uptime-kuma.
+
+# HAProxy
+
+No special configuration is required when using HAProxy as a reverse
+proxy although you may wish to add the `timeout tunnel` option to either
+the `defaults`, `listen`, or `backend` sections. If using the `timeout
+tunnel` option, it is also recommended to set `timeout client-fin` to
+handle instances where the client stops responding. 
+
+Read more: 
+http://cbonte.github.io/haproxy-dconv/2.4/configuration.html#4.2-timeout%20tunnel
 
 # Others
 
