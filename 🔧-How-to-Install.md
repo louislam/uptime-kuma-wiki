@@ -140,3 +140,8 @@ https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
 Do you have an old Android phone? You could install Uptime Kuma on it!
 
 https://github.com/louislam/uptime-kuma/issues/423
+
+### Install on Azure Container Instance with TLS endpoint
+
+Unofficial tutorial by Stefan:
+https://haci.io/posts/uptime-kuma-azure-container-instance/
