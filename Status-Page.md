@@ -1,4 +1,4 @@
-Multiple status pages is supported in 1.3.0.
+Multiple status pages is supported in 1.13.0.
 
 Special slug: `default`
 
