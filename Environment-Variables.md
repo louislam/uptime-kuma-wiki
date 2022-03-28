@@ -1,4 +1,4 @@
-# Environment variables
+# Server environment variables
 
 | Environment variable                       | Server argument            | Description                                                           |    Default |
 | ------------------------------------------ | -------------------------- | --------------------------------------------------------------------- | ---------: |
@@ -10,3 +10,10 @@
 | `UPTIME_KUMA_SSL_CERT` or `SSL_CERT`       | `ssl-cert`                 | Path to SSL certificate                                               |            |
 | `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN`     | `disable-frame-sameorigin` | Prevent kuma from being opened by an IFrame from other hosts          |    `false` |
 | `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                            | Log beat event to STDOUT ("1" to enable)                              |            |
+
+# Docker specific environment variables
+
+| Environment variable | Description                         | Default |
+| -------------------- | ----------------------------------- | ------: |
+| `PUID`               | User id to access the data storage  |  `1000` |
+| `GUID`               | Group id to access the data storage |  `1000` |
