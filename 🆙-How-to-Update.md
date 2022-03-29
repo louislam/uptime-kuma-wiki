@@ -8,10 +8,24 @@ For someone who used my "How-to-use" commands to install Uptime Kuma, you can up
 docker pull louislam/uptime-kuma:1
 docker stop uptime-kuma
 docker rm uptime-kuma
+
+# Default
 docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+
+# If you are not using default value
+# docker run -d --restart=always -p <YOUR PORT>:3001 -v <YOUR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
 
 PS: For every new release, it takes some time to build the docker image, please be patient if it is not available yet.
+
+## Docker-Compose
+
+```bash
+cd "<YOUR docker-compose.yml DIRECTORY>"
+docker pull louislam/uptime-kuma:1
+docker stop uptime-kuma
+docker-compose up -d --force-recreate
+```
 
 ## 🆙 💪🏻 Non-Docker
 
@@ -20,7 +34,7 @@ cd <uptime-kuma-directory>
 
 # Update from git
 git fetch --all
-git checkout 1.12.1 --force
+git checkout 1.13.1 --force
 
 # Install dependenies and prebuilt
 npm ci --production
