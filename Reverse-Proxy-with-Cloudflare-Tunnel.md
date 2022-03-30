@@ -80,8 +80,8 @@ But trust me, once you learnt, you will remember how to config without this guid
 
 ## How to Stop
 
-Option 1. You can remove the map on Cloudflare.
-Option 2. You can click `Stop cloudflared` and `Remove Token` in your Uptime Kuma.
+- Option 1. You can remove the map on Cloudflare.
+- Option 2. You can click `Stop cloudflared` and `Remove Token` in your Uptime Kuma.
 
 
 ## Environment Variable
