@@ -1,4 +1,4 @@
-(⚠️ Beta Feature)
+⚠️ Beta Feature
 
 ## Description
 
