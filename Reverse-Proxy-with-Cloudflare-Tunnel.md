@@ -8,7 +8,7 @@ Recently, I just discovered that Cloudflare has added a web GUI for Cloudflare T
 
 For Docker users, you just need to provide a Cloudflare Tunnel token in the Settings. Then it is ready to be browsed from the Internet. 
 
-
+Read more about cloudflared:
 https://www.reddit.com/r/selfhosted/comments/tp0nqg/cloudflare_has_added_a_web_gui_for_controlling/
 
 Pros:
