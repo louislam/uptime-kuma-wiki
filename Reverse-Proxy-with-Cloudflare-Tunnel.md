@@ -6,7 +6,7 @@ Despite a lot of reverse proxy methods in the world, unfortunately, none of them
 
 Recently, I just discovered that Cloudflare has added a web GUI for Cloudflare Tunnel which make it super easy to use. You can expose your Uptime Kuma to the Internet without so many configs!
 
-The goal of this pr is adding the executable binary `cloudflared` (Debian only) into the docker image. And then you just need to provide a Cloudflare token in the Settings. Then it is ready to be browsed from the Internet. 
+For Docker users, you just need to provide a Cloudflare Tunnel token in the Settings. Then it is ready to be browsed from the Internet. 
 
 
 https://www.reddit.com/r/selfhosted/comments/tp0nqg/cloudflare_has_added_a_web_gui_for_controlling/
