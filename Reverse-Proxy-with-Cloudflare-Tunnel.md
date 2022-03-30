@@ -1,8 +1,29 @@
 ## Description
 
-This is the easiest reverse proxy that I have ever seen so far. 
+This is the easiest reverse proxy that I have ever seen so far. You don't even need to expose Docker port!
 
-You don't even need to expose Docker port!
+Despite a lot of reverse proxy methods in the world, unfortunately, none of them are actually easy-to-use in my opinion. As in the past, many Uptime Kuma users kept asking how to config a reverse proxy.
+
+Recently, I just discovered that Cloudflare has added a web GUI for Cloudflare Tunnel which make it super easy to use. You can expose your Uptime Kuma to the Internet without so many configs!
+
+The goal of this pr is adding the executable binary `cloudflared` (Debian only) into the docker image. And then you just need to provide a Cloudflare token in the Settings. Then it is ready to be browsed from the Internet. 
+
+
+https://www.reddit.com/r/selfhosted/comments/tp0nqg/cloudflare_has_added_a_web_gui_for_controlling/
+
+Pros:
+- Free of charge
+- Full GUI, zero-config files
+- You can put your Uptime Kuma behind firewall
+- No need to expose your real ip
+- Expose Docker port is optional
+- No need nginx, caddy, traefik etc
+- Zero-config SSL
+- Free SSL
+
+Cons:
+- (Not a con if you are already using Cloudflare) You domain's nameserver have to move to Cloudflare.
+- add 30MB to the docker base image
 
 ## Requirements
 
