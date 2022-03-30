@@ -8,7 +8,7 @@ You don't even need to expose Docker port!
 
 - Your domain name's DNS is managed by Cloudflare.
 - For Docker, it is supported by Debian base only. The Alpine base is not supported yet.
-- For non-Docker, you need to download and install `cloudflared` https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/
+- For non-Docker, you need to download and install `cloudflared`. https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/
 
 ## TL;DR
 
