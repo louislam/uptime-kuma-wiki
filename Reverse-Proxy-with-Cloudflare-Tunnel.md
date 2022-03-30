@@ -41,7 +41,7 @@ Cons:
 
 ## Step by step
 
-The step is actually very simple. However, since the concept is pretty new to anyone, it may be good to write it in detail. 
+The steps are actually very simple. However, since the concept is pretty new to anyone, it may be good to write it in detail. 
 
 But trust me, once you learnt, you will remember how to config without this guide again! While for nginx, Traefik, I never could remember how to config without googling it.
 
@@ -64,7 +64,19 @@ But trust me, once you learnt, you will remember how to config without this guid
 6. `Settings` > `Reverse Proxy`
 7. Paste the token into the `Cloudflare Tunnel Token` field.
 8. Click `Start cloudflared`
-   
+9. Go back to `Cloudflare Zero Trust`, if you see your connector, then click `Next`
+
+    <img src="https://user-images.githubusercontent.com/1336778/160883516-66c059db-442d-4e2c-845a-c8eaf7a7f992.png" width="800" />
+
+10. Choose your favorite domain name and map to `http://localhost:3001`
+
+    <img src="https://user-images.githubusercontent.com/1336778/160883898-24217c46-d833-463d-8e0e-e5dc22a35d48.png" width="800" />
+
+11. Click `Save` and go to your domain name `https://<your domain name>` and profit!
+    Yeah, it also automatically gives you SSL!
+
+    <img src="https://user-images.githubusercontent.com/1336778/160884606-a6a9db7f-68a6-4083-ac75-6f06f4930c52.png" width="500" />
+
 
 ## How to Stop
 
