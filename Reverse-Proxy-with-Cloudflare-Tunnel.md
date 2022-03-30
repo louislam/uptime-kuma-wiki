@@ -39,9 +39,44 @@ Cons:
 3. Map to http://localhost:3001.
 3. Profit.
 
-## Details
+## Step by step
+
+The step is actually very simple. However, since the concept is pretty new to anyone, it may be good to write it in detail. 
+
+But trust me, once you learnt, you will remember how to config without this guide again! While for nginx, Traefik, I never could remember how to config without googling it.
+
+
 
 1. Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/).
+2. `Access` > `Tunnels` > `Create Tunnel`
+
+   <img src="https://user-images.githubusercontent.com/1336778/160877346-01fe89f0-b55d-4417-92f7-fe7509656255.png" width="800" />
+
+3. Type a `Tunnel name` such as `uptime-kuma` and save tunnel.
+4. Click the token to copy it.
+
+   <img src="https://user-images.githubusercontent.com/1336778/160879200-642609d7-7264-41ea-8b16-b99f95e7f446.png" width="800" />
+
+5. Go to your Uptime Kuma instance. 
+
+   <img src="https://user-images.githubusercontent.com/1336778/160821358-aff29332-6383-447e-a552-dbdeba014a77.png" width="800" />
+
+6. `Settings` > `Reverse Proxy`
+7. Paste the token into the `Cloudflare Tunnel Token` field.
+8. Click `Start cloudflared`
+   
+
+## How to Stop
+
+Option 1. You can remove the map on Cloudflare.
+Option 2. You can click `Stop cloudflared` and `Remove Token` in your Uptime Kuma.
 
 
-![image](https://user-images.githubusercontent.com/1336778/160821358-aff29332-6383-447e-a552-dbdeba014a77.png)
+## Environment Variable
+
+Alternatively, you can set the token via a environment variable. cloudflared will be started automatically.
+
+With this approach, you don't even need to expose your container port to host machine.  
+
+UPTIME_KUMA_CLOUDFLARED_TOKEN=`<your token>`
+
