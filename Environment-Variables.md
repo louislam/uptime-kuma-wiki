@@ -7,6 +7,8 @@
 | `UPTIME_KUMA_PORT` or `PORT`               | `port`                     | Port to listen to                                                     |     `3001` |
 | `UPTIME_KUMA_SSL_KEY` or `SSL_KEY`         | `ssl-key`                  | Path to SSL key                                                       |            |
 | `UPTIME_KUMA_SSL_CERT` or `SSL_CERT`       | `ssl-cert`                 | Path to SSL certificate                                               |            |
+| `UPTIME_KUMA_CLOUDFLARED_TOKEN`        | `cloudflared-token`                 | Cloudflare Tunnel Token (Available in 1.14.0)                                              |            |
+
 
 ## Docker specific environment variables
 
