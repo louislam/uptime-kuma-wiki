@@ -12,6 +12,7 @@ Uptime Kuma **does not support a subdirectory** such as `http://example.com/upti
 - [Synology Builtin Reverse Proxy](#synology-builtin-reverse-proxy)
 - [Traefik](#Traefik)
 - [Cloudflare](#cloudflare)
+- [Cloudflare Tunnels](#cloudflare-tunnels)
 - [OpenLiteSpeed](#openlitespeed)
 - [HAProxy](#haproxy)
 - Others
@@ -163,6 +164,12 @@ Cloudflare Dashboard -> Network -> Enable WebSockets
 
 Read more:
 https://github.com/louislam/uptime-kuma/issues/138#issuecomment-890485229
+
+# Cloudflare Tunnels
+
+It is the easiest way in my opinion.
+
+Read more: https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy-with-Cloudflare-Tunnel
 
 # OpenLiteSpeed
 
