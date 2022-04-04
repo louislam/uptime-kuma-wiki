@@ -24,4 +24,4 @@
 | ------------------------------------------ | -------------------------- | --------------------------------------------------------------------- | ---------: |
 | `NODE_ENV`                                 |                            | Set the NodeJS environment flag                                       | production |
 | `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN`     | `disable-frame-sameorigin` | Prevent kuma from being opened by an IFrame from other hosts          |    `false` |
-| `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                            | Log beat event to STDOUT ("1" to enable)                              |            |
+| `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                            | Monitor ID - If provided, it will output the monitor's response to your console                              |            |
