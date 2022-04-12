@@ -8,6 +8,8 @@
 | `UPTIME_KUMA_SSL_KEY` or `SSL_KEY`         | `ssl-key`                  | Path to SSL key                                                       |            |
 | `UPTIME_KUMA_SSL_CERT` or `SSL_CERT`       | `ssl-cert`                 | Path to SSL certificate                                               |            |
 | `UPTIME_KUMA_CLOUDFLARED_TOKEN`        | `cloudflared-token`                 | Cloudflare Tunnel Token (Available in 1.14.0)                                              |            |
+| `NODE_EXTRA_CA_CERTS`        |                  | Add your self-signed ca certs. (e.g. /cert/path/CAcert.pem) [Read more](https://github.com/louislam/uptime-kuma/issues/1380)                                            |            |
+| `NODE_TLS_REJECT_UNAUTHORIZED`        |                  | Ignore all TLS errors                                      |    `0`        |
 
 
 ## Docker specific environment variables
@@ -23,4 +25,4 @@
 | ------------------------------------------ | -------------------------- | --------------------------------------------------------------------- | ---------: |
 | `NODE_ENV`                                 |                            | Set the NodeJS environment flag                                       | production |
 | `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN`     | `disable-frame-sameorigin` | Prevent kuma from being opened by an IFrame from other hosts          |    `false` |
-| `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                            | Log beat event to STDOUT ("1" to enable)                              |            |
+| `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                            | Monitor ID - If provided, it will output the monitor's response to your console                              |            |
