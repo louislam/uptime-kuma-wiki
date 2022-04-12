@@ -7,6 +7,7 @@ Uptime Kuma **does not support a subdirectory** such as `http://example.com/upti
 - [Nginx](#nginx)
 - [Apache](#apache)
 - [Caddy](#caddy)
+- [Caddy with Docker-Compose](#caddy-with-docker-compose)
 - [Https-Portal](#https-portal)
 - [Nginx Proxy Manager](#nginx-proxy-manager)
 - [Synology Builtin Reverse Proxy](#synology-builtin-reverse-proxy)
@@ -93,6 +94,37 @@ Without SSL:
 subdomain.domain.com {
     reverse_proxy 127.0.0.1:3001
 }
+```
+
+# Caddy with Docker-compose
+
+If you run Uptime Kuma using Docker-Compose and don't already have a reverse proxy, this is a simple way to configure Caddy. You only need to replace 'status.example.org' with your domain.
+
+```yml
+version: '3'
+networks:
+  default:  
+    name: 'proxy_network'
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    restart: unless-stopped
+    volumes:  
+      - /srv/uptime:/app/data
+    labels:   
+      caddy: status.example.org
+      caddy.reverse_proxy: "* {{ '{{upstreams 3001}}'}}"
+  caddy:
+    image: "lucaslorentz/caddy-docker-proxy:ci-alpine"
+    ports:    
+      - "80:80" 
+      - "443:443"
+    volumes:  
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /srv/caddy/:/data
+    restart: unless-stopped
+    environment:
+      - CADDY_INGRESS_NETWORKS=proxy_network
 ```
 
 # Https-Portal
