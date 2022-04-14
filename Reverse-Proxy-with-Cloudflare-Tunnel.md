@@ -1,5 +1,3 @@
-⚠️ Beta Feature
-
 ## Description
 
 This is the easiest reverse proxy that I have ever seen so far!
