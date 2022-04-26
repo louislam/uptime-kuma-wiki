@@ -145,3 +145,8 @@ https://github.com/louislam/uptime-kuma/issues/423
 
 Unofficial tutorial by Stefan:
 https://haci.io/posts/uptime-kuma-azure-container-instance/
+
+### Install on Azure AppService Container
+
+Unofficial tutorial by Leandro:
+https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
