@@ -17,7 +17,7 @@
 | Environment variable | Description                         | Default |
 | -------------------- | ----------------------------------- | ------: |
 | `PUID`               | User id to access the data storage  |  `1000` |
-| `GUID`               | Group id to access the data storage |  `1000` |
+| `PGID`               | Group id to access the data storage |  `1000` |
 
 ## For Development only
 
