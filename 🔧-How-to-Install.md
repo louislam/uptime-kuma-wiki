@@ -1,6 +1,7 @@
 - [🚀 Installer](#-installer-via-cli)
 - [🐳 Docker](#-docker)
 - [💪🏻 Without Docker](#-without-docker-recommended-for-x86x64-only)
+- [☁️ Unofficial Install- and Hosting Options](#unofficial--experimental)
 
 ## 🚀 Installer via CLI
 
@@ -114,7 +115,7 @@ https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
   Install with Portainer
 
 
-## Unofficial & Experiment
+## Unofficial & Experimental
 
 ⚠ ⚠ ⚠ Warning: Generally, I only test Docker and Node.js. All installation methods here may be broken in the future release. I don't maintain them. Use at your own risk.
 
@@ -134,6 +135,12 @@ https://github.com/louislam/uptime-kuma/tree/ansible-unofficial/ansible
 Unofficial tutorial by Marius Bogdan Lixandru:
 
 https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
+
+### One-Click Hosting on PikaPods
+
+Run with one click on [PikaPods.com](https://www.pikapods.com/). Free for about 3 months with welcome credit.
+
+[![PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=uptime-kuma)
 
 ### Termux (Unofficial/Experiment)
 
