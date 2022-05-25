@@ -1,0 +1,1 @@
+Please read: https://github.com/louislam/uptime-kuma/pull/1119
