@@ -4,7 +4,7 @@ This wiki is also available on https://uptime.kuma.pet/docs/
 
 ## 🐻?
 
-Kuma（クマ / 熊）means bear 🐻 in Japanese.
+Kuma (クマ/熊) means bear 🐻 in Japanese.
 
 A little bear is watching your website.🐻🐻🐻
 
