@@ -4,7 +4,7 @@ This wiki is also available on https://uptime.kuma.pet/docs/
 
 ## 🐻?
 
-Kuma（クマ / 熊）means bear 🐻 in Japanese.
+Kuma (クマ/熊) means bear 🐻 in Japanese.
 
 A little bear is watching your website.🐻🐻🐻
 
@@ -13,7 +13,7 @@ A little bear is watching your website.🐻🐻🐻
 http://ipa-reader.xyz/?text=%CB%88%CA%8Cpta%C9%AAm%20k%C9%AF%CC%9F%E1%B5%9Dma%CC%A0&voice=Joey
 
 
-### How to contribute to this wiki?
+## How to contribute to this wiki?
 
 You could make a pull request in this wiki repo:
 https://github.com/louislam/uptime-kuma-wiki

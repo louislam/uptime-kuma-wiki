@@ -34,7 +34,7 @@ cd <uptime-kuma-directory>
 
 # Update from git
 git fetch --all
-git checkout 1.15.1 --force
+git checkout 1.16.1 --force
 
 # Install dependencies and prebuilt
 npm install --production
