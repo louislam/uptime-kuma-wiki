@@ -103,7 +103,7 @@ https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
 
 ## (Optional) One more step for Reverse Proxy
 
-This is optional for someone who want to do reverse proxy.
+This is optional for someone who want to use a reverse proxy.
 
 Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more headers **"Upgrade"** and **"Connection"** in order to reverse proxy WebSocket.
 
