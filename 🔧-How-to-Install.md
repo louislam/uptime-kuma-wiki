@@ -51,9 +51,15 @@ docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/
 
 ### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
-Required Tools: Node.js >= 14, git and pm2.
+It should supports Linux/Windows/MacOS.
 
-(**Not recommended for ARM CPU users.** Since there is no prebuilt for node-sqlite3, it is hard to get it running)
+Required Tools: 
+- [Node.js](https://nodejs.org/en/) >= 14
+- [Git](https://git-scm.com/downloads)
+- [PM2](https://pm2.keymetrics.io/) 
+- (Optional) [cloudflared](https://github.com/cloudflare/cloudflared)
+- (Optional) [Apprise](https://github.com/caronc/apprise)
+
 
 ```bash
 # Update your npm to the latest version
