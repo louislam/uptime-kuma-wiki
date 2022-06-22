@@ -1,6 +1,6 @@
 ## Monitoring a website using Cloudflare
 
-By default, Cloudflare is not API friendly including Uptime Kuma. Cloudflare may blocks requests from Uptime Kuma.
+By default, Cloudflare is not API friendly including Uptime Kuma. Cloudflare may block requests from Uptime Kuma.
 
 You need to disable "Browser Integrity Check" in Cloudflare Dashboard.
 
