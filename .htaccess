@@ -5,7 +5,7 @@ RewriteEngine On
 RewriteRule ^README.md$ Home.md [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [QSA,L]
+RewriteRule ^ index.html [QSA,L]
 
 
 
