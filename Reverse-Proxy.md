@@ -69,9 +69,10 @@ With SSL:
 
   ProxyPass / http://localhost:3001/
   RewriteEngine on
-  RewriteCond %{HTTP:Upgrade} websocket [NC]
-  RewriteCond %{HTTP:Connection} upgrade [NC]
-  RewriteRule ^/?(.*) "ws://localhost:3001/$1" [P,L]
+  RewriteCond %{HTTP:Upgrade} =websocket
+  RewriteRule /(.*) ws://localhost:3001/$1 [P,L]
+  RewriteCond %{HTTP:Upgrade} !=websocket
+  RewriteRule /(.*) http://localhost:3001/$1 [P,L]
 </VirtualHost>
 ```
 
