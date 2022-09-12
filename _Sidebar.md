@@ -11,6 +11,7 @@
 - [Status Page](https://github.com/louislam/uptime-kuma/wiki/Status-Page)
 - [Notification Methods](https://github.com/louislam/uptime-kuma/wiki/Notification-Methods)
 - [Badge](https://github.com/louislam/uptime-kuma/wiki/Badge)
+- [How to Monitor Docker Containers](https://github.com/louislam/uptime-kuma/wiki/How-to-Monitor-Docker-Containers)
 
 ## Network
 - [Reverse Proxy](https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy)
