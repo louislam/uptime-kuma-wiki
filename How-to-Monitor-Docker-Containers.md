@@ -24,4 +24,4 @@ TODO
 
 ## Related Disscussion
 
-- https://github.com/louislam/uptime-kuma/issues/2061#event-7365512787
+- https://github.com/louislam/uptime-kuma/issues/2061
