@@ -1,0 +1,18 @@
+## Fix the Connect ENOENT error when trying to monitor local Docker
+
+
+In case you installed Uptime Kuma on docker, you might want to monitor other container running on the same machine.
+
+If you create a docker container in uptime kuma, by default it points probably to the right location (/var/run/docker.sock) but it will give you an error : Connect ENOENT /var/run/docker.sock
+
+In order to fix it, you have to add :
+
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      
+ to your docker-compose file, under Volume.
+ 
+ Don't forget the " :ro " (read only) ; if you forget it, your docker container will be at risk!
+ 
+ 
+ Original thread : https://github.com/louislam/uptime-kuma/issues/2061
+ 
