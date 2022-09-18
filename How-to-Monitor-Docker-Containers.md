@@ -1,3 +1,5 @@
+(Version >= 1.18.0)
+
 ## If you are running Uptime Kuma Docker
 
 By default, a docker container is self-contained, which means Uptime Kuma cannot access your host. You need to bind the /var/run/docker.sock to your container.
