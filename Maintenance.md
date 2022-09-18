@@ -2,6 +2,5 @@
 
 This feature is designed for:
 
-- Temporary disable downtime notifications during time window
+- Temporary disable notifications during time window
 - Show the message on status pages.
-          
