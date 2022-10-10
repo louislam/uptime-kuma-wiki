@@ -145,6 +145,14 @@ https://github.com/k3rnelpan1c-dev/uptime-kuma-helm
 
 https://github.com/louislam/uptime-kuma/tree/ansible-unofficial/ansible
 
+### Home Assistant add-on (Unofficial)
+
+https://github.com/hassio-addons/addon-uptime-kuma
+
+[![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=a0d7b954_uptime-kuma&repository_url=https%3A%2F%2Fgithub.com%2Fhassio-addons%2Frepository)
+
+Also check out the corresponding custom integration: https://github.com/meichthys/uptime_kuma (WIP).
+
 ### Install on Synology NAS (Unofficial)
 
 Unofficial tutorial by Marius Bogdan Lixandru:
