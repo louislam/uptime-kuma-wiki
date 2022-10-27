@@ -37,7 +37,7 @@ git fetch --all
 git checkout 1.18.5 --force
 
 # Install dependencies and prebuilt
-npm install --production
+npm install --omit=dev
 npm run download-dist
 
 # Restart
