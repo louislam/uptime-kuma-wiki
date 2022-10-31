@@ -28,8 +28,9 @@ start_pre() {
 						    $directory/data \
 						    $directory/data/upload
 	checkpath --owner=$command_user --file $log_dir/*.log \
-					       $directory/data/error.log \
-					       $directory/data/kuma.db
+					       $directory/data/error.log
+
+	checkpath --owner=$command_user --mode 600 --file $directory/data/kuma.db*
 }
 
 start_post() {
