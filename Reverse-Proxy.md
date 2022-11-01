@@ -22,7 +22,22 @@ Uptime Kuma **does not support a subdirectory** such as `http://example.com/upti
 
 # Nginx
 
-With SSL:
+HTTP only:
+```nginx
+server  {
+    listen 80;
+    server_name    sub.domain.com;
+    location / {
+        proxy_pass         http://localhost:3001;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection "upgrade";
+        proxy_set_header   Host $host;
+    }
+}
+```
+
+HTTPS with a cert file:
 ```nginx
 server {
   listen 443 ssl http2;
@@ -42,23 +57,21 @@ server {
 }
 ```
 
-Without SSL:
-```nginx
-server  {
-    listen 80;
-    server_name    sub.domain.com;
-    location / {
-        proxy_pass         http://localhost:3001;
-        proxy_http_version 1.1;
-        proxy_set_header   Upgrade $http_upgrade;
-        proxy_set_header   Connection "upgrade";
-        proxy_set_header   Host $host;
-    }
-}
+# Apache
+HTTP only:
+```apache
+<VirtualHost *:80>
+  ServerName sub.domain.com
+
+  ProxyPass / http://localhost:3001/
+  RewriteEngine on
+  RewriteCond %{HTTP:Upgrade} websocket [NC]
+  RewriteCond %{HTTP:Connection} upgrade [NC]
+  RewriteRule ^/?(.*) "ws://localhost:3001/$1" [P,L]
+</VirtualHost>
 ```
 
-# Apache
-With SSL:
+HTTPS with a cert file:
 ```apache
 <VirtualHost *:443>
   ServerName sub.domain.com
@@ -77,16 +90,20 @@ With SSL:
 </VirtualHost>
 ```
 
-Without SSL:
+HTTPS without a cert file (requires an external cert like Cloudflare):
 ```apache
-<VirtualHost *:80>
+<VirtualHost *:443>
   ServerName sub.domain.com
+  SSLEngine Off
+  # Protocol 'h2' is only supported on Apache 2.4.17 or newer.
+  Protocols h2 http/1.1
 
   ProxyPass / http://localhost:3001/
   RewriteEngine on
-  RewriteCond %{HTTP:Upgrade} websocket [NC]
-  RewriteCond %{HTTP:Connection} upgrade [NC]
-  RewriteRule ^/?(.*) "ws://localhost:3001/$1" [P,L]
+  RewriteCond %{HTTP:Upgrade} =websocket
+  RewriteRule /(.*) ws://localhost:3001/$1 [P,L]
+  RewriteCond %{HTTP:Upgrade} !=websocket
+  RewriteRule /(.*) http://localhost:3001/$1 [P,L]
 </VirtualHost>
 ```
 
