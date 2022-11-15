@@ -176,7 +176,19 @@ Please enable "WebSockets Supports"
 
 # Synology Builtin Reverse Proxy
 
-https://mlohr.com/websockets-for-synology-dsm/
+
+1. Bind IP to localhost when starting Kuma
+
+```bash
+docker run -d --restart=always -p 127.0.0.1:3002:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+```
+
+2. On your NAS, open *Control Panel* and then *Login Portal* 
+3. Click on *Advanced*
+4. Open *Reverse Proxy* 
+5. Create a new Entry with the following values:
+
+![Reverse Proxy](./img/Synology-reverse-proxy.png)
 
 # Traefik
 ```
