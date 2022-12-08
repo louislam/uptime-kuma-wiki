@@ -26,7 +26,8 @@ With SSL:
 ```nginx
 server {
   listen 443 ssl http2;
-  #listen [::]:443 ssl http2;
+  # Remove '#' in the next line to enable IPv6
+  # listen [::]:443 ssl http2;
   server_name sub.domain.com;
   ssl_certificate     /path/to/ssl/cert/crt;
   ssl_certificate_key /path/to/ssl/key/key;
@@ -47,7 +48,8 @@ Without SSL:
 ```nginx
 server  {
     listen 80;
-    #listen [::]:80;
+    # Remove '#' in the next line to enable IPv6
+    # listen [::]:80;
     server_name    sub.domain.com;
     location / {
         proxy_pass         http://localhost:3001;
