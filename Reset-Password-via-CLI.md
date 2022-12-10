@@ -1,7 +1,8 @@
 ## With Docker
 
 ```
-docker exec -it <container name> npm run reset-password
+docker exec -it <container name> bash
+npm run reset-password
 ```
 
 ## Without Docker
