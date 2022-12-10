@@ -12,7 +12,7 @@
 - [Notification Methods](https://github.com/louislam/uptime-kuma/wiki/Notification-Methods)
 - [Badge](https://github.com/louislam/uptime-kuma/wiki/Badge)
 - [How to Monitor Docker Containers](https://github.com/louislam/uptime-kuma/wiki/How-to-Monitor-Docker-Containers)
-- [Maintenance](https://github.com/louislam/uptime-kuma/wiki/Maintanance)
+- [Maintenance](https://github.com/louislam/uptime-kuma/wiki/Maintenance)
 
 ## Network
 - [Reverse Proxy](https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy)
