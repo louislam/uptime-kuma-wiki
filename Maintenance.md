@@ -2,5 +2,5 @@
 
 This feature is designed for:
 
-- Temporary disable notifications during time window
-- Show the message on status pages.
+- Temporary disable notifications during a time window
+- Show a maintenance message on status pages.
