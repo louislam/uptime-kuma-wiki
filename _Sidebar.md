@@ -13,6 +13,7 @@
 - [Badge](https://github.com/louislam/uptime-kuma/wiki/Badge)
 - [How to Monitor Docker Containers](https://github.com/louislam/uptime-kuma/wiki/How-to-Monitor-Docker-Containers)
 - [Maintenance](https://github.com/louislam/uptime-kuma/wiki/Maintenance)
+- [3rd Party Addons](https://github.com/louislam/uptime-kuma/wiki/3rd-Party-Addons)
 
 ## Network
 - [Reverse Proxy](https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy)
