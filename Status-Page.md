@@ -1,11 +1,18 @@
-Multiple status pages is supported in 1.13.0.
 
-Special slug: `default`
+## Things You Should Know
 
-`/status` is pointing to `/status/default`.
+- Status page is intended for public users to check the status of your services
+- Status page will caches result for 60 seconds
+- Status page is just like a traditional web page. Update won't be so responsive like the dashboard does.
+- Status page will refresh the page every 5 minutes
+- `default` is a special slug
+- `http://example.com/status` is pointing to `http://example.com/status/default`
+
+## Multiple Status Pages
+(Version >= 1.13.0)
 
 ## Domain Names for Status Pages
-(1.14.0)
+(Version >= 1.14.0)
 
 Now you can show different status pages based on the domain names.
 
