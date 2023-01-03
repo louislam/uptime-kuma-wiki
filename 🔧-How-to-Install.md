@@ -180,3 +180,9 @@ https://haci.io/posts/uptime-kuma-azure-container-instance/
 
 Unofficial tutorial by Leandro:
 https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
+
+### SQLite S3 persistent storage with Litestream.io 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/UfDasl?referralCode=373)
+
+Run uptime-kuma with S3 persistent sqlite database:
+https://github.com/fluential/litestream-uptime-kuma/
