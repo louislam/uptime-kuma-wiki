@@ -65,6 +65,12 @@ Required Tools:
 # Update your npm to the latest version
 npm install npm -g
 
+# Create app directory in /opt for home-independent app storage
+cd /opt
+sudo mkdir uptime-kuma
+sudo chown -R {username}:{username} uptime-kuma # Replace {username} with the username you are currently running the commands with
+
+# Clone the repository
 git clone https://github.com/louislam/uptime-kuma.git
 cd uptime-kuma
 npm run setup
