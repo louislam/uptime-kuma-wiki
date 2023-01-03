@@ -35,3 +35,4 @@
 ## More
 - [Supported Versions](https://github.com/louislam/uptime-kuma/blob/master/SECURITY.md)
 - [MIT License](https://github.com/louislam/uptime-kuma/blob/master/LICENSE)
+- [Videos By Youtubers](https://www.youtube.com/playlist?list=PLjfSRxTTcLFm0mAw3fKNZzieXixScm9th)
