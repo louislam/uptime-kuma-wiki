@@ -27,6 +27,14 @@ docker stop uptime-kuma
 docker-compose up -d --force-recreate
 ```
 
+## 🆙 💪🏻 Non-Docker with JQ (oneliner)
+
+This oneliner require jq command 
+
+```bash
+cd <uptime-kuma-directory> && git fetch --all && git checkout $(curl --silent "https://api.github.com/repos/louislam/uptime-kuma/releases/latest" | jq -r '.tag_name') --force && npm install --omit=dev && npm run download-dist
+```
+
 ## 🆙 💪🏻 Non-Docker
 
 ```bash
