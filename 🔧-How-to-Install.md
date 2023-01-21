@@ -70,12 +70,12 @@ cd uptime-kuma
 npm run setup
 
 # Option 1. Try it
-node server/server.js
+node start
 
 # (Recommended)
 # Option 2. Run in background using PM2
 # Install PM2 if you don't have: npm install pm2 -g
-pm2 start server/server.js --name uptime-kuma
+pm2 start "npm start" --name uptime-kuma
 
 ```
 
@@ -83,7 +83,7 @@ Browse to http://localhost:3001 after started.
 
 ```
 # Listen to different port or hostname
-pm2 start server/server.js --name uptime-kuma -- --port=80 --host=0.0.0.0
+pm2 start "npm start" --name uptime-kuma -- --port=80 --host=0.0.0.0
 ```
 
 #### Useful Commands
