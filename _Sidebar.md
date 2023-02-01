@@ -27,7 +27,7 @@
 
 ## Development & Contributions
 - [CONTRIBUTING Rules & Guide](https://github.com/louislam/uptime-kuma/blob/master/CONTRIBUTING.md)
-- [How to Translation](https://github.com/louislam/uptime-kuma/tree/master/src/lang)
+- [How to Translate](https://github.com/louislam/uptime-kuma/tree/master/src/lang)
 - [Setup Development Environment](https://github.com/louislam/uptime-kuma/wiki/Setup-Development-Environment)
 - [Test Pull Requests](https://github.com/louislam/uptime-kuma/wiki/Test-Pull-Requests)
 - [Development Side Notes](https://github.com/louislam/uptime-kuma/wiki/Development-Side-Notes)
