@@ -1,3 +1,11 @@
+(1.20.0) For non-Docker users, you can create a new file named `.env` in the root directory. The format is like this:
+
+```.env
+UPTIME_KUMA_HOST=127.0.0.1
+UPTIME_KUMA_PORT=8080
+```
+
+
 ## Server Environment Variables
 
 | Environment Variable                       | Server Argument            | Description                                                           |    Default |
@@ -7,7 +15,7 @@
 | `UPTIME_KUMA_PORT` or `PORT`               | `port`                     | Port to listen to                                                     |     `3001` |
 | `UPTIME_KUMA_SSL_KEY` or `SSL_KEY`         | `ssl-key`                  | Path to SSL key                                                       |            |
 | `UPTIME_KUMA_SSL_CERT` or `SSL_CERT`       | `ssl-cert`                 | Path to SSL certificate                                               |            |
-| `UPTIME_KUMA_CLOUDFLARED_TOKEN`        | `cloudflared-token`                 | Cloudflare Tunnel Token (Available in 1.14.0)                                              |            |
+| `UPTIME_KUMA_CLOUDFLARED_TOKEN`        | `cloudflared-token`                 | (1.14.0) Cloudflare Tunnel Token                                              |            |
 | `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN`     | `disable-frame-sameorigin` | By default, Uptime Kuma is not allowed in iframe if the domain name is not the same as the parent. It protects your Uptime Kuma to be a phishing website. If you don't need this protection, you can set it to `true` | `false` |
 | `NODE_EXTRA_CA_CERTS`        |                  | Add your self-signed ca certs. (e.g. /cert/path/CAcert.pem) [Read more](https://github.com/louislam/uptime-kuma/issues/1380)                                            |            |
 | `NODE_TLS_REJECT_UNAUTHORIZED`        |                  | Ignore all TLS errors                                      |    `0`        |
