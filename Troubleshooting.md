@@ -5,12 +5,18 @@ If your Uptime Kuma reports DOWN of your service, sometimes you would like to kn
 
 Go into your container's bash.
 
-```
+```bash
 docker exec -it uptime-kuma bash
 ```
 
-Then you can test with these commands for example:
+Install `curl`
+
+```bash
+apt update && apt --yes install curl
 ```
+
+Then you can test with these commands for example:
+```bash
 curl https://google.com
 ping google.com
 ```
