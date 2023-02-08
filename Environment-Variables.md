@@ -41,3 +41,4 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                            | Monitor ID - If provided, it will output the monitor's response to your console                              |            |
 | `UPTIME_KUMA_HIDE_LOG` |                            | (1.15.0) Examples: `debug_monitor,info_monitor,debug_cert,warn_monitor`                              |            |
 | `SQL_LOG` | | Set `1` to enable | | |
+| `UPTIME_KUMA_ENABLE_EMBEDDED_MARIADB`| | (2.0.0) Set `1` to enable | | |
