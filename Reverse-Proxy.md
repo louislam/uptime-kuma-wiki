@@ -119,7 +119,7 @@ services:
       - /srv/uptime:/app/data
     labels:   
       caddy: status.example.org
-      caddy.reverse_proxy: "* {{ '{{upstreams 3001}}'}}"
+      caddy.reverse_proxy: "{{upstreams 3001}}"
   caddy:
     image: "lucaslorentz/caddy-docker-proxy:ci-alpine"
     ports:    
