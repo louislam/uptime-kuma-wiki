@@ -181,6 +181,11 @@ https://haci.io/posts/uptime-kuma-azure-container-instance/
 Unofficial tutorial by Leandro:
 https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
 
+### Install on Azure AppService with persistent storage
+
+Unofficial bicep deployment script by Yannick Zwijsen:
+https://github.com/yzwijsen/deploy-uptime-kuma-azure
+
 ### SQLite S3 persistent storage with Litestream.io 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/UfDasl?referralCode=373)
 
