@@ -5,10 +5,8 @@ Prometheus metrics endpoint.
 
 ## Adding an API key
 
-Management of API keys is done through the API Key management page,
-accessible from the drop down menu, just below the maintenance link. This
-page will show you all of your API keys, including expired keys. The
-green button in the top left can be used to add a new key.
+Management of API keys is done through the API Keys page in settings 
+This page will show you all of your API keys, including expired keys.
 
 You can set the name of the key, as well as it's expiry date, or
 optionally set the key to never expire. When you click generate, you
@@ -26,7 +24,7 @@ authentication for endpoints will be permanently disabled.
 ## Disabling keys
 
 It is possible to temporarily disable keys. This can be done through the
-management page. This will prevent the key from being used for
+settings page. This will prevent the key from being used for
 authentication until it is enabled again.
 
 ## Expired keys
@@ -34,7 +32,7 @@ authentication until it is enabled again.
 If a key has expired, it will not be automatically deleted. This is to
 aid in debugging systems that suddenly stop working. You can delete an
 expired key, or any key for that matter, by simply hitting the red
-delete button from the management page.
+delete button from the settings page.
 
 ## Authenticating using an API key
 
