@@ -61,4 +61,4 @@ Here is an example config for Prometheus:
       password: <api key>
 ```
 
-Note: we don't need to set a password field as it is not used.
+Note: we don't need to set a username field as it is not used.
