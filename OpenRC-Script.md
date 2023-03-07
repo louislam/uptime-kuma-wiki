@@ -11,8 +11,9 @@ directory=${directory:-/usr/share/uptime-kuma}
 pidfile=${pidfile:-/run/$RC_SVCNAME.pid}
 
 log_dir="/var/log/$RC_SVCNAME"
-output_log="${output_log:-$log_dir/output.log}"
-error_log="${error_log:-$log_dir/error.log}"
+logfile=${logfile:-$log_dir/$RC_SVCNAME.log}
+output_log="${output_log:-$logfile}"
+error_log="${error_log:-$logfile}"
 
 command=${command:-/usr/bin/node}
 command_args="$directory/server/server.js"
@@ -27,8 +28,11 @@ start_pre() {
 	checkpath --owner=$command_user --directory $log_dir \
 						    $directory/data \
 						    $directory/data/upload
-	checkpath --owner=$command_user --file $log_dir/*.log \
+	checkpath --owner=$command_user --file $logfile \
 					       $directory/data/error.log
+
+	[ ! -e $directory/data/kuma.db ] &&
+	cp $directory/db/kuma.db $directory/data/
 
 	checkpath --owner=$command_user --mode 600 --file $directory/data/kuma.db*
 }
@@ -52,14 +56,7 @@ sudo addgroup -S uptime-kuma
 sudo adduser -S -D -h /var/lib/uptime-kuma -s /sbin/nologin -G uptime-kuma -g uptime-kuma uptime-kuma
 ```
 
-If the database is not initialized, it has to be run fisrt.
-
-```sh
-cd /usr/share/uptime-kuma
-sudo -u uptime-kuma node server/server.js
-```
-
-Start the service and add it to default runlevel if prefered.
+Start the service and add it to default runlevel if preferred.
 
 ```sh
 sudo rc-service uptime-kuma start
