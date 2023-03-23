@@ -49,6 +49,11 @@ docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/
 </tbody>
 </table>
 
+### 🐳 Docker Compose Example
+
+https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
+
+
 ### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
 It should supports Linux/Windows/MacOS.
@@ -97,9 +102,17 @@ pm2 restart uptime-kuma
 pm2 startup
 ```
 
-### Docker Compose Example
+### 🪟 Windows Portable
 
-https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
+![](https://user-images.githubusercontent.com/1336778/227160967-907ba113-c89d-4ec3-bb94-4c4ea6b7cb6f.png)
+
+
+Requirement: 
+- Arch: x64
+- .NET 4.8 Runtime
+- Internet for initialization (Download Node.js runtime and Uptime Kuma source code)
+
+Download: https://github.com/louislam/uptime-kuma/releases/download/1.21.0/uptime-kuma-win64-portable-1.0.0.zip
 
 ## (Optional) One more step for Reverse Proxy
 
@@ -109,7 +122,6 @@ Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more he
 
 Please read wiki for more info:
 https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
-
 
 ## Videos
 
