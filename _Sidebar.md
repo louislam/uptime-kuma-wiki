@@ -14,6 +14,7 @@
 - [How to Monitor Docker Containers](https://github.com/louislam/uptime-kuma/wiki/How-to-Monitor-Docker-Containers)
 - [Maintenance](https://github.com/louislam/uptime-kuma/wiki/Maintenance)
 - [3rd Party Addons](https://github.com/louislam/uptime-kuma/wiki/3rd-Party-Addons)
+- [API Keys](https://github.com/louislam/uptime-kuma/wiki/API-Keys)
 
 ## Network
 - [Reverse Proxy](https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy)
@@ -27,7 +28,7 @@
 
 ## Development & Contributions
 - [CONTRIBUTING Rules & Guide](https://github.com/louislam/uptime-kuma/blob/master/CONTRIBUTING.md)
-- [How to Translation](https://github.com/louislam/uptime-kuma/tree/master/src/languages)
+- [How to Translate](https://github.com/louislam/uptime-kuma/tree/master/src/lang#how-to-translate)
 - [Setup Development Environment](https://github.com/louislam/uptime-kuma/wiki/Setup-Development-Environment)
 - [Test Pull Requests](https://github.com/louislam/uptime-kuma/wiki/Test-Pull-Requests)
 - [Development Side Notes](https://github.com/louislam/uptime-kuma/wiki/Development-Side-Notes)
@@ -35,3 +36,4 @@
 ## More
 - [Supported Versions](https://github.com/louislam/uptime-kuma/blob/master/SECURITY.md)
 - [MIT License](https://github.com/louislam/uptime-kuma/blob/master/LICENSE)
+- [Videos By Youtubers](https://www.youtube.com/playlist?list=PLjfSRxTTcLFm0mAw3fKNZzieXixScm9th)
