@@ -43,3 +43,16 @@ npm run download-dist
 # Restart
 pm2 restart uptime-kuma
 ```
+
+## ℹ️ NPM 6->9
+
+Use `--omit=dev` instead of `--production`
+
+```
+   │      New major version of npm available! 6.14.18 → 9.6.4      │
+   │   Changelog: https://github.com/npm/cli/releases/tag/v9.6.4   │
+   │               Run npm install -g npm to update!               │
+
+# npm install --production
+npm WARN config production Use `--omit=dev` instead.
+```
