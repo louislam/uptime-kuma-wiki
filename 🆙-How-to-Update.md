@@ -43,3 +43,5 @@ npm run download-dist
 # Restart
 pm2 restart uptime-kuma
 ```
+
+[@mkgeeky](https://github.com/mkgeeky/) has created [uptime-kuma-helper](https://github.com/mkgeeky/uptime-kuma-helper) a bash script to update easy/automatically

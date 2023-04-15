@@ -97,6 +97,8 @@ pm2 restart uptime-kuma
 pm2 startup
 ```
 
+[@mkgeeky](https://github.com/mkgeeky/) has created [uptime-kuma-helper](https://github.com/mkgeeky/uptime-kuma-helper) a bash script to install easy
+
 ### Docker Compose Example
 
 https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
