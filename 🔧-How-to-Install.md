@@ -191,3 +191,8 @@ https://github.com/yzwijsen/deploy-uptime-kuma-azure
 
 Run uptime-kuma with S3 persistent sqlite database:
 https://github.com/fluential/litestream-uptime-kuma/
+
+### Install on Zeabur
+
+Run with one click on [Zeabur](https://zeabur.com/).
+https://docs.zeabur.com/marketplace/umami
