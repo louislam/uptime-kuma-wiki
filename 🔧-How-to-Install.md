@@ -70,12 +70,8 @@ Required Tools:
 # Update your npm to the latest version
 npm install npm -g
 
-# Create app directory in /opt for home-independent app storage
-cd /opt
-sudo mkdir uptime-kuma
-sudo chown -R {username}:{username} uptime-kuma # Replace {username} with the username you are currently running the commands with
-
 # Clone the repository
+# If you don't want to install Uptime Kuma into your homefolder but instead into a more permanent location, follow the "Create app directory in /opt" steps under **Useful Commands** and then continue here.
 git clone https://github.com/louislam/uptime-kuma.git
 cd uptime-kuma
 npm run setup
@@ -106,6 +102,11 @@ pm2 restart uptime-kuma
 
 # Run at startup
 pm2 startup
+
+# Create app directory in /opt for home-independent app storage
+cd /opt
+sudo mkdir uptime-kuma
+sudo chown -R {username}:{username} uptime-kuma # Replace {username} with the username you are currently running the commands with
 ```
 
 ### 🪟 Windows Portable
