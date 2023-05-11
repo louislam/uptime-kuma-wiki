@@ -20,6 +20,7 @@ Put the following into your Prometheus config:
   - job_name: 'uptime'
     scrape_interval: 30s
     scheme: http
+    metrics_path: '/metrics'
     static_configs:
       - targets: ['uptime-kuma.url']
     basic_auth: # Only needed if authentication is enabled (default) 
