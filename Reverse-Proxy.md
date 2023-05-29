@@ -31,6 +31,7 @@ server {
   server_name sub.domain.com;
   ssl_certificate     /path/to/ssl/cert/crt;
   ssl_certificate_key /path/to/ssl/key/key;
+  # *See "With SSL (Certbot)" below for details on automating ssl certificates
 
   location / {
     proxy_set_header   X-Real-IP $remote_addr;
@@ -59,6 +60,31 @@ server  {
         proxy_set_header   Host $host;
     }
 }
+```
+
+With SSL (Certbot):
+```nginx
+server {
+  # If you don't have one yet, you can set up a subdomain with your domain registrar (e.g. Namecheap)
+  # Just create a new host record with type='A Record', host='<subdomain>', value='<ip_address>'.
+  
+  server_name your_subdomain.your_domain.your_tld;
+
+  location / {
+    proxy_set_header   X-Real-IP $remote_addr;
+    proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header   Host $host;
+    proxy_pass         http://localhost:3001/;
+    proxy_http_version 1.1;
+    proxy_set_header   Upgrade $http_upgrade;
+    proxy_set_header   Connection "upgrade";
+  }
+}
+
+# Once that's completed, you can run
+# sudo apt install python3-certbot-nginx
+# sudo certbot --nginx -d your_domain -d your_subdomain.your_domain -d www.your_domain
+# And Certbot will auto-populate this nginx .conf file for you, while also renewing your certificates automatically in the future.
 ```
 
 # Apache
@@ -119,7 +145,7 @@ services:
       - /srv/uptime:/app/data
     labels:   
       caddy: status.example.org
-      caddy.reverse_proxy: "* {{ '{{upstreams 3001}}'}}"
+      caddy.reverse_proxy: "* {{upstreams 3001}}"
   caddy:
     image: "lucaslorentz/caddy-docker-proxy:ci-alpine"
     ports:    

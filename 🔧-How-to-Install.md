@@ -49,6 +49,11 @@ docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/
 </tbody>
 </table>
 
+### 🐳 Docker Compose Example
+
+https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
+
+
 ### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
 It should supports Linux/Windows/MacOS.
@@ -65,6 +70,8 @@ Required Tools:
 # Update your npm to the latest version
 npm install npm -g
 
+# Clone the repository
+# If you don't want to install Uptime Kuma into your homefolder but instead into a more permanent location, follow the "Create app directory in /opt" steps under **Useful Commands** and then continue here.
 git clone https://github.com/louislam/uptime-kuma.git
 cd uptime-kuma
 npm run setup
@@ -95,11 +102,24 @@ pm2 restart uptime-kuma
 
 # Run at startup
 pm2 startup
+
+# Create app directory in /opt for home-independent app storage
+cd /opt
+sudo mkdir uptime-kuma
+sudo chown -R {username}:{username} uptime-kuma # Replace {username} with the username you are currently running the commands with
 ```
 
-### Docker Compose Example
+### 🪟 Windows Portable
 
-https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
+![](https://user-images.githubusercontent.com/1336778/227160967-907ba113-c89d-4ec3-bb94-4c4ea6b7cb6f.png)
+
+
+Requirement: 
+- Arch: x64
+- .NET 4.8 Runtime
+- Internet for initialization (Download Node.js runtime and Uptime Kuma source code)
+
+Download: https://github.com/louislam/uptime-kuma/releases/download/1.21.0/uptime-kuma-win64-portable-1.0.0.zip
 
 ## (Optional) One more step for Reverse Proxy
 
@@ -109,7 +129,6 @@ Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more he
 
 Please read wiki for more info:
 https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
-
 
 ## Videos
 
@@ -192,6 +211,12 @@ https://github.com/yzwijsen/deploy-uptime-kuma-azure
 Run uptime-kuma with S3 persistent sqlite database:
 https://github.com/fluential/litestream-uptime-kuma/
 
+
 ### uptime-kuma-helper
 
 [@mkgeeky](https://github.com/mkgeeky/) has created [uptime-kuma-helper](https://github.com/mkgeeky/uptime-kuma-helper) a bash script to install and update easy
+
+### Install on Zeabur
+
+Run with one click on [Zeabur](https://zeabur.com/).
+https://docs.zeabur.com/marketplace/umami
