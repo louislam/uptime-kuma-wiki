@@ -92,3 +92,16 @@ With this approach, you don't even need to expose your container port to the hos
 
 UPTIME_KUMA_CLOUDFLARED_TOKEN=`<your token>`
 
+
+## Troubleshooting
+### How to tunnel multiple applications
+
+When you start a Cloudflare tunnel through an Uptime Kuma docker install, that tunnel can only be used for Uptime Kuma.
+Running duplicate tunnels is [not supported](https://developers.cloudflare.com/cloudflare-one/faq/cloudflare-tunnels-faq/#how-can-i-troubleshoot-a-tunnel-that-was-configured-from-zero-trust) and might result in unstable connections.
+
+If you would like to proxy other containers or services through Cloudflare, then you will need to deactivate the tunnel that's built into Uptime Kuma, and install the cloudflared connector manually.
+Specific instructions to install the cloudflared connector should be available on the same page that you copied the token from eariler. 
+
+Installing the connector directly will allow you to tunnel Uptime Kuma alongside other applications by adding additional Public Hostnames on the dashboard.
+
+
