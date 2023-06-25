@@ -22,9 +22,8 @@ PS: For every new release, it takes some time to build the docker image, please 
 
 ```bash
 cd "<YOUR docker-compose.yml DIRECTORY>"
-docker pull louislam/uptime-kuma:1
-docker stop uptime-kuma
-docker-compose up -d --force-recreate
+docker compose pull
+docker compose up -d --force-recreate
 ```
 
 ## 🆙 💪🏻 Non-Docker
