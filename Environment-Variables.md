@@ -43,3 +43,4 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_HIDE_LOG` |                            | (1.15.0) Examples: `debug_monitor,info_monitor,debug_cert,warn_monitor`                              |            |
 | `SQL_LOG` | | Set `1` to enable | | |
 | `UPTIME_KUMA_ENABLE_EMBEDDED_MARIADB`| | (2.0.0) Set `1` to enable | | |
+| `UPTIME_KUMA_IN_CONTAINER`| | (1.23.0) Is Uptime Kuma inside a container? | | |
