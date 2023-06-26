@@ -1,4 +1,3 @@
-# API Keys
 (Version >= 1.21.0)
 
 API keys can be used to access secured HTTP APIs, including the
