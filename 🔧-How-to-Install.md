@@ -120,7 +120,7 @@ Requirement:
 - .NET 4.8 Runtime
 - Internet for initialization (Download Node.js runtime and Uptime Kuma source code)
 
-Download: https://github.com/louislam/uptime-kuma/releases/download/1.21.0/uptime-kuma-win64-portable-1.0.0.zip
+Download: https://github.com/louislam/uptime-kuma/files/11886108/uptime-kuma-win64-portable-1.0.1.zip
 
 ## (Optional) One more step for Reverse Proxy
 
