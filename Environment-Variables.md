@@ -22,6 +22,7 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_SSL_KEY_PASSPHRASE` or `SSL_KEY_PASSPHRASE`       | `--ssl-key-passphrase=`                 | (1.21.1) SSL Key Passphrase                                              |            |
 | `UPTIME_KUMA_CLOUDFLARED_TOKEN`        | `--cloudflared-token=`                 | (1.14.0) Cloudflare Tunnel Token                                              |            |
 | `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN`     | `--disable-frame-sameorigin=` | By default, Uptime Kuma is not allowed in iframe if the domain name is not the same as the parent. It protects your Uptime Kuma to be a phishing website. If you don't need this protection, you can set it to `true` | `false` |
+| `UPTIME_KUMA_ALLOW_ALL_CHROME_EXECUTABLES`        | `--allow-all-chrome-executables=`                 | (1.23.0) Allow to specify any executables as Chromium                                              |    `0`        |
 | `NODE_EXTRA_CA_CERTS`        |                  | Add your self-signed ca certs. (e.g. /cert/path/CAcert.pem) [Read more](https://github.com/louislam/uptime-kuma/issues/1380)                                            |            |
 | `NODE_TLS_REJECT_UNAUTHORIZED`        |                  | Ignore all TLS errors                                      |    `0`        |
 | `NODE_OPTIONS` | | Set it to `--insecure-http-parser`, if you encountered error `Invalid header value char` when your website using WAF | |
