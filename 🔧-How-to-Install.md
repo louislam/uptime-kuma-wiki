@@ -8,7 +8,7 @@
 [Ubuntu/CentOS] Interactive CLI installer, supports Docker or without Docker. 
 
 ```bash
-curl -o kuma_install.sh http://git.kuma.pet/install.sh && sudo bash kuma_install.sh
+curl -Lo kuma_install.sh https://git.kuma.pet/install.sh && sudo bash kuma_install.sh
 ```
 
 ## Advanced Installation
