@@ -145,13 +145,6 @@ https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 
 ⚠ ⚠ ⚠ Warning: Generally, I only test Docker and Node.js. All installation methods here may be broken in the future release. I don't maintain them. Use at your own risk.
 
-
-### ☸️ Kubernetes (Unofficial)
-
-⚠ Warning: K8s deployment is provided by contributors. I have no experience with K8s and I can't fix error in the future.
-
-See more [here](https://github.com/louislam/uptime-kuma/tree/k8s-unofficial/kubernetes) 
-
 ### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
 
 > Note: This Chart relies on a repackaged OCI Container Image, which lets *uptime-kuma* run as **non-root** user. \
