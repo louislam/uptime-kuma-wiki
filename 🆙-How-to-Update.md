@@ -31,6 +31,9 @@ docker compose up -d --force-recreate
 ```bash
 cd <uptime-kuma-directory>
 
+# Backup dist directory
+mv dist dist-$(date +%Y%m%d-%H%M%S)
+
 # Update from git
 git fetch --all
 git checkout 1.22.0 --force
