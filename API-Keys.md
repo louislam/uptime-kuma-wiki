@@ -1,7 +1,10 @@
 (Version >= 1.21.0)
 
-API keys can be used to access secured HTTP APIs, including the
-Prometheus metrics endpoint.
+API keys can be enabled to manage access to the Prometheus metrics endpoint.
+
+By default, HTTP basic authentication is used to secure access to the Prometheus 
+metrics endpoint. As soon as you add your first API key, the use of basic 
+authentication for the endpoint will be permanently disabled.
 
 ## Adding an API key
 
@@ -16,10 +19,6 @@ be used to access the web interface but you should treat API keys like
 you treat your passwords as they can still be used to access potentially
 sensitive data.
 
-Note: whilst basic authentication will continue to work after you
-update, you will be unable to use basic authentication as soon as you
-add your first API key. After you have added your first API key, basic
-authentication for endpoints will be permanently disabled.
 
 ## Disabling keys
 
