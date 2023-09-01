@@ -69,7 +69,7 @@ Required Tools:
 
 ```bash
 # Update your npm to the latest version
-npm install npm -g
+npm install npm@9 -g
 
 # Clone the repository
 # If you don't want to install Uptime Kuma into your homefolder but instead into a more permanent location, follow the "Create app directory in /opt" steps under **Useful Commands** and then continue here.
