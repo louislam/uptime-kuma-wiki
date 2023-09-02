@@ -60,7 +60,7 @@ My original ExecStart was: `ExecStart=/usr/bin/dockerd -H fd:// --containerd=/ru
 
 Snap stores the `daemon.json` here:  `/var/snap/docker/current/config/daemon.json`
 
-`sudo nano /var/snap/docker/current/config/daemon.json`
+use `sudo nano /var/snap/docker/current/config/daemon.json` to edit the file like
 
 And this is what the original file looks like
 
