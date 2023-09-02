@@ -56,7 +56,8 @@ ExecStart=/usr/bin/dockerd --containerd=/run/containerd/containerd.sock
 My original ExecStart was: `ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock`, note the -H that would cause a duplicate property error.
 
 
-### Method 2 - If you installed docker using snap
+>[!NOTE]
+>If you installed docker using snap
 
 Snap stores the `daemon.json` here:  `/var/snap/docker/current/config/daemon.json`
 
