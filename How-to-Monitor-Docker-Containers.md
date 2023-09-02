@@ -77,8 +77,6 @@ The service should be running as usual, showing the docker snap service
 
 ![Screenshot showing the snap docker service working](https://github.com/louislam/uptime-kuma/assets/642149/8494c876-5580-4f87-9ceb-9a5974f1c977)
 
-
-
 **Update uptime-kuma**  
 Add a new Docker host and choose TCP as the option. Specify the IP address of the host and the TCP port you exposed, as seen below.
 
