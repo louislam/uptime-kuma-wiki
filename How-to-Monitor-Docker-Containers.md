@@ -62,22 +62,11 @@ Snap stores the `daemon.json` here:  `/var/snap/docker/current/config/daemon.jso
 
 use `sudo nano /var/snap/docker/current/config/daemon.json` to edit the file like
 
-And this is what the original file looks like
-
-```
-{
-    "log-level":        "error",
-    "storage-driver":   "overlay2"
-}
-```
-
-Change it to 
-
-```
+```diff
 {
     "log-level":        "error",
     "storage-driver":   "overlay2",
-    "hosts": ["unix:///var/run/docker.sock", "tcp://0.0.0.0:2375"]
++   "hosts": ["unix:///var/run/docker.sock", "tcp://0.0.0.0:2375"]
 }
 ```
 
