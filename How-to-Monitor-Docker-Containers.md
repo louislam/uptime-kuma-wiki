@@ -58,8 +58,6 @@ My original ExecStart was: `ExecStart=/usr/bin/dockerd -H fd:// --containerd=/ru
 
 ### Method 2 - If you installed docker using snap
 
-Tested in Ubuntu 22
-
 The location of the files is different:  **daemon.json** is in /var/snap/docker/current/config/
 
 `sudo nano /var/snap/docker/current/config/daemon.json`
