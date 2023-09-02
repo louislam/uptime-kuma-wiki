@@ -70,15 +70,12 @@ use `sudo nano /var/snap/docker/current/config/daemon.json` to edit the file lik
 }
 ```
 
-- Restart the service: 
-`sudo systemctl restart snap.docker.dockerd.service`
-
-- Check if the service is running:
-`sudo systemctl status snap.docker.dockerd.service`
+- Restart the service using `sudo systemctl restart snap.docker.dockerd.service`
+- Check if the service is running using `sudo systemctl status snap.docker.dockerd.service`
 
 The service should be running as usual, showing the docker snap service
 
-![RustDesk - 09-01 at 22 18 35@2x](https://github.com/louislam/uptime-kuma/assets/642149/8494c876-5580-4f87-9ceb-9a5974f1c977)
+![Screenshot showing the snap docker service working](https://github.com/louislam/uptime-kuma/assets/642149/8494c876-5580-4f87-9ceb-9a5974f1c977)
 
 
 
