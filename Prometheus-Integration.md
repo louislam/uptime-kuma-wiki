@@ -37,10 +37,10 @@ There is also a [Grafana Dashboard](https://grafana.com/grafana/dashboards/14847
 Assuming we have HTTP monitors in place for bbc.co.uk and google.com:
 
 ```
-# Show all response rates gouped by site
+# Show all response rates grouped by site
 sum(monitor_response_time) by (monitor_name)
 # Show only the response time for BBC.co.uk
-sum(monitor_reponse_time{monitor_url="https://www.bbc.co.uk/"})
+sum(monitor_response_time{monitor_url="https://www.bbc.co.uk/"})
 # Show the current status of Google.com
 monitor_status{monitor_name="Google"}
 ```

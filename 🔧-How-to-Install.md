@@ -60,7 +60,6 @@ It should supports Linux/Windows/MacOS.
 
 Required Tools: 
 - [Node.js](https://nodejs.org/en/) >= 14  
-  ⚠️ Take causion with Node 20. See Issues [3138](https://github.com/louislam/uptime-kuma/issues/3138) and [3202](https://github.com/louislam/uptime-kuma/issues/3202) for further details.
 - [Git](https://git-scm.com/downloads)
 - [PM2](https://pm2.keymetrics.io/) 
 - (Optional) [cloudflared](https://github.com/cloudflare/cloudflared)

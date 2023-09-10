@@ -60,6 +60,6 @@ Add a new Docker host and choose TCP as the option. Specify the IP address of th
 
 ![Docker host monitor](img/docker-host.png)
 
-## Related Disscussion
+## Related Discussion
 
 - https://github.com/louislam/uptime-kuma/issues/2061
