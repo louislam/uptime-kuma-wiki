@@ -55,6 +55,29 @@ ExecStart=/usr/bin/dockerd --containerd=/run/containerd/containerd.sock
 
 My original ExecStart was: `ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock`, note the -H that would cause a duplicate property error.
 
+
+> [!NOTE]
+> If you installed docker using snap
+
+Snap stores the `daemon.json` here:  `/var/snap/docker/current/config/daemon.json`
+
+use `sudo nano /var/snap/docker/current/config/daemon.json` to edit the file like
+
+```diff
+{
+    "log-level":        "error",
+    "storage-driver":   "overlay2",
++   "hosts": ["unix:///var/run/docker.sock", "tcp://0.0.0.0:2375"]
+}
+```
+
+- Restart the service using `sudo systemctl restart snap.docker.dockerd.service`
+- Check if the service is running using `sudo systemctl status snap.docker.dockerd.service`
+
+The service should be running as usual, showing the docker snap service
+
+![Screenshot showing the snap docker service working](https://github.com/louislam/uptime-kuma/assets/642149/8494c876-5580-4f87-9ceb-9a5974f1c977)
+
 **Update uptime-kuma**  
 Add a new Docker host and choose TCP as the option. Specify the IP address of the host and the TCP port you exposed, as seen below.
 
