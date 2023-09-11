@@ -23,7 +23,7 @@ Now you can show different status pages based on the domain names.
 1. If you are not using a reverse proxy, you should expose your Uptime Kuma in port 80.
 2. If you are using a reverse proxy, add your domain name in your reverse proxy and point to Uptime Kuma.
 
-    (⚠️ PS: For such as Apache or nginx, you need to forward the header `X-Forward-Host` or `Host` to Uptime Kuma, otherwise Uptime Kuma do not know the current domain name)
+    (⚠️ PS: For such as Apache or nginx, you need to forward the header `X-Forwarded-Host` or `Host` to Uptime Kuma, otherwise Uptime Kuma do not know the current domain name)
 
 3. Add a A/CNAME record for your domain name in your DNS management.
 4. Add your domain name in your status page settings sidebar.
