@@ -142,7 +142,8 @@ https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 
 ## Unofficial & Experimental
 
-⚠ ⚠ ⚠ Warning: Generally, I only test Docker and Node.js. All installation methods here may be broken in the future release. I don't maintain them. Use at your own risk.
+> [!WARNING]
+> The following installation methods is provided by the community. They are not tested officially and may be broken in the future release. Use at your own risk.
 
 ### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
 
