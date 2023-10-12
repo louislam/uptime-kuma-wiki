@@ -50,3 +50,4 @@ https://github.com/louislam/uptime-kuma-wiki
 * (2023-02-06) let starCount = 29141; let dockerPullCount = 32185677;
 * (2023-02-26) `<div class="⭐">30,063</div><div class="🐳">32,606,170</div>`
 * (2023-05-11) ⭐33132,🐳34513470
+* (2023-10-09) ⭐39263,🐳44805032
