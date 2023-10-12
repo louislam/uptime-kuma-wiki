@@ -1,5 +1,3 @@
-## Advanced Installation
-
 ### 🐳 Docker
 
 ```bash
