@@ -207,4 +207,7 @@ https://github.com/fluential/litestream-uptime-kuma/
 ### Install on Zeabur
 
 Run with one click on [Zeabur](https://zeabur.com/).
-https://docs.zeabur.com/marketplace/umami
+
+[![Deploy on Zeabur](https://github.com/louislam/uptime-kuma-wiki/assets/22755963/c1e546a0-f313-44fd-8550-f3ec4fc64ab0)](https://zeabur.com/docs/marketplace/uptime-kuma)
+
+[https://docs.zeabur.com/marketplace/uptime-kuma](https://zeabur.com/docs/marketplace/uptime-kuma)
