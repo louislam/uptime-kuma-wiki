@@ -7,4 +7,6 @@ Feel free to add your project here by making a pull request in this wiki repo: h
 - [Uptime Kuma Manager](https://apps.apple.com/us/app/uptime-kuma-manager/id6446004887) - An iOS app that allows you to connect to your Uptime Kuma servers and monitor the services directly from your phone.
 - [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) - A wrapper for the Uptime Kuma Socket.IO API
 - [uptimekuma-migrator](https://github.com/Peppershade/uptimekuma-migrator) - Simple migrator from UptimeRobot to UptimeKuma 
+- [swatchdog](https://github.com/imsingee/swatchdog) - A simple requester to send periodically requests to Uptime Kuma's "Push" monitor
 - [KumaCompanion](https://github.com/Zerka30/KumaCompanion) - A Command Line Interface (CLI) for Uptime Kuma
+
