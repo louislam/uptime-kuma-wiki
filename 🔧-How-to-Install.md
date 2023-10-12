@@ -16,22 +16,21 @@ curl -Lo kuma_install.sh https://git.kuma.pet/install.sh && sudo bash kuma_insta
 ### 🐳 Docker
 
 ```bash
-# Create a volume
-docker volume create uptime-kuma
-
-# Start the container
 docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
 
+Uptime Kuma is now running on http://localhost:3001
+
+> [!WARNING]
+> **NFS** (Network File System) are **NOT** supported. Please map to a local directory or volume. 
+
 Browse to http://localhost:3001 after started.
 
-Change Port and Volume
+#### Changing Port or Volume
 
 ```bash
 docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
-
-⚠️ Please use a **local volume** only. Other types such as NFS are not supported.
 
 #### Docker Tags Description
 <table>
@@ -42,36 +41,41 @@ docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/
 </tr>
 </thead>
 <tbody>
-<tr><td>latest, 1, 1.*</td><td>latest stable - debian</td></tr>
-<tr><td>debian, 1-debian, 1.*-debian</td><td>latest stable - debian</td></tr>
-<tr><td>❌alpine, 1-alpine, 1.*-alpine</td><td>(❌Deprecated due to DNS issues) latest stable - alpine</td></tr>
-<tr><td>nightly*</td><td>development build, unstable</td></tr>
+<tr><td>1</td><td>Latest stable (👍Recommended Tag)</td></tr>
+<tr><td>latest, 1, 1.*</td><td>Latest stable - debian</td></tr>
+<tr><td>debian, 1-debian, 1.*-debian</td><td>Latest stable - debian</td></tr>
+<tr><td>❌alpine, 1-alpine, 1.*-alpine</td><td>(❌Deprecated due to DNS issues) Latest stable - alpine</td></tr>
+<tr><td>nightly*</td><td>Development build, unstable</td></tr>
 </tbody>
 </table>
 
-### 🐳 Docker Compose Example
+### 🐳 Docker Compose
 
+Example docker-compose template:
 https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml
 
+```bash
+docker compose up -d
+```
 
-### 💪🏻 Without Docker (Recommended for x86/x64 only)
 
-It should supports Linux/Windows/MacOS.
+### 💪🏻 Non-Docker
 
-Required Tools: 
-- [Node.js](https://nodejs.org/en/) >= 14  
+Requirements:
+
+- Platform
+  - ✅ Major Linux distros such as Debian, Ubuntu, CentOS, Fedora and ArchLinux etc.
+  - ✅ Windows 10 (x64), Windows Server 2012 R2 (x64) or higher
+  - ❌ Replit / Heroku
+- [Node.js](https://nodejs.org/en/download/) 14 / 16 / 18 / 20.4
+- [npm](https://docs.npmjs.com/cli/) 9
 - [Git](https://git-scm.com/downloads)
-- [PM2](https://pm2.keymetrics.io/) 
-- (Optional) [cloudflared](https://github.com/cloudflare/cloudflared)
-- (Optional) [Apprise](https://github.com/caronc/apprise)
-
+- [pm2](https://pm2.keymetrics.io/) - For running Uptime Kuma in the background
 
 ```bash
-# Update your npm to the latest version
+# Update your npm
 npm install npm@9 -g
 
-# Clone the repository
-# If you don't want to install Uptime Kuma into your homefolder but instead into a more permanent location, follow the "Create app directory in /opt" steps under **Useful Commands** and then continue here.
 git clone https://github.com/louislam/uptime-kuma.git
 cd uptime-kuma
 npm run setup
@@ -79,47 +83,26 @@ npm run setup
 # Option 1. Try it
 node server/server.js
 
-# (Recommended)
-# Option 2. Run in background using PM2
-# Install PM2 if you don't have: npm install pm2 -g
+# (Recommended) Option 2. Run in the background using PM2
+# Install PM2 if you don't have it:
+npm install pm2 -g && pm2 install pm2-logrotate
+
+# Start Server
 pm2 start server/server.js --name uptime-kuma
-
 ```
 
-Browse to http://localhost:3001 after started.
+Uptime Kuma is now running on http://localhost:3001
 
-```
-# Listen to different port or hostname
-pm2 start server/server.js --name uptime-kuma -- --port=80 --host=0.0.0.0
-```
-
-#### Useful Commands
+More useful PM2 Commands
 
 ```bash
-pm2 start uptime-kuma
-pm2 stop uptime-kuma
-pm2 restart uptime-kuma
+# If you want to see the current console output
+pm2 monit
 
-# Run at startup
-pm2 startup
-
-# Create app directory in /opt for home-independent app storage
-cd /opt
-sudo mkdir uptime-kuma
-sudo chown -R {username}:{username} uptime-kuma # Replace {username} with the username you are currently running the commands with
+# If you want to add it to startup
+pm2 save && pm2 startup
 ```
 
-### 🪟 Windows Portable
-
-![](https://user-images.githubusercontent.com/1336778/227160967-907ba113-c89d-4ec3-bb94-4c4ea6b7cb6f.png)
-
-
-Requirement: 
-- Arch: x64
-- .NET 4.8 Runtime
-- Internet for initialization (Download Node.js runtime and Uptime Kuma source code)
-
-Download: https://github.com/louislam/uptime-kuma/releases/download/1.23.1/uptime-kuma-windows-x64-portable-1.23.1.zip
 
 ## (Optional) One more step for Reverse Proxy
 
@@ -143,7 +126,7 @@ https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 ## Unofficial & Experimental
 
 > [!WARNING]
-> The following installation methods is provided by the community. They are not tested officially and may be broken in the future release. Use at your own risk.
+> The following installation methods are provided by the community. They are not tested officially and may be broken in the future release. Use at your own risk.
 
 ### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
 
