@@ -1,16 +1,3 @@
-- [🚀 Installer](#-installer-via-cli)
-- [🐳 Docker](#-docker)
-- [💪🏻 Without Docker](#-without-docker-recommended-for-x86x64-only)
-- [☁️ Unofficial Install- and Hosting Options](#unofficial--experimental)
-
-## 🚀 Installer via CLI
-
-[Ubuntu/CentOS] Interactive CLI installer, supports Docker or without Docker. 
-
-```bash
-curl -Lo kuma_install.sh https://git.kuma.pet/install.sh && sudo bash kuma_install.sh
-```
-
 ## Advanced Installation
 
 ### 🐳 Docker
