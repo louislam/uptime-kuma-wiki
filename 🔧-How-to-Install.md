@@ -216,4 +216,4 @@ Run with one click on [Zeabur](https://zeabur.com/).
 
 [![Deploy to Dome](https://trydome.io/button-2.gif)](https://app.trydome.io/signup?package=uptime-kuma)
 
-To try the self-hosted uptime-kuma, [🚀 one-click deploy with Dome](https://app.trydome.io/signup?package=uptime-kuma).
+To try the self-hosted uptime-kuma, [🚀 one-click deploy with Dome](https://app.trydome.io/signup?package=uptime-kuma) with a free trial. 
