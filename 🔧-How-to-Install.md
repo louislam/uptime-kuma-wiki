@@ -211,3 +211,9 @@ Run with one click on [Zeabur](https://zeabur.com/).
 [![Deploy on Zeabur](https://github.com/louislam/uptime-kuma-wiki/assets/22755963/c1e546a0-f313-44fd-8550-f3ec4fc64ab0)](https://zeabur.com/docs/marketplace/uptime-kuma)
 
 [https://docs.zeabur.com/marketplace/uptime-kuma](https://zeabur.com/docs/marketplace/uptime-kuma)
+
+### Install on Dome
+
+[![Deploy to Dome](https://trydome.io/button-2.gif)](https://app.trydome.io/signup?package=uptime-kuma)
+
+To try the self-hosted uptime-kuma, [🚀 one-click deploy with Dome](https://app.trydome.io/signup?package=uptime-kuma).
