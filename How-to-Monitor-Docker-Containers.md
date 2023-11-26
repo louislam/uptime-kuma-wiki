@@ -83,6 +83,12 @@ Add a new Docker host and choose TCP as the option. Specify the IP address of th
 
 ![Docker host monitor](img/docker-host.png)
 
+**Configuring certificates for Docker TLS connection**
+
+Assuming you have already properly configured your remote docker instance to listen securely for TLS connections as detailed [here](https://docs.docker.com/engine/security/protect-access/#use-tls-https-to-protect-the-docker-daemon-socket), you must configure Uptime-Kuma to use the certificates you've generated.  The base path where certificates are looked for can be set with the `DOCKER_TLS_DIR_PATH` environmental variable or defaults to `data/docker-tls/`. 
+
+If a directory in this path exists with a name matching the FQDN of the docker host (e.g. the FQDN of `https://example.com:2376` is example.com so the directory `data/docker-tls/example.com/` would be searched for certificate files), then `ca.pem`, `key.pem` and `cert.pem` files are loaded and included in the agent options. File names can also be overridden via `DOCKER_TLS_FILE_NAME_(CA|KEY|CERT)`.
+
 ## Related Discussion
 
 - https://github.com/louislam/uptime-kuma/issues/2061
