@@ -220,6 +220,9 @@ docker run -d --restart=always -p 127.0.0.1:3002:3001 -v uptime-kuma:/app/data -
 
 ![Reverse Proxy](./img/Synology-reverse-proxy.png)
 
+6. Click on the tab *Custom Header*
+7. Click `Create` -> `Websockets`, this automatically fills in the required headers for websockets.
+
 # Traefik
 ```
 labels:
