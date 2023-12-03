@@ -7,7 +7,9 @@ docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name upti
 Uptime Kuma is now running on http://localhost:3001
 
 > [!WARNING]
-> **NFS** (Network File System) are **NOT** supported. Please map to a local directory or volume. 
+> Filesystem support for POSIX file locks is required to avoid SQLite database corruption.
+> Be aware of possible [file locking problems](https://www.sqlite.org/howtocorrupt.html#_file_locking_problems) such as those [commonly encountered with NFS](https://www.sqlite.org/faq.html#q5).
+> **Please map the `/app/data`-folder to a local directory or volume.** 
 
 Browse to http://localhost:3001 after started.
 
