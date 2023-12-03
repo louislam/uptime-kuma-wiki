@@ -16,7 +16,7 @@ Labels to filter by include:
 
 Put the following into your Prometheus config:
 
-```
+```yml
   - job_name: 'uptime'
     scrape_interval: 30s
     scheme: http
