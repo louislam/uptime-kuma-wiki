@@ -10,4 +10,4 @@ Feel free to add your project here by making a pull request in this wiki repo: h
 - [uptimekuma-migrator](https://github.com/Peppershade/uptimekuma-migrator) - Simple migrator from UptimeRobot to UptimeKuma 
 - [swatchdog](https://github.com/imsingee/swatchdog) - A simple requester to send periodically requests to Uptime Kuma's "Push" monitor
 - [KumaCompanion](https://github.com/Zerka30/KumaCompanion) - A Command Line Interface (CLI) for Uptime Kuma
-
+- [UptimeKumaRemoteProbe ](https://github.com/zimbres/UptimeKumaRemoteProbe) - A Remote Probe to work with Uptime Kuma "Push" monitor type. 
