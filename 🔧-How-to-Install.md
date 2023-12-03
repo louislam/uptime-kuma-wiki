@@ -115,7 +115,8 @@ https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 
 ### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
 
-> Note: This Chart relies on a repackaged OCI Container Image, which lets *uptime-kuma* run as **non-root** user. \
+> [!NOTE]
+> This Chart relies on a repackaged OCI Container Image, which lets *uptime-kuma* run as **non-root** user.
 > The entire repackage process is automated via GitHub Actions and renovate-bot keeps everything up to date. (feel free to audit it yourself)
 
 The Containerfile used to rebundle *uptime-kuma*: [rootless Containerfile](https://github.com/k3rnelpan1c-dev/uptime-kuma-helm/blob/main/container/Containerfile)

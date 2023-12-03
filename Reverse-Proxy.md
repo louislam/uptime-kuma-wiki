@@ -166,7 +166,7 @@ Link to https-portal Websocket under [Advanced Usage](https://github.com/SteveLT
 
 Example docker-compose.yml file using Https-Portal:
 
-```
+```yml
 version: '3.3'
 
 services:
@@ -224,7 +224,7 @@ docker run -d --restart=always -p 127.0.0.1:3002:3001 -v uptime-kuma:/app/data -
 7. Click `Create` -> `Websockets`, this automatically fills in the required headers for websockets.
 
 # Traefik
-```
+```yml
 labels:
     - "traefik.enable=true"
     - "traefik.http.routers.uptime-kuma.rule=Host(`YourOwnHostname`)"
