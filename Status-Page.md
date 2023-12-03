@@ -31,3 +31,29 @@ Now you can show different status pages based on the domain names.
 This is my example, they both are from the same instance:
 - https://status.louislam.net
 - https://status.kuma.pet
+
+## Custom Subdirectory / custom html on status pages
+
+> [!CAUTION]
+> For the following to work `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN` needs to be enabled.
+> This allows other pages to include Uptime Kuma as an `iframe` and makes you vulnerable to [`clickjacking`](https://en.wikipedia.org/wiki/Clickjacking). 
+
+Changing the subdirectory of Uptime Kuma is tracked in https://github.com/louislam/uptime-kuma/pull/1092
+Embedding `script`s/`meta`-tags/... into Uptime Kuma is tracked in https://github.com/louislam/uptime-kuma/issues/3115
+
+A solution to get around this limitation is to utilise an `iframe`.
+Here is an example of how to configure this (replacing `INSERT_{...}_HERE` with your own values):
+
+```html
+<html data-lt-installed="true"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<meta name="description" content="INSERT_DESCRIPTION_HERE">
+    <title>INSERT_TITLE_HERE</title>
+</head>
+<body style="height: 100vh;margin: 0;padding: 0;overflow: hidden;">
+    <iframe src="INSERT_UPTIME_KUMA_URL_HERE" frameborder="0" width="100%" height="100%" allowtransparency="yes" style="overflow:hidden;margin: 0; border: none;"></iframe>
+</body>
+</html>
+```
