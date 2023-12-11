@@ -97,7 +97,7 @@ With SSL:
   SSLCertificateKeyFile /path/to/ssl/key/key
   # Protocol 'h2' is only supported on Apache 2.4.17 or newer.
   Protocols h2 http/1.1
-
+  ProxyPreserveHost on
   ProxyPass / http://localhost:3001/
   RewriteEngine on
   RewriteCond %{HTTP:Upgrade} =websocket
@@ -111,7 +111,7 @@ Without SSL:
 ```apache
 <VirtualHost *:80>
   ServerName sub.domain.com
-
+  ProxyPreserveHost on
   ProxyPass / http://localhost:3001/
   RewriteEngine on
   RewriteCond %{HTTP:Upgrade} websocket [NC]
