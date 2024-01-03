@@ -2,7 +2,7 @@
 ## Things You Should Know
 
 - Status page is intended for public users to check the status of your services
-- Status page will caches result for 5 minutes
+- Status page will cache results for 5 minutes
 - Status page is just like a traditional web page. Updates won't be as responsive as the dashboard.
 - Status page will refresh the page every 5 minutes
 - `default` is a special slug
