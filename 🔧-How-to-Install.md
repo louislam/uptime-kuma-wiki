@@ -39,7 +39,7 @@ docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/
 ### 🐳 Docker Compose
 
 Example docker-compose template:
-[https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose-dev.yml](https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose-dev.yml)
+[https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml](https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml)
 
 ```bash
 docker compose up -d
