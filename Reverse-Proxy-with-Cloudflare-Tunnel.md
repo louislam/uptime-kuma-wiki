@@ -50,7 +50,7 @@ But trust me, once you learnt, you will remember how to config without this guid
 1. Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/).
 2. `Network` > `Tunnels` > `Create a Tunnel`
 
-![Create-a-tunnel.jpg](https://cdn.collinsoft.com/file/cdn-collinsoft/ryancollins-org/2024/2024-01-31-create-a-tunnel/create-a-tunnel-1024x.jpg)
+   <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/6ca4062b-12b8-4516-a1dd-e64a94ae6a4b" width="800" />
 
 3. `Cloudflared` > `Next`
 
