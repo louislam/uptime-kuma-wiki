@@ -48,16 +48,26 @@ But trust me, once you learnt, you will remember how to config without this guid
 
 
 1. Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/).
-2. `Access` > `Tunnels` > `Create Tunnel`
+2. `Network` > `Tunnels` > `Create a Tunnel`
 
-   <img src="https://user-images.githubusercontent.com/1336778/160877346-01fe89f0-b55d-4417-92f7-fe7509656255.png" width="800" />
+![Create-a-tunnel.jpg](https://cdn.collinsoft.com/file/cdn-collinsoft/ryancollins-org/2024/2024-01-31-create-a-tunnel/create-a-tunnel-1024x.jpg)
 
-3. Type a `Tunnel name` such as `uptime-kuma` and save tunnel.
-4. Click the token to copy it.
+3. `Cloudflared` > `Next`
 
-   <img src="https://user-images.githubusercontent.com/1336778/160879200-642609d7-7264-41ea-8b16-b99f95e7f446.png" width="800" />
+![Cloudflared-Next.jpg](https://cdn.collinsoft.com/file/cdn-collinsoft/ryancollins-org/2024/2024-01-31-cloudflared-next/cloudflared-next-1024x.jpg)
 
-5. Go to your Uptime Kuma instance. 
+4. Type a `Tunnel name` such as `uptime-kuma` and save tunnel.
+5. Click the clipboard icon to copy the run command.
+
+![Copy.jpg](https://cdn.collinsoft.com/file/cdn-collinsoft/ryancollins-org/2024/2024-01-31-copy/copy-1024x.jpg)
+
+6. Paste that into a text editor so you can copy the token from the end of the command.
+
+    brew install cloudflared && 
+
+    sudo cloudflared service install eyJhIjoXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+7. Go to your Uptime Kuma instance. 
 
    <img src="https://user-images.githubusercontent.com/1336778/160821358-aff29332-6383-447e-a552-dbdeba014a77.png" width="800" />
 
