@@ -63,9 +63,7 @@ But trust me, once you learnt, you will remember how to config without this guid
 
 6. Paste that into a text editor so you can copy the token from the end of the command.
 
-    brew install cloudflared && 
-
-    sudo cloudflared service install eyJhIjoXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+`cloudflared.exe service install eyJhIjoiZDA4ZGNiMTUXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`
 
 7. Go to your Uptime Kuma instance. 
 
