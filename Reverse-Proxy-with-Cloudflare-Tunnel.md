@@ -58,7 +58,7 @@ But trust me, once you learnt, you will remember how to config without this guid
 
 4. Type a `Tunnel name` such as `uptime-kuma` and save tunnel.
 5. Click the clipboard icon to copy the run command.
-![Copy.jpg](https://cdn.collinsoft.com/file/cdn-collinsoft/ryancollins-org/2024/2024-01-31-copy/copy-1024x.jpg)
+   <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/2853ee57-cc50-4ae6-9688-e102038d9f57" width="800" />
 
 6. Paste that into a text editor so you can copy the token from the end of the command.
 
