@@ -43,7 +43,7 @@ Cons:
 
 The steps are actually very simple. However, since the concept is pretty new to anyone, it may be good to write it in detail. 
 
-But trust me, once you learn, you will remember how to config without this guide! While for Nginx or Traefik, I never could remember how to config without googling it.
+But trust me, once you learn, you will remember how to configure a cloudflare tunnel without this guide! (for Nginx or Traefik, I could never remember how to configure them without googling it)
 
 
 
