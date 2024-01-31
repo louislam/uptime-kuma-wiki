@@ -48,16 +48,23 @@ But trust me, once you learn, you will remember how to configure a cloudflare tu
 
 
 1. Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/).
-2. `Access` > `Tunnels` > `Create Tunnel`
+2. `Network` > `Tunnels` > `Create a Tunnel`
 
-   <img src="https://user-images.githubusercontent.com/1336778/160877346-01fe89f0-b55d-4417-92f7-fe7509656255.png" width="800" />
+   <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/6ca4062b-12b8-4516-a1dd-e64a94ae6a4b" width="800" />
 
-3. Type a `Tunnel name` such as `uptime-kuma` and save tunnel.
-4. Click the token to copy it.
+3. `Cloudflared` > `Next`
 
-   <img src="https://user-images.githubusercontent.com/1336778/160879200-642609d7-7264-41ea-8b16-b99f95e7f446.png" width="800" />
+   <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/222f8eba-b807-488b-8059-fb975fb554da" width="800" />
 
-5. Go to your Uptime Kuma instance. 
+4. Type a `Tunnel name` such as `uptime-kuma` and save tunnel.
+5. Click the clipboard icon to copy the run command.
+   <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/2853ee57-cc50-4ae6-9688-e102038d9f57" width="800" />
+
+6. Paste that into a text editor so you can copy the token from the end of the command.
+   ```cmd
+   cloudflared.exe service install eyJhIjoiZDA4ZGNiMTUXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   `` `
+7. Go to your Uptime Kuma instance. 
 
    <img src="https://user-images.githubusercontent.com/1336778/160821358-aff29332-6383-447e-a552-dbdeba014a77.png" width="800" />
 
