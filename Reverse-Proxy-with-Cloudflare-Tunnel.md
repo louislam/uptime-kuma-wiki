@@ -61,9 +61,9 @@ But trust me, once you learnt, you will remember how to config without this guid
    <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/2853ee57-cc50-4ae6-9688-e102038d9f57" width="800" />
 
 6. Paste that into a text editor so you can copy the token from the end of the command.
-
-`cloudflared.exe service install eyJhIjoiZDA4ZGNiMTUXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`
-
+   ```cmd
+   cloudflared.exe service install eyJhIjoiZDA4ZGNiMTUXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   `` `
 7. Go to your Uptime Kuma instance. 
 
    <img src="https://user-images.githubusercontent.com/1336778/160821358-aff29332-6383-447e-a552-dbdeba014a77.png" width="800" />
