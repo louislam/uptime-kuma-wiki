@@ -54,7 +54,7 @@ But trust me, once you learnt, you will remember how to config without this guid
 
 3. `Cloudflared` > `Next`
 
-![Cloudflared-Next.jpg](https://cdn.collinsoft.com/file/cdn-collinsoft/ryancollins-org/2024/2024-01-31-cloudflared-next/cloudflared-next-1024x.jpg)
+   <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/222f8eba-b807-488b-8059-fb975fb554da" width="800" />
 
 4. Type a `Tunnel name` such as `uptime-kuma` and save tunnel.
 5. Click the clipboard icon to copy the run command.
