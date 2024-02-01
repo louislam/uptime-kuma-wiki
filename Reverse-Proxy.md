@@ -121,12 +121,25 @@ Without SSL:
 ```
 
 # Caddy
-
+Install Caddy server
+```bash
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https -y
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt-get update && sudo apt-get install caddy -y
+nano /etc/caddy/Caddyfile
+```
+edit nano /etc/caddy/Caddyfile, Delete everything in the file and replace it with (change to your domain):
 ```nginx
 subdomain.domain.com {
     reverse_proxy 127.0.0.1:3001
 }
 ```
+Start and enable the Caddy service with:
+```bash
+sudo systemctl enable --now caddy
+```
+You should now be able to point a browser to https://subdomain.domain.com/ and see your Uptime Kuma site
 
 # Caddy with Docker-compose
 
