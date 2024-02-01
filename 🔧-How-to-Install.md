@@ -1,9 +1,14 @@
 ### 🐳 Docker
 
 ```bash
+curl -sSL https://get.docker.com/ | CHANNEL=stable sh
+apt update && apt install docker-compose-plugin
 docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
-
+Check if its running: 
+```bash
+docker container ls
+```
 Uptime Kuma is now running on http://localhost:3001
 
 > [!WARNING]
