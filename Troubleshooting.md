@@ -1,7 +1,7 @@
 
 ## Uptime Kuma reports `DOWN`, but the service can be accessed
 
-> [!INFO]
+> [!TIP]
 > In case you did not know: 
 > docker has [more than one network type](https://youtu.be/bKFMS5C4CG0) with only some of them allowing access to the local network and some not even allowing access to remote networks
 
