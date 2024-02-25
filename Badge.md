@@ -59,7 +59,7 @@ but can be overwritten with predefined color or any other color in HEX code:
 
 ![image](img/badge/custom-colours.png)
 
-See https://shields.io/#colors for predefined colors.
+See https://www.npmjs.com/package/badge-maker#colors for predefined colors.
 
 Different badge styles as defined by https://shields.io/#styles are also supported. (thx @throwabird / [comment](https://github.com/louislam/uptime-kuma/pull/1119#issuecomment-1004760533) )
 
@@ -78,6 +78,8 @@ There are options to customize the **response** badge's text: `labelPrefix`, `la
 Use of the following options to enable them: `flat` (default), `flat-square`, `plastic`, `for-the-badge`, `social`: ![image](img/badge/badge-style.png)
 
 ## Open Badge Generator
+
+Call up the Open Badge Generator of a service by pressing the Settings button on a status page in edit mode.
 
 ![image](img/badge/settings-button.png)
 
