@@ -79,15 +79,32 @@ There are options to customize the **response** badge's text: `labelPrefix`, `la
 
 Use of the following options to enable them: `flat` (default), `flat-square`, `plastic`, `for-the-badge`, `social`: ![image](img/badge/badge-style.png)
 
-## Open Badge Generator
-
-Call up the Open Badge Generator of a service by pressing the Settings button on a status page in edit mode.
-
-![image](img/badge/settings-button.png)
-
-![image](img/badge/settings.png)
-
-![image](img/badge/open-badge-generator.png)
+> [!TIP]
+> We have an Badge Generator integrated which makes this configuration more interactive.
+> 
+> You can use said generator via: 
+> - navigating to a status page in edit mode
+> - <details><summary>Clicking on the settings icon</summary>
+>   <p>
+>   
+>   ![image](img/badge/settings-button.png)
+>   
+>   </p>
+>   </details>
+> - <details><summary>Clicking on the <code>Open Badge Maker</code>-button</summary>
+>   <p>
+>   
+>   ![image](img/badge/settings.png)
+>   
+>   </p>
+>   </details>
+> - <details><summary>filling out the form to create your own badge</summary>
+>   <p>
+>   
+>   ![image](img/badge/open-badge-generator.png)
+>   
+>   </p>
+>   </details>
 
 # Screenshots
 
