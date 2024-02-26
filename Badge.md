@@ -12,7 +12,9 @@
 
 # Description
 
-Status, ping, uptime, avg-response badges, cert-exp and response generated in node-js, no internet access required (based on [badge-maker](https://www.npmjs.com/package/badge-maker) aka. [shields.io](http://shields.io/))
+`status`, `ping`, `uptime`, `avg-response`, `cert-exp` and `response`-badges are generated locally.
+The server does this for all monitors which have been added to status pages and have thus been published.
+The design is based on [badge-maker](https://www.npmjs.com/package/badge-maker) aka. [shields.io](http://shields.io/).
 
 There are six API endpoints that return an SVG graphic for a given (public) monitor:
 
