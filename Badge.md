@@ -106,8 +106,8 @@ Use of the following options to enable them: `flat` (default), `flat-square`, `p
 >   </p>
 >   </details>
 
-# Screenshots
+**Example**
 
-![image](img/badge/examples.png)
+`<kuma-url>/api/badge/<monitorId>/status?style=flat-square`
 
 Source: https://github.com/louislam/uptime-kuma/pull/1119
