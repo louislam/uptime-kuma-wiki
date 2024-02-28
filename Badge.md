@@ -27,8 +27,6 @@ These are the endpoints that return an SVG graphic for a given (public) monitor:
 | `cert-exp`     | `<kuma-url>/api/badge/:monitorID/cert-exp`              | `<kuma-url>/api/badge/1/cert-exp`     | ![image](img/badge/cert-exp-example.png)     |
 | `response`     | `<kuma-url>/api/badge/:monitorID/response`              | `<kuma-url>/api/badge/1/response`     | ![image](img/badge/response-example.png)     |
 
-# Open Badge Generator
-
 > [!TIP]
 > We have an Badge Generator integrated which makes this configuration more interactive.
 > 
