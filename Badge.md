@@ -1,13 +1,5 @@
 (Version >= 1.16.0)
 
-- [Description](#description)
-- [Open Badge Generator](#open-badge-generator)
-- [Badge Type Options](#badge-type-options)
-  - [Status badge](#status-badge)
-  - [Ping, uptime, avg-response and response badge](#ping-uptime-avg-response-and-response-badge)
-    - [Badge Duration at ping, uptime and avg-response](#badge-duration-at-ping-uptime-and-avg-response)
-  - [Certificate Expire badge](#certificate-expire-badge)
-- [Badge Styles](#badge-styles)
 
 
 # Description
