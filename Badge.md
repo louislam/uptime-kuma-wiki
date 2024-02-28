@@ -97,11 +97,9 @@ The default uptime badge's color is based on the uptime percentage:
 
 ![image](img/badge/uptime-color.png)
 
-but can be overwritten with predefined color or any other color in HEX code:
+but can be overwritten with [predefined color](https://www.npmjs.com/package/badge-maker#colors) or any other color in HEX code:
 
 ![image](img/badge/custom-colours.png)
-
-See https://www.npmjs.com/package/badge-maker#colors for predefined colors.
 
 ### Badge Duration at ping, uptime and avg-response
 
