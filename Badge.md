@@ -59,7 +59,7 @@ There are options to customize the **status** badge's appearance:
 **Examples**
 
 | Badge | Url |
----------------
+|-------|-----|
 | ![image](img/badge/status-label.png) | `<kuma-url>/api/badge/<monitorId>/status?upLabel=<upLabel>&downLabel=<downLabel>` |
 | ![image](img/badge/status-bw.png) | `<kuma-url>/api/badge/<monitorId>/status?upColor=white&downColor=black` |
 
@@ -77,7 +77,7 @@ There are options to customize the **ping**, **uptime**, **avg-response** and **
 **Examples**
 
 | Badge | Url |
----------------
+|-------|-----|
 | ![image](img/badge/ping-label.png) | `<kuma-url>/api/badge/<monitorId>/ping/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>` |
 | ![image](img/badge/uptime-label.png) | `<kuma-url>/api/badge/<monitorId>/uptime/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>` |
 |  | `<kuma-url>/api/badge/<monitorId>/avg-response/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>` |
@@ -97,7 +97,7 @@ The given time interval at `Badge Duration (in hours)` has to be in 'hours', but
 **Example***
 
 | Badge | Url |
----------------
+|-------|-----|
 | ![image](img/badge/duration.png) | `<kuma-url>/api/badge/1/uptime/720?label=30&labelSuffix=d` |
 
 ## Certificate Expire badge
@@ -121,5 +121,5 @@ The different badge styles as defined by https://shields.io/#styles. (thx @throw
 **Example**
 
 | Badge | Url |
----------------
+|-------|-----|
 | ![image](img/badge/badge-style.png) | `<kuma-url>/api/badge/<monitorId>/status?style=flat-square` |
