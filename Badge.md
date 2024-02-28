@@ -1,5 +1,4 @@
 (Version >= 1.16.0)
-With https://github.com/louislam/uptime-kuma/pull/1119
 
 - [Description](#description)
 - [Open Badge Generator](#open-badge-generator)
