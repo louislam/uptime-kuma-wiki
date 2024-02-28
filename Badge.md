@@ -64,11 +64,12 @@ There are options to customize the **status** badge's appearance:
 - `upColor` 
 - `downColor`
 
-**Example**
+**Examples**
 
-`<kuma-url>/api/badge/<monitorId>/status?upLabel=<upLabel>&downLabel=<downLabel>` ![image](img/badge/status-label.png)
-
-`<kuma-url>/api/badge/<monitorId>/status?upColor=white&downColor=black` ![image](img/badge/status-bw.png)
+| Badge | Url |
+---------------
+| ![image](img/badge/status-label.png) | `<kuma-url>/api/badge/<monitorId>/status?upLabel=<upLabel>&downLabel=<downLabel>` |
+| ![image](img/badge/status-bw.png) | `<kuma-url>/api/badge/<monitorId>/status?upColor=white&downColor=black` |
 
 ## Ping, uptime, avg-response and response badge
 
@@ -81,17 +82,13 @@ There are options to customize the **ping**, **uptime**, **avg-response** and **
 - `color`
 - `labelColor`
 
-**Example**
+**Examples**
 
-`<kuma-url>/api/badge/<monitorId>/ping/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>`
-
-![image](img/badge/ping-label.png)
-
-`<kuma-url>/api/badge/<monitorId>/uptime/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>`
-
-![image](img/badge/uptime-label.png)
-
-`<kuma-url>/api/badge/<monitorId>/avg-response/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>`
+| Badge | Url |
+---------------
+| ![image](img/badge/ping-label.png) | `<kuma-url>/api/badge/<monitorId>/ping/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>` |
+| ![image](img/badge/uptime-label.png) | `<kuma-url>/api/badge/<monitorId>/uptime/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>` |
+|  | `<kuma-url>/api/badge/<monitorId>/avg-response/24?labelPrefix=<labelPrefix>&label=<label>&labelSuffix=<labelSuffix>&prefix=<prefix>&suffix=<suffix>` |
 
 The default uptime badge's color is based on the uptime percentage:
 
@@ -105,9 +102,11 @@ but can be overwritten with [predefined color](https://www.npmjs.com/package/bad
 
 The given time interval at `Badge Duration (in hours)` has to be in 'hours', but customizing options allow for a different display: 
 
-`<kuma-url>/api/badge/1/uptime/720?label=30&labelSuffix=d`
+**Example***
 
-![image](img/badge/duration.png)
+| Badge | Url |
+---------------
+| ![image](img/badge/duration.png) | `<kuma-url>/api/badge/1/uptime/720?label=30&labelSuffix=d` |
 
 ## Certificate Expire badge
 
@@ -129,6 +128,6 @@ The different badge styles as defined by https://shields.io/#styles. (thx @throw
 
 **Example**
 
-`<kuma-url>/api/badge/<monitorId>/status?style=flat-square`
-
-![image](img/badge/badge-style.png)
+| Badge | Url |
+---------------
+| ![image](img/badge/badge-style.png) | `<kuma-url>/api/badge/<monitorId>/status?style=flat-square` |
