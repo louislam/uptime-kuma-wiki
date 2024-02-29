@@ -94,7 +94,7 @@ but can be overwritten with [predefined color](https://www.npmjs.com/package/bad
 
 The given time interval at `Badge Duration (in hours)` has to be in 'hours', but customizing options allow for a different display: 
 
-**Example***
+**Example**
 
 | Badge | Url |
 |-------|-----|
