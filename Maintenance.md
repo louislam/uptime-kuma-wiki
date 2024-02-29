@@ -11,12 +11,12 @@ This feature is designed for:
 
 You can access the maintenance management via the menu at the top left.
 
-![Docker host monitor](img/maintenance/user-menue-Maintenace.png)
+![image](img/maintenance/user-menue-Maintenace.png)
 
 Within the maintenance management, there is an overview of the currently configured maintenance windows.
 In the upper area, you can configure another maintenance using the '+ Schedule Maintenance' button.
 
-![Docker host monitor](img/maintenance/schedule-maintenance-button.png)
+![image](img/maintenance/schedule-maintenance-button.png)
 
 ## New Schedule Maintenance
 
