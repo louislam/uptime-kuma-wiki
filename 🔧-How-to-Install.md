@@ -149,12 +149,6 @@ Run with one click on [PikaPods.com](https://www.pikapods.com/). Free for about 
 
 [![PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=uptime-kuma)
 
-### Termux (Unofficial/Experiment)
-
-Do you have an old Android phone? You could install Uptime Kuma on it!
-
-https://github.com/louislam/uptime-kuma/issues/423
-
 ### Install on Azure Container Instance with TLS endpoint
 
 Unofficial tutorial by Stefan:
