@@ -146,6 +146,7 @@ https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
 ### One-Click Hosting on PikaPods
 
 Run with one click on [PikaPods.com](https://www.pikapods.com/). Free for about 3 months with welcome credit.
+PikaPods have produced a [getting started video](https://www.youtube.com/watch?v=gbbcnNKPi8M) if you like consuming information in this form.
 
 [![PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=uptime-kuma)
 
