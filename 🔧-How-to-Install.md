@@ -184,3 +184,7 @@ Run with one click on [Zeabur](https://zeabur.com/).
 [![Deploy to Dome](https://trydome.io/button-2.gif)](https://app.trydome.io/signup?package=uptime-kuma)
 
 To try the self-hosted uptime-kuma, [🚀 one-click deploy with Dome](https://app.trydome.io/signup?package=uptime-kuma) with a free trial. 
+
+## Deploy to Fly.io
+
+You can host uptime-kuma [with a single command at Fly.io](https://community.fly.io/t/hosting-uptime-kuma-on-fly-io/14352) and run on its included Hobby Plan usage.
