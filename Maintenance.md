@@ -22,11 +22,11 @@ In the upper area, you can configure another maintenance using the '+ Schedule M
 
 **Title**
 
-Here you can define an title for the new maintenance, witch is displayed on top of selected status pages.
+Here you can define an title for the new maintenance, which is displayed on top of selected status pages.
 
 **Description**
 
-Here you can define an description for the new maintenance, witch is also displayed on top of selected status pages.
+Here you can define an description for the new maintenance, which is also displayed on top of selected status pages.
 The description supports Markdown syntax.
 
 **Affected Monitors**
