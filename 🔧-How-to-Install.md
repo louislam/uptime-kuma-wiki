@@ -17,6 +17,12 @@ Browse to http://localhost:3001 after started.
 
 ```bash
 docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
+
+# Add `--add-host` flag to connect to local web servers which reside in local machine
+docker run -d --restart=always -p 3001:3001 --add-host host.docker.internal:host-gateway -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+
+# Replace `http://localhost:8000` with `http://host.docker.internal:8000`
+# curl http://host.docker.internal:8000
 ```
 
 #### Docker Tags Description
