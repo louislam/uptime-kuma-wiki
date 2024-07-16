@@ -26,3 +26,7 @@ Examples:
 curl https://google.com
 ping google.com
 ```
+
+### IPv6
+If you are running Uptime Kuma on top of Docker and the service can only be access via IPv6. Please follow the Docker's [official wiki](https://docs.docker.com/config/daemon/ipv6/) to enable IPv6 support.  
+IPv6 are not supported out of the box on Docker. 
