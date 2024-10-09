@@ -1,8 +1,12 @@
-In order to expose Uptime Kuma to the web securely, it is recommended to proxy it behind a traditional webserver such as nginx or Apache. Below are some example configurations that you could use.
+In order to expose Uptime Kuma to the web securely, it is recommended to proxy it behind a traditional webserver such as nginx or Apache.
+Below are some example configurations that you could use.
 
 Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more headers **"Upgrade"** and **"Connection"** in order to accept WebSocket on a reverse proxy.
 
-Uptime Kuma **does not support a subdirectory** such as `http://example.com/uptimekuma`. Please prepare a domain or sub-domain to do that.
+> [!NOTE]
+> Uptime Kuma **does not support a subdirectory** such as `http://example.com/uptimekuma`.
+> Please prepare a domain or sub-domain to do that. A hacky way to produce subdirectory status pages [is listed here](https://github.com/louislam/uptime-kuma/wiki/Status-Page#custom-subdirectory--custom-html-on-status-pages).
+> This issue is tracked in https://github.com/louislam/uptime-kuma/issues/147
 
 > [!TIP]
 > It is recommended to use SSL (HTTPS) with your web-server to avoid MiTM attacks when on a public network. If using caddy these certificates will be auto-generated and updated.
