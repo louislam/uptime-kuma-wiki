@@ -13,3 +13,4 @@ Feel free to add your project here by making a pull request in this wiki repo: h
 - [UptimeKumaRemoteProbe ](https://github.com/zimbres/UptimeKumaRemoteProbe) - A Remote Probe to work with Uptime Kuma "Push" monitor type.
 - [AutoKuma](https://github.com/BigBoot/AutoKuma) - Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.
 - [Uptime Mate](https://github.com/schech1/uptime-buddy) - An Uptime Kuma monitoring tool for Apple Watch.
+- [Uptime Kuma Push Agent](https://github.com/manprinsen/uptime-kuma-agent) - A lightweight monitoring agent with Go, Python, and shell implementations, designed to send network uptime data to Uptime Kuma's Push Monitor.
