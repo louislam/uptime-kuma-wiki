@@ -39,17 +39,17 @@ Authentication is done by passing the API key in the `Authorization`
 header. For example, here is a request made with curl to the `metrics`
 endpoint.
 
-```
+```bash
 curl -u":<key>" uptime.kuma/metrics
 ```
 
-Note, the `:` is required before the key as basic authentication
-requires a username and password separated by a `:`, however we don't
-make use of the username field.
+> [!NOTE]
+> `:` is required before the key, because basic authentication requires a username and password separated by a `:`.
+> We don't make use of the username field.
 
 Here is an example config for Prometheus:
 
-```
+```yml
   - job_name: 'uptime'
     scrape_interval: 30s
     scheme: http
@@ -59,4 +59,5 @@ Here is an example config for Prometheus:
       password: <api key>
 ```
 
-Note: we don't need to set a username field as it is not used.
+> [!NOTE]
+> Seting the username field is not nessesary, as it is unused.

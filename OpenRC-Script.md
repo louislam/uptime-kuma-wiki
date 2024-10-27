@@ -45,20 +45,20 @@ start_post() {
 
 Set the script to executable.
 
-```sh
+```bash
 sudo chmod 755 /etc/init.d/uptime-kuma
 ```
 
 Create a user and group `uptime-kuma:uptime-kuma` for the service.
 
-```sh
+```bash
 sudo addgroup -S uptime-kuma
 sudo adduser -S -D -h /var/lib/uptime-kuma -s /sbin/nologin -G uptime-kuma -g uptime-kuma uptime-kuma
 ```
 
 Start the service and add it to default runlevel if preferred.
 
-```sh
+```bash
 sudo rc-service uptime-kuma start
 sudo rc-update add uptime-kuma
 ```

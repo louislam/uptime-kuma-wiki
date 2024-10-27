@@ -16,7 +16,7 @@ Labels to filter by include:
 
 Put the following into your Prometheus config:
 
-```
+```yml
   - job_name: 'uptime'
     scrape_interval: 30s
     scheme: http
@@ -30,17 +30,17 @@ Put the following into your Prometheus config:
 
 You should see the `monitor_response_time` and `monitor_status` metrics showing up in Prometheus
 
-There is also a [Grafana Dashboard](https://grafana.com/grafana/dashboards/14847) available to import into your Grafana installation to get the metrics integrated with your other monitoring tools.
+There is also a [Grafana Dashboard](https://github.com/louislam/uptime-kuma/tree/unofficial/grafana-dashboard) available to import into your Grafana installation to get the metrics integrated with your other monitoring tools.
 
 # Example PromQL queries
 
 Assuming we have HTTP monitors in place for bbc.co.uk and google.com:
 
 ```
-# Show all response rates gouped by site
+# Show all response rates grouped by site
 sum(monitor_response_time) by (monitor_name)
 # Show only the response time for BBC.co.uk
-sum(monitor_reponse_time{monitor_url="https://www.bbc.co.uk/"})
+sum(monitor_response_time{monitor_url="https://www.bbc.co.uk/"})
 # Show the current status of Google.com
 monitor_status{monitor_name="Google"}
 ```

@@ -1,12 +1,20 @@
 Now you can test pull requests without setting up any development environment.
 
 You just need to use this docker image with specified pr repo name:
+
+v2.x.x
+
+```bash
+docker run --rm -it -p 3000:3000 -p 3001:3001 --pull always -e 'UPTIME_KUMA_GH_REPO=<PR REPO, YOU CAN COPY>' louislam/uptime-kuma:pr-test2
+```
+
+v1.23.x
 ```bash
 docker run --rm -it -p 3000:3000 -p 3001:3001 --pull always -e 'UPTIME_KUMA_GH_REPO=<PR REPO, YOU CAN COPY>' louislam/uptime-kuma:pr-test
 ```
 
 Example:
-UPTIME_KUMA_GH_REPO=`tamasmagyar:test/add-cypress-tests`
+UPTIME_KUMA_GH_REPO=`chakflying:fix/beat-schedule-delay`
 
 You can copy the name from here easily:
 
