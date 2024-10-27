@@ -13,6 +13,12 @@
 
 ## Breaking Changes
 
+- The `:duration` of these endpoints accepts `24`, `24h`, `30d`, `1y` only
+  - <kuma-url>/api/badge/:monitorID/ping/:duration
+  - <kuma-url>/api/badge/:monitorID/uptime/:duration
+- Drop support for legacy browsers
+- The deprecated backup feature is completely removed now
+
 ### Docker only
 - Dropped support for Alpine base docker image (But you still can migrate to the v2)
 - If your host are using Debian / Raspbian Buster, you should not upgrade. Due to the bug of libseccomp2, it will be running into a startup problem.
