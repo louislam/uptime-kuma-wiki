@@ -84,7 +84,6 @@ If you don't need the above features, you can use the slim version.
 Rootless tags are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
 
 Known issues:
-#- nscd cannot be started, which means DNS caching will not work. nscd is important for Uptime Kuma, as it will reduce the amount of DNS queries and lookup time.
 - Docker monitor will not work without proper configure, as by default, it requires root privileges.
 - If file permission is not set correctly, it may cause some issues.
 - Unable to use embedded MariaDB, you will need to use external MariaDB.
