@@ -135,10 +135,10 @@ docker stop uptime-kuma
 ```
 
 2. Backup your `data` directory.
-3. Change the image tag to `louislam/uptime-kuma:2-beta`.
+3. Change the image tag to `louislam/uptime-kuma:beta`.
 
 ```bash
-docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:2-beta
+docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:beta
 ```
 
 4. Check the logs to see the migration process.
@@ -157,12 +157,12 @@ docker compose down
 
 2. Backup your `data` directory.
 
-3. Change the image tag to `louislam/uptime-kuma:2-beta`.
+3. Change the image tag to `louislam/uptime-kuma:beta`.
 
 ```yaml
 services:
   uptime-kuma:
-    image: louislam/uptime-kuma:2-beta
+    image: louislam/uptime-kuma:beta
     ....
 ```
 
