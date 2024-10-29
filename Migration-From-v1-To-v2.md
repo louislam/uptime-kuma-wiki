@@ -35,10 +35,10 @@
 
 ## Docker Tags
 
-### Recommended Tags
 
-> [!WARNING] 
-> Not available yet
+<!--
+
+### Recommended Tags
 
 | Tag        | Description                                      |
 |------------|--------------------------------------------------|
@@ -46,9 +46,6 @@
 | 2-slim     | (Slim) Latest version of v2                      |
 
 ### Other Tags
-
-> [!WARNING] 
-> Not available yet
 
 | Tag        | Description                                      |
 |------------|--------------------------------------------------|
@@ -59,9 +56,6 @@
 
 ### Rootless Tags
 
-> [!WARNING] 
-> Not available yet
-
 ⚠️ Rootless tags are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
 
 | Tag        | Description                                      |
@@ -71,6 +65,7 @@
 | 2.x.x-rootless | Pinned to a specific release (Rootless)         |
 | 2.x.x-slim-rootless | (Slim) Pinned to a specific release (Rootless) |
 
+-->
 
 ### Unstable Tags
 
