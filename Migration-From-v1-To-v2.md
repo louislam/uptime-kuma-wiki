@@ -131,6 +131,7 @@ Known issues:
 - ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should set the `data` directory to `node:node (1001:1001)` user. 
 - Docker monitor will not work without proper configure, as by default, it requires root privileges.
 - Unable to use embedded MariaDB, you will need to use external MariaDB.
+- Embedded MariaDB doesn't seem to be working on Docker Desktop (Windows), if you the `data` directory bind to a Windows folder.
 
 ## Migration Steps (Docker)
 
