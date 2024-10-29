@@ -38,10 +38,13 @@
 
 ## Docker Tags
 
+### Recommended Tags
+
+Not available yet.
 
 <!--
 
-### Recommended Tags
+
 
 | Tag        | Description                                      |
 |------------|--------------------------------------------------|
@@ -72,12 +75,35 @@
 
 ### Unstable Tags
 
-| Tag               | Description                               |
-|-------------------|-------------------------------------------|
-| beta              | The latest of Beta version of Uptime Kuma |
-| 2.x.x-beta.x | Pinned to a specific beta release         |
-| nightly2          | Development build                         |
-| nightly2-rootless | Rootless development build                |
+#### Beta Tags
+
+| Tag                | Description                               |
+|--------------------|-------------------------------------------|
+| beta               | The latest of Beta version of Uptime Kuma |
+| beta-slim          | (Slim) The latest of Beta version of Uptime Kuma |
+
+#### Other Beta Tags
+
+| Tag                | Description                               |
+|--------------------|-------------------------------------------|
+| 2.x.x-beta.x       | Pinned to a specific beta release         |
+| 2.x.x-beta-slim.x  | (Slim) Pinned to a specific beta release  |
+
+#### Beta Rootless Tags
+
+| Tag                | Description                               |
+|--------------------|-------------------------------------------|
+| beta-rootless      | The latest of Beta version of Uptime Kuma (Rootless) |
+| beta-slim-rootless | (Slim) The latest of Beta version of Uptime Kuma (Rootless) |
+| 2.x.x-beta-rootless.x | Pinned to a specific beta release (Rootless) |
+| 2.x.x-beta-slim-rootless.x | (Slim) Pinned to a specific beta release (Rootless) |
+
+#### Nightly Tags
+
+| Tag                | Description                               |
+|--------------------|-------------------------------------------|
+| nightly2           | Development build                         |
+| nightly2-rootless  | Rootless development build                |
 
 ## Slim vs Full?
 
