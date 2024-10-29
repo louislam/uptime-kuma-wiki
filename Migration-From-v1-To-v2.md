@@ -1,4 +1,5 @@
-# Migration from v1 to v2
+> [!WARNING] 
+> It is a major version update. It contains some breaking changes. Please read the migration guide carefully if you want to upgrade from v1 to v2.
 
 ## Before You Start
 
