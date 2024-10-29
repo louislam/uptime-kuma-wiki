@@ -6,7 +6,7 @@
 - Stop your Uptime Kuma and:
    - Backup your `data` directory.
    - Make sure you have a backup of your `data` directory again.
-   - Make sure you have a backup of your `data` directory again again.
+   - Make sure you have a backup of your `data` directory again and again.
 - The migration process could take some time to complete, depending on the size of your database.
    - You should be able to view the logs of the migration process in the console.
    - Do not interrupt the migration process.
