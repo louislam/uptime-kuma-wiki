@@ -16,10 +16,14 @@
 ## Breaking Changes
 
 - The `:duration` of these endpoints accepts `24`, `24h`, `30d`, `1y` only
-  - <kuma-url>/api/badge/:monitorID/ping/:duration
-  - <kuma-url>/api/badge/:monitorID/uptime/:duration
+  - `<kuma-url>/api/badge/:monitorID/ping/:duration`
+  - `<kuma-url>/api/badge/:monitorID/uptime/:duration`
 - Dropped support for legacy browsers
-- The deprecated backup feature is completely removed now
+- The deprecated [backup](https://github.com/louislam/uptime-kuma/pull/3892) and [CachableLookup](https://github.com/louislam/uptime-kuma/issues/3762) features are completely removed now
+- Default retires for **NEW**ly created monitors are now `0` instead of `1` to prevent users being confused
+- `Email (SMTP)` switched templating for subjects/bodys from a custom-regex to [LiquidJS](https://liquidjs.com/).
+  LiquidJS **does discriminate between case-ness** of variables and **ignores all non-matching variables**.
+  These are the supported variables: `name`, `msg`, `status`, `heartbeatJSON`, `monitorJSON`, `hostnameOrUrl`
 
 ### Docker only
 - Dropped support for Alpine base docker image (But you still can migrate to the v2)
