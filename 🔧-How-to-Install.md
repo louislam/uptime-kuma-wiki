@@ -1,7 +1,7 @@
 ### 🐳 Docker
 
 ```bash
-docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+docker run -d --restart=unless-stopped -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
 
 Uptime Kuma is now running on http://localhost:3001
@@ -16,7 +16,7 @@ Browse to http://localhost:3001 after started.
 #### Changing Port or Volume
 
 ```bash
-docker run -d --restart=always -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
+docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
 
 #### Docker Tags Description
