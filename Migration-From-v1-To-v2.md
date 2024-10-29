@@ -23,7 +23,7 @@
 
 ### Docker only
 - Dropped support for Alpine base docker image (But you still can migrate to the v2)
-- If your host are using Debian / Raspbian Buster, you should not upgrade. Due to the bug of libseccomp2, it will be running into a startup problem.
+- If your host are using Debian / Raspbian Buster, you should not upgrade. Due to the bug of libseccomp2, it will be running into a startup problem. Read more: https://github.com/louislam/uptime-kuma/issues/41#issuecomment-896164516
 
 ### Non Docker
 - Dropped support for Node.js 14 and 16. The minimum supported version of Node.js is 18. Node.js 20 is recommended.
@@ -142,7 +142,23 @@ docker compose logs -f
 
 ## Migration Steps (Non-Docker)
 
-TODO
+Beta is not available for non-docker yet.
+
+<!--
+1. Stop your Uptime Kuma.
+
+```bash
+pm2 stop uptime-kuma
+```
+
+2. Backup your `data` directory.
+3. Check your Node.js version, the minimum supported version is 18. Node.js 20 is recommended.
+
+```bash
+node --version
+```
+-->
+
 
 ## FAQ
 
