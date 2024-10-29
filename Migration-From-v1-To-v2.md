@@ -1,6 +1,9 @@
 > [!WARNING] 
 > It is a major version update. It contains some breaking changes. Please read the migration guide carefully if you want to upgrade from v1 to v2.
 
+> [!WARNING] 
+> Beta only
+
 ## Before You Start
 
 - Stop your Uptime Kuma and:
