@@ -4,6 +4,7 @@
     * [How to Install](🔧-How-to-Install.md)
     * [How to Update](🆙-How-to-Update.md)
     * [Notification Methods](Notification-Methods.md)
+    * [(Beta) Migration from v1 to v2](Migration-From-v1-To-v2.md)
 
 * **Advanced**
     * [Reverse Proxy](Reverse-Proxy.md)
