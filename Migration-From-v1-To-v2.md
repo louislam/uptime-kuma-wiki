@@ -37,12 +37,18 @@
 
 ### Recommended Tags
 
+> [!WARNING] 
+> Not available yet
+
 | Tag        | Description                                      |
 |------------|--------------------------------------------------|
 | 2          | Latest version of v2 (Recommended)               |
 | 2-slim     | (Slim) Latest version of v2                      |
 
 ### Other Tags
+
+> [!WARNING] 
+> Not available yet
 
 | Tag        | Description                                      |
 |------------|--------------------------------------------------|
@@ -52,6 +58,9 @@
 | next-slim  | (Slim) Latest version of Uptime Kuma             |
 
 ### Rootless Tags
+
+> [!WARNING] 
+> Not available yet
 
 ⚠️ Rootless tags are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
 
