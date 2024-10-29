@@ -127,8 +127,9 @@ If you don't need the above features, you can use the slim version.
 Rootless tags are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
 
 Known issues:
+- ⚠️ Not recommended for upgrading from v1 to v2.
+- ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should set the `data` directory to `node:node (1001:1001)` user. 
 - Docker monitor will not work without proper configure, as by default, it requires root privileges.
-- If file permission is not set correctly, it may cause some issues.
 - Unable to use embedded MariaDB, you will need to use external MariaDB.
 
 ## Migration Steps (Docker)
