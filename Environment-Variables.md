@@ -22,6 +22,8 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_SSL_KEY_PASSPHRASE` or `SSL_KEY_PASSPHRASE`       | `--ssl-key-passphrase=`                 | (1.21.1) SSL Key Passphrase                                              |            |
 | `UPTIME_KUMA_CLOUDFLARED_TOKEN`        | `--cloudflared-token=`                 | (1.14.0) Cloudflare Tunnel Token                                              |            |
 | `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN`     | `--disable-frame-sameorigin=` | By default, Uptime Kuma is not allowed in iframe if the domain name is not the same as the parent. It protects your Uptime Kuma to be a phishing website. If you don't need this protection, you can set it to `true` | `false` |
+| `UPTIME_KUMA_WS_ORIGIN_CHECK`     |  | By default, Uptime Kuma is verifying that the websockets [`ORIGIN`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin)-Header matches your servers hostname. If you don't need this protection, you can set it to `bypass`. See [GHSA-mj22-23ff-2hrr](https://github.com/louislam/uptime-kuma/security/advisories/GHSA-mj22-23ff-2hrr) for further context. | `cors-like` |
+| `UPTIME_KUMA_ALLOW_ALL_CHROME_EXEC`        | `--allow-all-chrome-exec=`                 | (1.23.0) Allow to specify any executables as Chromium                                              |    `0`        |
 | `NODE_EXTRA_CA_CERTS`        |                  | Add your self-signed ca certs. (e.g. /cert/path/CAcert.pem) [Read more](https://github.com/louislam/uptime-kuma/issues/1380)                                            |            |
 | `NODE_TLS_REJECT_UNAUTHORIZED`        |                  | Ignore all TLS errors                                      |    `0`        |
 | `NODE_OPTIONS` | | Set it to `--insecure-http-parser`, if you encountered error `Invalid header value char` when your website using WAF | |
@@ -43,3 +45,4 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_HIDE_LOG` |                            | (1.15.0) Examples: `debug_monitor,info_monitor,debug_cert,warn_monitor`                              |            |
 | `SQL_LOG` | | Set `1` to enable | | |
 | `UPTIME_KUMA_ENABLE_EMBEDDED_MARIADB`| | (2.0.0) Set `1` to enable | | |
+| `UPTIME_KUMA_IN_CONTAINER`| | (1.23.0) Is Uptime Kuma inside a container? | | |

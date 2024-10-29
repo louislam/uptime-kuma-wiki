@@ -18,6 +18,8 @@ https://github.com/louislam/uptime-kuma-wiki
 
 ## History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=louislam/uptime-kuma&type=Date)](https://star-history.com/#louislam/uptime-kuma&Date)
+
 * (2021-08-21) Reach 1001 Stargazers, thanks everyone!
 * (2021-08-26) Reach 2066 Stargazers. Grow so fast! That is unexpected!
 * (2021-08-31) Reach 2651 Stargazers. Amazing!
@@ -49,3 +51,9 @@ https://github.com/louislam/uptime-kuma-wiki
 * (2023-01-09) {"⭐": 27783, "🐳": 31688853 }
 * (2023-02-06) let starCount = 29141; let dockerPullCount = 32185677;
 * (2023-02-26) `<div class="⭐">30,063</div><div class="🐳">32,606,170</div>`
+* (2023-05-11) ⭐33132,🐳34513470
+* (2023-10-09) ⭐39263,🐳44805032
+* (2023-11-03) ⭐40093,🐳47255050
+* (2023-12-05) ⭐42,297 🐳51,241,294
+* (2024-04-05) ⭐48,341 🐳68,668,482
+* (2024-10-16) ⭐57,263 🐳93,911,095
