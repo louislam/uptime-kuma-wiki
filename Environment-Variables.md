@@ -46,3 +46,14 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `SQL_LOG` | | Set `1` to enable | | |
 | `UPTIME_KUMA_ENABLE_EMBEDDED_MARIADB`| | (2.0.0) Set `1` to enable | | |
 | `UPTIME_KUMA_IN_CONTAINER`| | (1.23.0) Is Uptime Kuma inside a container? | | |
+
+## MariaDB Environment Variables
+
+| Environment Variable      | Description                        |
+| ------------------------- | ---------------------------------- |
+| `UPTIME_KUMA_DB_TYPE`     | Database Type `sqlite`, `mariadb`  |
+| `UPTIME_KUMA_DB_HOSTNAME` | Database hostname. for mariadb     |
+| `UPTIME_KUMA_DB_PORT`     | Database port. for mariadb, `3306` |
+| `UPTIME_KUMA_DB_NAME`     | Database name                      |
+| `UPTIME_KUMA_DB_USERNAME` | Database username                  |
+| `UPTIME_KUMA_DB_PASSWORD` | Database password                  |
