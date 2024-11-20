@@ -190,3 +190,8 @@ To try the self-hosted uptime-kuma, [🚀 one-click deploy with Dome](https://ap
 ## Deploy to Fly.io
 
 You can host uptime-kuma [with a single command at Fly.io](https://community.fly.io/t/hosting-uptime-kuma-on-fly-io/14352) and run on its included Hobby Plan usage.
+
+## Deploy to FlashPanel
+
+You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma.html) with [FlashPanel](https://flashpanel.io) (a server management control panel) for free on one server with up to 10 websites.
+
