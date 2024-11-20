@@ -168,6 +168,13 @@ https://github.com/yzwijsen/deploy-uptime-kuma-azure
 Run uptime-kuma with S3 persistent sqlite database:
 https://github.com/fluential/litestream-uptime-kuma/
 
+### One-Click Deployment on Alibaba Cloud
+
+[![Deploy on AlibabaCloud ComputeNest](https://service-info-public.oss-cn-hangzhou.aliyuncs.com/computenest-en.svg)](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Higress社区版)
+
+Follow the deployment guide to deploy Uptime Kuma on Alibaba Cloud. Both domestic site and internationl sites are supported.
+- [Deployment Guide in English](https://computenest.console.aliyun.com/service/detail/ap-southeast-1/service-6a4ce994c30c49b1ae6b/2?type=user&isRecommend=true)
+- [中文部署文档](https://computenest.console.aliyun.com/service/detail/cn-hangzhou/service-34d66f31479747cd9957/2?type=user&isRecommend=true)
 
 ### uptime-kuma-helper
 
