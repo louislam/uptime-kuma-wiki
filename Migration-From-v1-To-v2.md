@@ -135,7 +135,7 @@ Known issues:
 - ⚠️ Not recommended for upgrading from v1 to v2.
 - ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should make sure the ownership of the `data` directory is set to the `node:node (1000:1000)` user. 
 - Docker monitor will not work without proper configuration, as by default it requires root privileges.
-- Embedded MariaDB doesn't seem to be working on Docker Desktop (Windows), if the `data` directory is bound to a Windows folder.
+- Embedded MariaDB doesn't seem to be working on Docker Desktop (Windows), if the `data` directory is mounted to a Windows folder.
 
 ## Migration Steps (Docker)
 
