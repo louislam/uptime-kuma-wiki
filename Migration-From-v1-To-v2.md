@@ -2,7 +2,7 @@
 > It is a major version update. It contains some breaking changes. Please read the migration guide carefully if you want to upgrade from v1 to v2.
 
 > [!WARNING] 
-> Beta only
+> v2 is available in **Beta** only. You may encounter bugs and stability issues.
 
 ## Before You Start
 
@@ -11,7 +11,7 @@
    - Make sure you have a backup of your `data` directory again.
    - Make sure you have a backup of your `data` directory again and again.
 - The migration process could take some time to complete, depending on the size of your database.
-   - You should be able to view the logs of the migration process in the console.
+   - You should be able to view logs of the migration process in the console.
    - Do not interrupt the migration process.
    - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
 - Beta version is not stable and may contain bugs, especially for the first beta release.
@@ -19,21 +19,25 @@
 
 ## Breaking Changes
 
-- The `:duration` of these endpoints accepts `24`, `24h`, `30d`, `1y` only
+- The `:duration` of these badge endpoints now accept values `24`, `24h`, `30d`, `1y` only
   - `<kuma-url>/api/badge/:monitorID/ping/:duration`
   - `<kuma-url>/api/badge/:monitorID/uptime/:duration`
 - Dropped support for legacy browsers
-- The deprecated [backup](https://github.com/louislam/uptime-kuma/pull/3892) and [CachableLookup](https://github.com/louislam/uptime-kuma/issues/3762) features are completely removed now
-- Default retires for **NEW**ly created monitors are now `0` instead of `1` to prevent users being confused
-- `Email (SMTP)` switched templating for subjects/bodys from a custom-regex to [LiquidJS](https://liquidjs.com/).
-  LiquidJS **does discriminate between case-ness** of variables and **ignores all non-matching variables**.
-  These are the supported variables: `name`, `msg`, `status`, `heartbeatJSON`, `monitorJSON`, `hostnameOrUrl`
+- Removed deprecated feature [Backup/Restore from JSON](https://github.com/louislam/uptime-kuma/pull/3892). Backing up the `data` directory is currently the only supported backup method.
+- Removed deprecated feature [DNS Cache for HTTP monitors](https://github.com/louislam/uptime-kuma/issues/3762). Consider using the bundled `nscd` for docker installation.
+- Updated default retries for **NEWLY** created monitors from `1` to `0` to prevent user confusion
+- Switched `Email (SMTP)` notification subject/body templating from a custom-regex to [LiquidJS](https://liquidjs.com/). In LiquidJS,
+    - variables are now **case-sensitive**, and
+    - **all non-matching variables are ignored**.
+    - These are the supported variables: `name`, `msg`, `status`, `heartbeatJSON`, `monitorJSON`, `hostnameOrUrl`. We don't have documentation for these yet, but you can refer to the [source code](https://github.com/louislam/uptime-kuma/blob/master/server/model/monitor.js) for the data structure.
 
 ### Docker only
-- Dropped support for Alpine base docker image (But you still can migrate to the v2)
-- If your host are using Debian / Raspbian Buster, you should not upgrade. Due to the bug of libseccomp2, it will be running into a startup problem. Read more: https://github.com/louislam/uptime-kuma/issues/41#issuecomment-896164516
+
+- Dropped support for Alpine based docker images (But you still can migrate to v2)
+- If your host is using Debian / Raspbian Buster, you should not upgrade. Due to a bug in the libseccomp2 library, it will run into a startup problem. Read more: https://github.com/louislam/uptime-kuma/issues/41#issuecomment-896164516
 
 ### Non Docker
+
 - Dropped support for Node.js 14 and 16. The minimum supported version of Node.js is 18. Node.js 20 is recommended.
 
 ## Docker Tags
@@ -91,7 +95,7 @@ Not available yet.
 #### Beta Rootless Tags
 
 > [!WARNING]
-> Rootless images are not recommended for upgrading from v1 to v2, you will run into startup issues likely.
+> Rootless images are not recommended for upgrading from v1 to v2, you will likely run into startup issues.
 
 > [!WARNING] 
 > ⚠️ Rootless images are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
@@ -112,25 +116,26 @@ Not available yet.
 
 ## Slim vs Full?
 
-Slim version is a smaller image size, it is about ~300MB to ~400MB smaller than the full version.
+Slim version has a smaller image size, it is about ~300MB to ~400MB smaller than the full version.
 
-Full version includes:
-- Embedded MariaDB
-- Embedded Chromium
-- Embedded some fonts for Chromium
-- Any big dependencies in the future may be included in the full version only too
+| Full Version | Slim Version |
+| ------------ | -------------|
+| ✔️ Embedded MariaDB - Can be used as a low-maintenance, durable and performant storage backend | ❌ No embedded MariaDB - but you can still connect to an external MariaDB/MySQL database as storage backend |
+| ✔️ Embedded Chromium - Can be used for the "Browser Engine" monitor type. Some fonts are also included to improve rendering | ❌ No embedded Chromium - for the "Browser Engine" monitor type, an external chromium instance or further setup is required  |
+
+Any big dependencies in the future may be included in the full version only too.
 
 If you don't need the above features, you can use the slim version.
 
 ## Rootless vs Non-Rootless?
 
-Rootless tags are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
+Rootless tags are for users who wants to run Uptime Kuma without root privileges, but some features may not work as expected.
 
 Known issues:
 - ⚠️ Not recommended for upgrading from v1 to v2.
-- ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should set the `data` directory to `node:node (1000:1000)` user. 
-- Docker monitor will not work without proper configure, as by default, it requires root privileges.
-- Embedded MariaDB doesn't seem to be working on Docker Desktop (Windows), if you the `data` directory bind to a Windows folder.
+- ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should make sure the ownership of the `data` directory is set to the `node:node (1000:1000)` user. 
+- Docker monitor will not work without proper configuration, as by default it requires root privileges.
+- Embedded MariaDB doesn't seem to be working on Docker Desktop (Windows), if the `data` directory is mounted to a Windows folder.
 
 ## Migration Steps (Docker)
 
