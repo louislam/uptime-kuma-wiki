@@ -14,3 +14,4 @@ Feel free to add your project here by making a pull request in this wiki repo: h
 - [AutoKuma](https://github.com/BigBoot/AutoKuma) - Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.
 - [Uptime Mate](https://github.com/schech1/uptime-buddy) - An Uptime Kuma monitoring tool for Apple Watch.
 - [Uptime Kuma Push Agent](https://github.com/manprinsen/uptime-kuma-agent) - A lightweight monitoring agent with Go, Python, and shell implementations, designed to send network uptime data to Uptime Kuma's Push Monitor.
+- [MMM-AuthenticatedUptimeKuma](https://github.com/totoluto/MMM-AuthenticatedUptimeKuma) - A MagicMirror² module which allows you to display the status of your monitors on your mirror in different ways
