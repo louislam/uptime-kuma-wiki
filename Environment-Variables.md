@@ -48,6 +48,7 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_IN_CONTAINER`| | (1.23.0) Is Uptime Kuma inside a container? | | |
 
 ## MariaDB Environment Variables
+Only Version 2
 
 | Environment Variable      | Description                        |
 | ------------------------- | ---------------------------------- |
