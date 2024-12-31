@@ -228,7 +228,8 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
   6. Click on the tab *Custom Header*
   7. Click `Create` -> `Websockets`, this automatically fills in the required headers for websockets.
   
-  # Traefik
+- <details><summary>Traefik</summary>
+  
   ```yml
   labels:
       - "traefik.enable=true"
@@ -238,6 +239,7 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
       - "traefik.http.routers.uptime-kuma.tls.certresolver=myresolver"
       - "traefik.http.services.uptime-kuma.loadBalancer.server.port=3001"
   ```
+  
   Add the above to your `docker-compose.yml` file and replace "YourOwnHostname" with the hostname you want to use. When setup correctly, Traefik can automatically get a Let’s Encrypt certificate for your service.
 
 
