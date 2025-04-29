@@ -196,3 +196,6 @@ You can host uptime-kuma [with a single command at Fly.io](https://community.fly
 
 You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma.html) with [FlashPanel](https://flashpanel.io) (a server management control panel) for free on one server with up to 10 websites.
 
+## Uptime Kuma On Pi Deploy Android
+
+See [this guide](https://nanonotables.blogspot.com/2025/04/uptime-kuma-on-pi-deploy-tutorial.html) on how to convert a rooted android smartphone into an uptime kuma instance.
