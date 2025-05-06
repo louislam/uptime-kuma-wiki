@@ -188,6 +188,12 @@ Run with one click on [Zeabur](https://zeabur.com/).
 
 [https://docs.zeabur.com/marketplace/uptime-kuma](https://zeabur.com/docs/marketplace/uptime-kuma)
 
+### One-Click Deployment on Sealos
+
+Run with one click on [Sealos](https://sealos.io/).
+
+[![Deploy on Sealos](https://sealos.io/Deploy-on-Sealos.svg)](https://template.sealos.io/deploy?templateName=uptime-kuma)
+
 ### Install on Dome
 
 [![Deploy to Dome](https://trydome.io/button-2.gif)](https://app.trydome.io/signup?package=uptime-kuma)
