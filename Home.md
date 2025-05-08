@@ -8,7 +8,7 @@ A little bear is watching your website.🐻🐻🐻
 
 ### Pronunciation 
 
-http://ipa-reader.xyz/?text=%CB%88%CA%8Cpta%C9%AAm%20k%C9%AF%CC%9F%E1%B5%9Dma%CC%A0&voice=Joey
+https://ipa-reader.com/?text=%CB%88%CA%8Cpta%C9%AAm%20k%C9%AF%CC%9F%E1%B5%9Dma%CC%A0&voice=Joey
 
 
 ## How to contribute to this wiki?
