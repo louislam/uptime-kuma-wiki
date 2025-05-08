@@ -1,21 +1,20 @@
-> [!WARNING] 
+> [!WARNING]
 > It is a major version update. It contains some breaking changes. Please read the migration guide carefully if you want to upgrade from v1 to v2.
 
-> [!WARNING] 
+> [!WARNING]
 > v2 is available in **Beta** only. You may encounter bugs and stability issues.
 
 ## Before You Start
 
 - Stop your Uptime Kuma and:
-   - Backup your `data` directory.
-   - Make sure you have a backup of your `data` directory again.
-   - Make sure you have a backup of your `data` directory again and again.
+  - Backup your `data` directory.
+  - Make sure you have a backup of your `data` directory again.
+  - Make sure you have a backup of your `data` directory again and again.
 - The migration process could take some time to complete, depending on the size of your database.
-   - You should be able to view logs of the migration process in the console.
-   - Do not interrupt the migration process.
-   - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
+  - You should be able to view logs of the migration process in the console.
+  - Do not interrupt the migration process.
+  - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
 - Beta version is not stable and may contain bugs, especially for the first beta release.
-
 
 ## Breaking Changes
 
@@ -27,9 +26,9 @@
 - Removed deprecated feature [DNS Cache for HTTP monitors](https://github.com/louislam/uptime-kuma/issues/3762). Consider using the bundled `nscd` for docker installation.
 - Updated default retries for **NEWLY** created monitors from `1` to `0` to prevent user confusion
 - Switched `Email (SMTP)` notification subject/body templating from a custom-regex to [LiquidJS](https://liquidjs.com/). In LiquidJS,
-    - variables are now **case-sensitive**, and
-    - **all non-matching variables are ignored**.
-    - These are the supported variables: `name`, `msg`, `status`, `heartbeatJSON`, `monitorJSON`, `hostnameOrUrl`. We don't have documentation for these yet, but you can refer to the [source code](https://github.com/louislam/uptime-kuma/blob/master/server/model/monitor.js) for the data structure.
+  - variables are now **case-sensitive**, and
+  - **all non-matching variables are ignored**.
+  - These are the supported variables: `name`, `msg`, `status`, `heartbeatJSON`, `monitorJSON`, `hostnameOrUrl`. We don't have documentation for these yet, but you can refer to the [source code](https://github.com/louislam/uptime-kuma/blob/master/server/model/monitor.js) for the data structure.
 
 ### Docker only
 
@@ -80,48 +79,48 @@ Not available yet.
 
 #### Beta Tags
 
-| Tag                | Description                               |
-|--------------------|-------------------------------------------|
-| beta               | The latest of Beta version of Uptime Kuma |
-| beta-slim          | (Slim) The latest of Beta version of Uptime Kuma |
+| Tag       | Description                                      |
+| --------- | ------------------------------------------------ |
+| beta      | The latest of Beta version of Uptime Kuma        |
+| beta-slim | (Slim) The latest of Beta version of Uptime Kuma |
 
 #### Other Beta Tags
 
-| Tag                | Description                               |
-|--------------------|-------------------------------------------|
-| 2.x.x-beta.x       | Pinned to a specific beta release         |
-| 2.x.x-beta-slim.x  | (Slim) Pinned to a specific beta release  |
+| Tag               | Description                              |
+| ----------------- | ---------------------------------------- |
+| 2.x.x-beta.x      | Pinned to a specific beta release        |
+| 2.x.x-beta-slim.x | (Slim) Pinned to a specific beta release |
 
 #### Beta Rootless Tags
 
 > [!WARNING]
 > Rootless images are not recommended for upgrading from v1 to v2, you will likely run into startup issues.
 
-> [!WARNING] 
+> [!WARNING]
 > ⚠️ Rootless images are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
 
-| Tag                | Description                               |
-|--------------------|-------------------------------------------|
-| beta-rootless      | The latest of Beta version of Uptime Kuma (Rootless) |
-| beta-slim-rootless | (Slim) The latest of Beta version of Uptime Kuma (Rootless) |
-| 2.x.x-beta-rootless.x | Pinned to a specific beta release (Rootless) |
-| 2.x.x-beta-slim-rootless.x | (Slim) Pinned to a specific beta release (Rootless) |
+| Tag                        | Description                                                 |
+| -------------------------- | ----------------------------------------------------------- |
+| beta-rootless              | The latest of Beta version of Uptime Kuma (Rootless)        |
+| beta-slim-rootless         | (Slim) The latest of Beta version of Uptime Kuma (Rootless) |
+| 2.x.x-beta-rootless.x      | Pinned to a specific beta release (Rootless)                |
+| 2.x.x-beta-slim-rootless.x | (Slim) Pinned to a specific beta release (Rootless)         |
 
 #### Nightly Tags
 
-| Tag                | Description                               |
-|--------------------|-------------------------------------------|
-| nightly2           | Development build                         |
-| nightly2-rootless  | Rootless development build                |
+| Tag               | Description                |
+| ----------------- | -------------------------- |
+| nightly2          | Development build          |
+| nightly2-rootless | Rootless development build |
 
 ## Slim vs Full?
 
 Slim version has a smaller image size, it is about ~300MB to ~400MB smaller than the full version.
 
-| Full Version | Slim Version |
-| ------------ | -------------|
-| ✔️ Embedded MariaDB - Can be used as a low-maintenance, durable and performant storage backend | ❌ No embedded MariaDB - but you can still connect to an external MariaDB/MySQL database as storage backend |
-| ✔️ Embedded Chromium - Can be used for the "Browser Engine" monitor type. Some fonts are also included to improve rendering | ❌ No embedded Chromium - for the "Browser Engine" monitor type, an external chromium instance or further setup is required  |
+| Full Version                                                                                                                | Slim Version                                                                                                                |
+| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| ✔️ Embedded MariaDB - Can be used as a low-maintenance, durable and performant storage backend                              | ❌ No embedded MariaDB - but you can still connect to an external MariaDB/MySQL database as storage backend                 |
+| ✔️ Embedded Chromium - Can be used for the "Browser Engine" monitor type. Some fonts are also included to improve rendering | ❌ No embedded Chromium - for the "Browser Engine" monitor type, an external chromium instance or further setup is required |
 
 Any big dependencies in the future may be included in the full version only too.
 
@@ -132,8 +131,9 @@ If you don't need the above features, you can use the slim version.
 Rootless tags are for users who wants to run Uptime Kuma without root privileges, but some features may not work as expected.
 
 Known issues:
+
 - ⚠️ Not recommended for upgrading from v1 to v2.
-- ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should make sure the ownership of the `data` directory is set to the `node:node (1000:1000)` user. 
+- ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should make sure the ownership of the `data` directory is set to the `node:node (1000:1000)` user.
 - Docker monitor will not work without proper configuration, as by default it requires root privileges.
 - Embedded MariaDB doesn't seem to be working on Docker Desktop (Windows), if the `data` directory is mounted to a Windows folder.
 
@@ -172,9 +172,9 @@ docker compose down
 
 ```yaml
 services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:beta
-    ....
+    uptime-kuma:
+        image: louislam/uptime-kuma:beta
+....
 ```
 
 4. Start your Uptime Kuma stack.
@@ -207,7 +207,6 @@ pm2 stop uptime-kuma
 node --version
 ```
 -->
-
 
 ## FAQ
 

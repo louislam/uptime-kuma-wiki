@@ -4,26 +4,26 @@ If you already use [Prometheus.io](https://prometheus.io) or a platform that sup
 
 Labels to filter by include:
 
-| Label Name | Description |
-|------------|-------------|
-|monitor_name| The "Friendly Name" of the monitor |
-|monitor_type| The type (HTTP, keyword, TCP) of monitoring check |
-|monitor_url | The URL to be monitored (HTTP, keyword)
-|monitor_hostname | The Hostname to be monitored (TCP) |
-|monitor_port | The port to be monitored (TCP) |
+| Label Name       | Description                                       |
+| ---------------- | ------------------------------------------------- |
+| monitor_name     | The "Friendly Name" of the monitor                |
+| monitor_type     | The type (HTTP, keyword, TCP) of monitoring check |
+| monitor_url      | The URL to be monitored (HTTP, keyword)           |
+| monitor_hostname | The Hostname to be monitored (TCP)                |
+| monitor_port     | The port to be monitored (TCP)                    |
 
 # Prometheus Configuration
 
 Put the following into your Prometheus config:
 
 ```yml
-  - job_name: 'uptime'
-    scrape_interval: 30s
-    scheme: http
-    metrics_path: '/metrics'
-    static_configs:
-      - targets: ['uptime-kuma.url']
-    basic_auth: # Only needed if authentication is enabled (default) 
+- job_name: "uptime"
+  scrape_interval: 30s
+  scheme: http
+  metrics_path: "/metrics"
+  static_configs:
+      - targets: ["uptime-kuma.url"]
+  basic_auth: # Only needed if authentication is enabled (default)
       username: <your user>
       password: <your password>
 ```

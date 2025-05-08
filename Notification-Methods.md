@@ -1,6 +1,6 @@
 Uptime Kuma supports a lot of notifications.
 
-For native support platforms, please read here: 
+For native support platforms, please read here:
 
 [https://github.com/louislam/uptime-kuma/tree/master/server/notification-providers](https://github.com/louislam/uptime-kuma/tree/master/server/notification-providers)
 

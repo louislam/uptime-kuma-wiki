@@ -1,0 +1,12 @@
+{
+    // Run `deno fmt` to format
+    "fmt": {
+        "indentWidth": 4,
+        "semiColons": true,
+        "singleQuote": false,
+        "lineWidth": 9999,
+        "exclude": [
+            "Badge.md" // Formatting not stable for this file
+        ]
+    }
+}
