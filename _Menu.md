@@ -1,17 +1,26 @@
+### Installation
 
-* **Introduction**
-    * [Home](README.md)
-    * [How to Install](🔧-How-to-Install.md)
-    * [How to Update](🆙-How-to-Update.md)
-    * [Notification Methods](Notification-Methods.md)
-    * [(Beta) Migration from v1 to v2](Migration-From-v1-To-v2.md)
+- [🔧 How to Install](🔧-How-to-Install)
+- [🆙 How to Update](🆙-How-to-Update)
 
-* **Advanced**
-    * [Reverse Proxy](Reverse-Proxy.md)
-    * [Environment Variables](Environment-Variables.md)
-    * [Cloudflare Side Note](Cloudflare-Side-Note.md)
-    * [Prometheus Integration](Prometheus-Integration.md)
+### Documentation
 
-* **Tools**
-    * [Reset Password via CLI](Reset-Password-via-CLI.md)
+- [Notification Methods](Notification-Methods)
+- [Badge](Badge)
+- [Reverse Proxy](Reverse-Proxy)
+- [Reset Password via CLI](Reset-Password-via-CLI)
+- [API Documentation](API-Documentation)
 
+### Development
+
+- [Test Pull Requests](Test-Pull-Requests)
+- [Setup Development Environment](Setup-Development-Environment)
+
+- **Advanced**
+
+  - [Environment Variables](Environment-Variables.md)
+  - [Cloudflare Side Note](Cloudflare-Side-Note.md)
+  - [Prometheus Integration](Prometheus-Integration.md)
+
+- **Tools**
+  - [Reset Password via CLI](Reset-Password-via-CLI.md)
