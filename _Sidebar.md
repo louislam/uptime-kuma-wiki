@@ -1,40 +1,53 @@
-- [Home](https://github.com/louislam/uptime-kuma/wiki)
-- [Troubleshooting](https://github.com/louislam/uptime-kuma/wiki/Troubleshooting)
+# Uptime Kuma Wiki
 
-## Installation & Configuration
-- [🔧 How to Install](https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install)
-- [🆙 How to Update](https://github.com/louislam/uptime-kuma/wiki/%F0%9F%86%99-How-to-Update)
-- [Environment Variables](https://github.com/louislam/uptime-kuma/wiki/Environment-Variables)
-- [(Beta) Migration from v1 to v2](https://github.com/louislam/uptime-kuma/wiki/Migration-From-v1-To-v2)
+-   [Home](./Home)
 
-## Features 
-- [Reset Password via CLI](https://github.com/louislam/uptime-kuma/wiki/Reset-Password-via-CLI)
-- [Status Page](https://github.com/louislam/uptime-kuma/wiki/Status-Page)
-- [Notification Methods](https://github.com/louislam/uptime-kuma/wiki/Notification-Methods)
-- [Badge](https://github.com/louislam/uptime-kuma/wiki/Badge)
-- [How to Monitor Docker Containers](https://github.com/louislam/uptime-kuma/wiki/How-to-Monitor-Docker-Containers)
-- [Maintenance](https://github.com/louislam/uptime-kuma/wiki/Maintenance)
-- [3rd Party Addons/Apps](https://github.com/louislam/uptime-kuma/wiki/3rd-Party-Addons-Apps)
-- [API Keys](https://github.com/louislam/uptime-kuma/wiki/API-Keys)
+## Installation
 
-## Network
-- [Reverse Proxy](https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy)
-- [Reverse Proxy with Cloudflare Tunnel](https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy-with-Cloudflare-Tunnel)
-- [Cloudflare Side Note](https://github.com/louislam/uptime-kuma/wiki/Cloudflare-Side-Note)
+-   [🔧 How to Install](./🔧-How-to-Install)
+    -   [Non-Docker Environments](./🔧-How-to-Install#-non-docker)
+    -   [Docker Environments](./🔧-How-to-Install#-docker)
+    -   [Reverse Proxy](./Reverse-Proxy)
+    -   [Cloudflare](./Cloudflare-Side-Note)
+    -   [Cloudflare Tunnel](./Reverse-Proxy-with-Cloudflare-Tunnel)
+    -   [OpenRC Script](./OpenRC-Script)
+    -   [Systemd Unit File](./Systemd-Unit-File)
 
-## Integrations
-- [Prometheus Integration](https://github.com/louislam/uptime-kuma/wiki/Prometheus-Integration)
-- [Systemd Unit File](https://github.com/louislam/uptime-kuma/wiki/Systemd-Unit-File)
-- [OpenRC Script](https://github.com/louislam/uptime-kuma/wiki/OpenRC-Script)
+## Manage
 
-## Development & Contributions
-- [CONTRIBUTING Rules & Guide](https://github.com/louislam/uptime-kuma/blob/master/CONTRIBUTING.md)
-- [How to Translate](https://github.com/louislam/uptime-kuma/tree/master/src/lang#how-to-translate)
-- [Setup Development Environment](https://github.com/louislam/uptime-kuma/wiki/Setup-Development-Environment)
-- [Test Pull Requests](https://github.com/louislam/uptime-kuma/wiki/Test-Pull-Requests)
-- [Development Side Notes](https://github.com/louislam/uptime-kuma/wiki/Development-Side-Notes)
+-   [🆙 How to Update](./🆙-How-to-Update)
+-   [Reset Password via CLI](./Reset-Password-via-CLI)
+-   [Status Page](./Status-Page)
+-   [Maintenance](./Maintenance)
+-   [Badge](./Badge)
+-   [API Keys](./API-Keys)
+-   [Prometheus Integration](./Prometheus-Integration)
+-   [Environment Variables](./Environment-Variables)
+-   [Notification Methods](./Notification-Methods)
+-   [How to Monitor Docker Containers](./How-to-Monitor-Docker-Containers)
+-   [3rd Party Addons/Apps](./3rd-Party-Addons-Apps)
+
+## Development
+
+-   [Setup Development Environment](./Setup-Development-Environment)
+-   [Test Pull Requests](./Test-Pull-Requests)
+-   [Development Side Notes](./Development-Side-Notes)
+-   [API Documentation](./API-Documentation)
+-   [CONTRIBUTING Rules & Guide](https://github.com/louislam/uptime-kuma/blob/master/CONTRIBUTING.md)
+-   [How to Translate](https://github.com/louislam/uptime-kuma/tree/master/src/lang#how-to-translate)
+
+## Troubleshooting
+
+-   [Troubleshooting](./Troubleshooting)
+-   [Cloudflare Side Note](./Cloudflare-Side-Note)
+
+## Changelogs
+
+-   [Migration from v1 to v2](./Migration-From-v1-To-v2)
+-   [Changelogs](https://github.com/louislam/uptime-kuma/blob/master/CHANGELOG.md)
 
 ## More
-- [Supported Versions](https://github.com/louislam/uptime-kuma/blob/master/SECURITY.md)
-- [MIT License](https://github.com/louislam/uptime-kuma/blob/master/LICENSE)
-- [Videos By Youtubers](https://www.youtube.com/playlist?list=PLjfSRxTTcLFm0mAw3fKNZzieXixScm9th)
+
+-   [Supported Versions](https://github.com/louislam/uptime-kuma/blob/master/SECURITY.md)
+-   [MIT License](https://github.com/louislam/uptime-kuma/blob/master/LICENSE)
+-   [Videos By Youtubers](https://www.youtube.com/playlist?list=PLjfSRxTTcLFm0mAw3fKNZzieXixScm9th)
