@@ -7,9 +7,7 @@ docker run -d --restart=unless-stopped -p 3001:3001 -v uptime-kuma:/app/data --n
 Uptime Kuma is now running on http://localhost:3001
 
 > [!WARNING]
-> Filesystem support for POSIX file locks is required to avoid SQLite database corruption.
-> Be aware of possible [file locking problems](https://www.sqlite.org/howtocorrupt.html#_file_locking_problems) such as those [commonly encountered with NFS](https://www.sqlite.org/faq.html#q5).
-> **Please map the `/app/data`-folder to a local directory or volume.** 
+> Filesystem support for POSIX file locks is required to avoid SQLite database corruption. Be aware of possible [file locking problems](https://www.sqlite.org/howtocorrupt.html#_file_locking_problems) such as those [commonly encountered with NFS](https://www.sqlite.org/faq.html#q5). **Please map the `/app/data`-folder to a local directory or volume.**
 
 Browse to http://localhost:3001 after started.
 
@@ -20,6 +18,7 @@ docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUM
 ```
 
 #### Docker Tags Description
+
 <table>
     <thead>
       <tr>
@@ -38,13 +37,11 @@ docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUM
 
 ### 🐳 Docker Compose
 
-Example docker-compose template:
-[https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml](https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml)
+Example docker-compose template: [https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml](https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml)
 
 ```bash
 docker compose up -d
 ```
-
 
 ### 💪🏻 Non-Docker
 
@@ -87,25 +84,19 @@ pm2 monit
 pm2 save && pm2 startup
 ```
 
-
 ## (Optional) One more step for Reverse Proxy
 
 This is optional for someone who want to use a reverse proxy.
 
 Unlikely other web apps, Uptime Kuma is based on WebSocket. You need two more headers **"Upgrade"** and **"Connection"** in order to reverse proxy WebSocket.
 
-Please read wiki for more info:
-https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
+Please read wiki for more info: https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 
 ## Videos
 
-- [Learn Uptime Kuma in 5 Minutes](https://www.youtube.com/watch?v=muZiPdH2JZ8) by DEVOPS UNLOCKED
-  Install with the docker run command
-- [Meet Uptime Kuma, a Fancy Open Source Uptime Monitor](https://www.youtube.com/watch?v=r_A5NKkAqZM) by Techno Tim
-  Install with docker-compose
-- [Monitor Status with Uptime Kuma - Let's install Uptime Kuma with Docker](https://www.youtube.com/watch?v=rRKvDMGeeBA) by Geeked
-  Install with Portainer
-
+- [Learn Uptime Kuma in 5 Minutes](https://www.youtube.com/watch?v=muZiPdH2JZ8) by DEVOPS UNLOCKED Install with the docker run command
+- [Meet Uptime Kuma, a Fancy Open Source Uptime Monitor](https://www.youtube.com/watch?v=r_A5NKkAqZM) by Techno Tim Install with docker-compose
+- [Monitor Status with Uptime Kuma - Let's install Uptime Kuma with Docker](https://www.youtube.com/watch?v=rRKvDMGeeBA) by Geeked Install with Portainer
 
 ## Unofficial & Experimental
 
@@ -115,10 +106,9 @@ https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 ### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
 
 > [!NOTE]
-> This Chart relies on a repackaged OCI Container Image, which lets *uptime-kuma* run as **non-root** user.
-> The entire repackage process is automated via GitHub Actions and renovate-bot keeps everything up to date. (feel free to audit it yourself)
+> This Chart relies on a repackaged OCI Container Image, which lets _uptime-kuma_ run as **non-root** user. The entire repackage process is automated via GitHub Actions and renovate-bot keeps everything up to date. (feel free to audit it yourself)
 
-The Containerfile used to rebundle *uptime-kuma*: [rootless Containerfile](https://github.com/k3rnelpan1c-dev/uptime-kuma-helm/blob/main/container/Containerfile)
+The Containerfile used to rebundle _uptime-kuma_: [rootless Containerfile](https://github.com/k3rnelpan1c-dev/uptime-kuma-helm/blob/main/container/Containerfile)
 
 https://github.com/k3rnelpan1c-dev/uptime-kuma-helm
 
@@ -142,37 +132,34 @@ https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
 
 ### One-Click Hosting on PikaPods
 
-Run with one click on [PikaPods.com](https://www.pikapods.com/). Free for about 3 months with welcome credit.
-PikaPods have produced a [getting started video](https://www.youtube.com/watch?v=gbbcnNKPi8M) if you like consuming information in this form.
+Run with one click on [PikaPods.com](https://www.pikapods.com/). Free for about 3 months with welcome credit. PikaPods have produced a [getting started video](https://www.youtube.com/watch?v=gbbcnNKPi8M) if you like consuming information in this form.
 
 [![PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=uptime-kuma)
 
 ### Install on Azure Container Instance with TLS endpoint
 
-Unofficial tutorial by Stefan:
-https://haci.io/posts/uptime-kuma-azure-container-instance/
+Unofficial tutorial by Stefan: https://haci.io/posts/uptime-kuma-azure-container-instance/
 
 ### Install on Azure AppService Container
 
-Unofficial tutorial by Leandro:
-https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
+Unofficial tutorial by Leandro: https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
 
 ### Install on Azure AppService with persistent storage
 
-Unofficial bicep deployment script by Yannick Zwijsen:
-https://github.com/yzwijsen/deploy-uptime-kuma-azure
+Unofficial bicep deployment script by Yannick Zwijsen: https://github.com/yzwijsen/deploy-uptime-kuma-azure
 
-### SQLite S3 persistent storage with Litestream.io 
+### SQLite S3 persistent storage with Litestream.io
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/UfDasl?referralCode=373)
 
-Run uptime-kuma with S3 persistent sqlite database:
-https://github.com/fluential/litestream-uptime-kuma/
+Run uptime-kuma with S3 persistent sqlite database: https://github.com/fluential/litestream-uptime-kuma/
 
 ### One-Click Deployment on Alibaba Cloud
 
 [![Deploy on AlibabaCloud ComputeNest](https://service-info-public.oss-cn-hangzhou.aliyuncs.com/computenest-en.svg)](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Higress社区版)
 
 Follow the deployment guide to deploy Uptime Kuma on Alibaba Cloud. Both domestic site and internationl sites are supported.
+
 - [Deployment Guide in English](https://computenest.console.aliyun.com/service/detail/ap-southeast-1/service-6a4ce994c30c49b1ae6b/2?type=user&isRecommend=true)
 - [中文部署文档](https://computenest.console.aliyun.com/service/detail/cn-hangzhou/service-34d66f31479747cd9957/2?type=user&isRecommend=true)
 
@@ -198,7 +185,7 @@ Run with one click on [Sealos](https://sealos.io/).
 
 [![Deploy to Dome](https://trydome.io/button-2.gif)](https://app.trydome.io/signup?package=uptime-kuma)
 
-To try the self-hosted uptime-kuma, [🚀 one-click deploy with Dome](https://app.trydome.io/signup?package=uptime-kuma) with a free trial. 
+To try the self-hosted uptime-kuma, [🚀 one-click deploy with Dome](https://app.trydome.io/signup?package=uptime-kuma) with a free trial.
 
 ## Deploy to Fly.io
 

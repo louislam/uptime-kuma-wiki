@@ -18,8 +18,7 @@ WantedBy=multi-user.target
 ```
 
 > [!NOTE]
-> This unit file assumes that you are running the software as a separate 'uptime' user.
-> If you have node/npm installed in a different path, you will need to alter the ExecStart line to match this.
+> This unit file assumes that you are running the software as a separate 'uptime' user. If you have node/npm installed in a different path, you will need to alter the ExecStart line to match this.
 
 This unit file may be installed to /etc/systemd/system/uptime-kuma.service (Or whatever service name you'd prefer)
 
