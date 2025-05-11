@@ -164,11 +164,9 @@ https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
 Or with persistent storage: bicep deployment script by Yannick Zwijsen:
 https://github.com/yzwijsen/deploy-uptime-kuma-azure
 
-#### Install on Railway
+#### SQLite S3 persistent storage with Litestream.io 
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/UfDasl)
-
-#### SQLite S3 persistent storage with Litestream.io 
 
 Run uptime-kuma with S3 persistent sqlite database:
 https://github.com/fluential/litestream-uptime-kuma/
