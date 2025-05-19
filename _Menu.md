@@ -4,6 +4,7 @@
   - [How to Update](🆙-How-to-Update.md)
   - [Notification Methods](Notification-Methods.md)
   - [(Beta) Migration from v1 to v2](Migration-From-v1-To-v2.md)
+  - [API Documentation](API-Documentation.md)
 
 - **Advanced**
   - [Reverse Proxy](Reverse-Proxy.md)

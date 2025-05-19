@@ -38,6 +38,7 @@
 - [Setup Development Environment](https://github.com/louislam/uptime-kuma/wiki/Setup-Development-Environment)
 - [Test Pull Requests](https://github.com/louislam/uptime-kuma/wiki/Test-Pull-Requests)
 - [Development Side Notes](https://github.com/louislam/uptime-kuma/wiki/Development-Side-Notes)
+- [API Documentation](https://github.com/louislam/uptime-kuma/wiki/API-Documentation)
 
 ## More
 
