@@ -142,6 +142,11 @@ Run with one click on [PikaPods.com](https://www.pikapods.com/). Free for about 
 
 [![PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=uptime-kuma)
 
+### Koyeb
+Run with one click on [Koyeb](https://app.koyeb.com). Free forever.
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=uptimekuma&repository=koyeb%2Fexample-uptime-kuma&branch=main&builder=dockerfile&instance_type=free&instances_min=0&autoscaling_sleep_idle_delay=300&env%5BUPTIME_KUMA_PORT%5D=8000&env%5BLITESTREAM_ACCESS_KEY_ID%5D=REPLACE_ME&env%5BLITESTREAM_SECRET_ACCESS_KEY%5D=REPLACE_ME&env%5BLITESTREAM_BUCKET%5D=REPLACE_ME&env%5BLITESTREAM_PATH%5D=uptime-kuma&env%5BLITESTREAM_URL%5D=REPLACE_ME&env%5BLITESTREAM_REGION%5D=REPLACE_ME)
+
+
 #### Azure Container Instance (with TLS endpoint)
 
 Unofficial tutorial by Stefan: https://haci.io/posts/uptime-kuma-azure-container-instance/
