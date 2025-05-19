@@ -132,6 +132,12 @@ Unofficial tutorial by Marius Bogdan Lixandru:
 
 https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
 
+#### Replicator Kuma
+
+Replicator Kuma extends the uptime-kuma project by adding support for replicating monitors, status pages, incidents and other entities between uptime-kuma instances.
+
+https://github.com/Sid-Sun/replicator-kuma
+
 ### Server Hosting Platforms
 
 One-click deployment on various platforms.
