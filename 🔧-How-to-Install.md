@@ -98,12 +98,14 @@ Please read wiki for more info: https://github.com/louislam/uptime-kuma/wiki/Rev
 - [Meet Uptime Kuma, a Fancy Open Source Uptime Monitor](https://www.youtube.com/watch?v=r_A5NKkAqZM) by Techno Tim Install with docker-compose
 - [Monitor Status with Uptime Kuma - Let's install Uptime Kuma with Docker](https://www.youtube.com/watch?v=rRKvDMGeeBA) by Geeked Install with Portainer
 
-## Unofficial & Experimental
+## Unofficial
 
 > [!WARNING]
 > The following installation methods are provided by the community. They are not tested officially and may be broken in the future release. Use at your own risk.
 
-### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
+### Deployment Tools
+
+#### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
 
 > [!NOTE]
 > This Chart relies on a repackaged OCI Container Image, which lets _uptime-kuma_ run as **non-root** user. The entire repackage process is automated via GitHub Actions and renovate-bot keeps everything up to date. (feel free to audit it yourself)
@@ -112,11 +114,11 @@ The Containerfile used to rebundle _uptime-kuma_: [rootless Containerfile](https
 
 https://github.com/k3rnelpan1c-dev/uptime-kuma-helm
 
-### Ansible (Unofficial)
+#### Ansible (Unofficial)
 
 https://github.com/louislam/uptime-kuma/tree/ansible-unofficial/ansible
 
-### Home Assistant add-on (Unofficial)
+#### Home Assistant add-on (Unofficial)
 
 https://github.com/hassio-addons/addon-uptime-kuma
 
@@ -124,37 +126,38 @@ https://github.com/hassio-addons/addon-uptime-kuma
 
 Also check out the corresponding custom integration: https://github.com/meichthys/uptime_kuma (WIP).
 
-### Install on Synology NAS (Unofficial)
+#### Install on Synology NAS (Unofficial)
 
 Unofficial tutorial by Marius Bogdan Lixandru:
 
 https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
 
-### One-Click Hosting on PikaPods
+### Server Hosting platforms
+
+#### One-Click Hosting on PikaPods
 
 Run with one click on [PikaPods.com](https://www.pikapods.com/). Free for about 3 months with welcome credit. PikaPods have produced a [getting started video](https://www.youtube.com/watch?v=gbbcnNKPi8M) if you like consuming information in this form.
 
 [![PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=uptime-kuma)
 
-### Install on Azure Container Instance with TLS endpoint
+#### Install on Azure Container Instance with TLS endpoint
 
 Unofficial tutorial by Stefan: https://haci.io/posts/uptime-kuma-azure-container-instance/
 
-### Install on Azure AppService Container
+#### Install on Azure AppService Container
 
 Unofficial tutorial by Leandro: https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
 
-### Install on Azure AppService with persistent storage
+Or with persistent storage: bicep deployment script by Yannick Zwijsen:
+https://github.com/yzwijsen/deploy-uptime-kuma-azure
 
-Unofficial bicep deployment script by Yannick Zwijsen: https://github.com/yzwijsen/deploy-uptime-kuma-azure
+#### SQLite S3 persistent storage with Litestream.io
 
-### SQLite S3 persistent storage with Litestream.io
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/UfDasl?referralCode=373)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/UfDasl)
 
 Run uptime-kuma with S3 persistent sqlite database: https://github.com/fluential/litestream-uptime-kuma/
 
-### One-Click Deployment on Alibaba Cloud
+#### One-Click Deployment on Alibaba Cloud
 
 [![Deploy on AlibabaCloud ComputeNest](https://service-info-public.oss-cn-hangzhou.aliyuncs.com/computenest-en.svg)](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Higress社区版)
 
@@ -162,10 +165,6 @@ Follow the deployment guide to deploy Uptime Kuma on Alibaba Cloud. Both domesti
 
 - [Deployment Guide in English](https://computenest.console.aliyun.com/service/detail/ap-southeast-1/service-6a4ce994c30c49b1ae6b/2?type=user&isRecommend=true)
 - [中文部署文档](https://computenest.console.aliyun.com/service/detail/cn-hangzhou/service-34d66f31479747cd9957/2?type=user&isRecommend=true)
-
-### uptime-kuma-helper
-
-[@mkgeeky](https://github.com/mkgeeky/) has created [uptime-kuma-helper](https://github.com/mkgeeky/uptime-kuma-helper) a bash script to install and update easy
 
 ### Install on Zeabur
 
@@ -181,12 +180,6 @@ Run with one click on [Sealos](https://sealos.io/).
 
 [![Deploy on Sealos](https://sealos.io/Deploy-on-Sealos.svg)](https://template.sealos.io/deploy?templateName=uptime-kuma)
 
-### Install on Dome
-
-[![Deploy to Dome](https://trydome.io/button-2.gif)](https://app.trydome.io/signup?package=uptime-kuma)
-
-To try the self-hosted uptime-kuma, [🚀 one-click deploy with Dome](https://app.trydome.io/signup?package=uptime-kuma) with a free trial.
-
 ## Deploy to Fly.io
 
 You can host uptime-kuma [with a single command at Fly.io](https://community.fly.io/t/hosting-uptime-kuma-on-fly-io/14352) and run on its included Hobby Plan usage.
@@ -194,6 +187,12 @@ You can host uptime-kuma [with a single command at Fly.io](https://community.fly
 ## Deploy to FlashPanel
 
 You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma.html) with [FlashPanel](https://flashpanel.io) (a server management control panel) for free on one server with up to 10 websites.
+
+### Others
+
+### uptime-kuma-helper
+
+[@mkgeeky](https://github.com/mkgeeky/) has created [uptime-kuma-helper](https://github.com/mkgeeky/uptime-kuma-helper) a bash script to install and update easy
 
 ## Uptime Kuma On Pi Deploy Android
 
