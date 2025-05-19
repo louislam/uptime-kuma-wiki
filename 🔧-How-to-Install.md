@@ -148,8 +148,7 @@ Unofficial tutorial by Stefan: https://haci.io/posts/uptime-kuma-azure-container
 
 Unofficial tutorial by Leandro: https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
 
-Or with persistent storage: bicep deployment script by Yannick Zwijsen:
-https://github.com/yzwijsen/deploy-uptime-kuma-azure
+Or with persistent storage: bicep deployment script by Yannick Zwijsen: https://github.com/yzwijsen/deploy-uptime-kuma-azure
 
 #### SQLite S3 persistent storage with Litestream.io
 
