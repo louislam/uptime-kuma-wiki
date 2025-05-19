@@ -114,11 +114,11 @@ The Containerfile used to rebundle _uptime-kuma_: [rootless Containerfile](https
 
 https://github.com/k3rnelpan1c-dev/uptime-kuma-helm
 
-#### Ansible (Unofficial)
+#### Ansible
 
 https://github.com/louislam/uptime-kuma/tree/ansible-unofficial/ansible
 
-#### Home Assistant add-on (Unofficial)
+#### Home Assistant Add-on
 
 https://github.com/hassio-addons/addon-uptime-kuma
 
@@ -126,37 +126,41 @@ https://github.com/hassio-addons/addon-uptime-kuma
 
 Also check out the corresponding custom integration: https://github.com/meichthys/uptime_kuma (WIP).
 
-#### Install on Synology NAS (Unofficial)
+#### Install on Synology NAS
 
 Unofficial tutorial by Marius Bogdan Lixandru:
 
 https://mariushosting.com/how-to-install-uptime-kuma-on-your-synology-nas/
 
-### Server Hosting platforms
+### Server Hosting Platforms
 
-#### One-Click Hosting on PikaPods
+One-click deployment on various platforms.
+
+#### PikaPods
 
 Run with one click on [PikaPods.com](https://www.pikapods.com/). Free for about 3 months with welcome credit. PikaPods have produced a [getting started video](https://www.youtube.com/watch?v=gbbcnNKPi8M) if you like consuming information in this form.
 
 [![PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=uptime-kuma)
 
-#### Install on Azure Container Instance with TLS endpoint
+#### Azure Container Instance (with TLS endpoint)
 
 Unofficial tutorial by Stefan: https://haci.io/posts/uptime-kuma-azure-container-instance/
 
-#### Install on Azure AppService Container
+#### Azure AppService Container
 
 Unofficial tutorial by Leandro: https://www.leandroscardua.com/blog/deploy-uptime-kuma-on-azure/
 
 Or with persistent storage: bicep deployment script by Yannick Zwijsen: https://github.com/yzwijsen/deploy-uptime-kuma-azure
 
-#### SQLite S3 persistent storage with Litestream.io
+#### Railway
+
+SQLite S3 persistent storage with Litestream.io
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/UfDasl)
 
 Run uptime-kuma with S3 persistent sqlite database: https://github.com/fluential/litestream-uptime-kuma/
 
-#### One-Click Deployment on Alibaba Cloud
+#### Alibaba Cloud
 
 [![Deploy on AlibabaCloud ComputeNest](https://service-info-public.oss-cn-hangzhou.aliyuncs.com/computenest-en.svg)](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Higress社区版)
 
@@ -165,7 +169,7 @@ Follow the deployment guide to deploy Uptime Kuma on Alibaba Cloud. Both domesti
 - [Deployment Guide in English](https://computenest.console.aliyun.com/service/detail/ap-southeast-1/service-6a4ce994c30c49b1ae6b/2?type=user&isRecommend=true)
 - [中文部署文档](https://computenest.console.aliyun.com/service/detail/cn-hangzhou/service-34d66f31479747cd9957/2?type=user&isRecommend=true)
 
-### Install on Zeabur
+#### Zeabur
 
 Run with one click on [Zeabur](https://zeabur.com/).
 
@@ -173,26 +177,26 @@ Run with one click on [Zeabur](https://zeabur.com/).
 
 [https://docs.zeabur.com/marketplace/uptime-kuma](https://zeabur.com/docs/marketplace/uptime-kuma)
 
-### One-Click Deployment on Sealos
+#### Sealos
 
 Run with one click on [Sealos](https://sealos.io/).
 
 [![Deploy on Sealos](https://sealos.io/Deploy-on-Sealos.svg)](https://template.sealos.io/deploy?templateName=uptime-kuma)
 
-## Deploy to Fly.io
+#### Fly.io
 
 You can host uptime-kuma [with a single command at Fly.io](https://community.fly.io/t/hosting-uptime-kuma-on-fly-io/14352) and run on its included Hobby Plan usage.
 
-## Deploy to FlashPanel
+#### FlashPanel
 
 You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma.html) with [FlashPanel](https://flashpanel.io) (a server management control panel) for free on one server with up to 10 websites.
 
 ### Others
 
-### uptime-kuma-helper
+#### uptime-kuma-helper
 
 [@mkgeeky](https://github.com/mkgeeky/) has created [uptime-kuma-helper](https://github.com/mkgeeky/uptime-kuma-helper) a bash script to install and update easy
 
-## Uptime Kuma On Pi Deploy Android
+#### Uptime Kuma On Pi Deploy Android
 
 See [this guide](https://nanonotables.blogspot.com/2025/04/uptime-kuma-on-pi-deploy-tutorial.html) on how to convert a rooted android smartphone into an uptime kuma instance.
