@@ -1,5 +1,4 @@
 - **Introduction**
-
   - [Home](README.md)
   - [How to Install](🔧-How-to-Install.md)
   - [How to Update](🆙-How-to-Update.md)
@@ -8,7 +7,6 @@
   - [API Documentation](API-Documentation.md)
 
 - **Advanced**
-
   - [Reverse Proxy](Reverse-Proxy.md)
   - [Environment Variables](Environment-Variables.md)
   - [Cloudflare Side Note](Cloudflare-Side-Note.md)

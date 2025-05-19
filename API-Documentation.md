@@ -24,11 +24,11 @@ Uptime Kuma primarily uses **Socket.io** for real-time communication after authe
 
 ### Socket.io API
 
-1.  Establish a Socket.io connection.
-2.  **Authentication:** The client must authenticate _after_ connection using one of these events:
-    - `login` Event: Provide username, password, and optionally a 2FA token.
-    - `loginByToken` Event: Provide a JWT token obtained from a previous successful login where "Remember Me" was selected.
-3.  **Authorization:** Once authenticated via `login` or `loginByToken`, all subsequent events sent on that specific socket connection are authorized for the logged-in user.
+1. Establish a Socket.io connection.
+2. **Authentication:** The client must authenticate _after_ connection using one of these events:
+   - `login` Event: Provide username, password, and optionally a 2FA token.
+   - `loginByToken` Event: Provide a JWT token obtained from a previous successful login where "Remember Me" was selected.
+3. **Authorization:** Once authenticated via `login` or `loginByToken`, all subsequent events sent on that specific socket connection are authorized for the logged-in user.
 
 ## Common Data Structures
 
@@ -37,58 +37,58 @@ _(Used in Socket.io events and some API responses)_
 - **Monitor Object (Partial Example):**
   ```jsonc
   {
-    "id": 1,
-    "name": "My Website",
-    "type": "http",
-    "url": "https://example.com",
-    "method": "GET",
-    "interval": 60,
-    "retryInterval": 60,
-    "resendInterval": 0,
-    "maxretries": 0,
-    "hostname": null,
-    "port": null,
-    "active": true,
-    "tags": [
-      {
-        "tag_id": 1,
-        "monitor_id": 1,
-        "value": null,
-        "name": "production",
-        "color": "#059669"
-      }
-    ],
-    "notificationIDList": { "1": true },
-    // ... other monitor-type specific fields
-    "accepted_statuscodes_json": "[\"200-299\"]",
-    "conditions": "[]" // JSON string of condition groups
+      "id": 1,
+      "name": "My Website",
+      "type": "http",
+      "url": "https://example.com",
+      "method": "GET",
+      "interval": 60,
+      "retryInterval": 60,
+      "resendInterval": 0,
+      "maxretries": 0,
+      "hostname": null,
+      "port": null,
+      "active": true,
+      "tags": [
+          {
+              "tag_id": 1,
+              "monitor_id": 1,
+              "value": null,
+              "name": "production",
+              "color": "#059669"
+          }
+      ],
+      "notificationIDList": { "1": true },
+      // ... other monitor-type specific fields
+      "accepted_statuscodes_json": "[\"200-299\"]",
+      "conditions": "[]" // JSON string of condition groups
   }
   ```
 - **Heartbeat Object:**
   ```jsonc
   {
-    "monitorID": 1,
-    "status": 1, // 0=DOWN, 1=UP, 2=PENDING, 3=MAINTENANCE
-    "time": "2023-10-27T10:30:00.123Z", // ISO 8601 UTC Timestamp
-    "msg": "OK",
-    "ping": 123, // Response time in ms, null if not applicable
-    "important": true, // Was this heartbeat a status change?
-    "duration": 60, // Seconds since the last heartbeat for this monitor
-    "localDateTime": "2023-10-27 12:30:00", // Formatted time in server's timezone
-    "timezone": "Europe/Berlin", // Server's timezone name
-    "retries": 0, // Number of retries attempted for this state
-    "downCount": 0 // Consecutive down count for resend logic
+      "monitorID": 1,
+      "status": 1, // 0=DOWN, 1=UP, 2=PENDING, 3=MAINTENANCE
+      "time": "2023-10-27T10:30:00.123Z", // ISO 8601 UTC Timestamp
+      "msg": "OK",
+      "ping": 123, // Response time in ms, null if not applicable
+      "important": true, // Was this heartbeat a status change?
+      "duration": 60, // Seconds since the last heartbeat for this monitor
+      "localDateTime": "2023-10-27 12:30:00", // Formatted time in server's timezone
+      "timezone": "Europe/Berlin", // Server's timezone name
+      "retries": 0, // Number of retries attempted for this state
+      "downCount": 0 // Consecutive down count for resend logic
   }
   ```
 - **Notification Object (Partial Example):**
   ```jsonc
   {
-    "id": 1,
-    "name": "My Telegram Bot",
-    "active": true,
-    "isDefault": false,
-    "userID": 1,
-    "config": "{\"type\":\"telegram\",\"telegramBotToken\":\"...\",\"telegramChatID\":\"...\",\"name\":\"My Telegram Bot\",\"isDefault\":false,\"applyExisting\":false}" // JSON string
+      "id": 1,
+      "name": "My Telegram Bot",
+      "active": true,
+      "isDefault": false,
+      "userID": 1,
+      "config": "{\"type\":\"telegram\",\"telegramBotToken\":\"...\",\"telegramChatID\":\"...\",\"name\":\"My Telegram Bot\",\"isDefault\":false,\"applyExisting\":false}" // JSON string
   }
   ```
 
@@ -112,14 +112,14 @@ Receive updates for "Push" type monitors.
 - **Success Response (200 OK):**
   ```jsonc
   {
-    "ok": true
+      "ok": true
   }
   ```
 - **Error Response (404 Not Found):**
   ```jsonc
   {
-    "ok": false,
-    "msg": "Monitor not found or not active."
+      "ok": false,
+      "msg": "Monitor not found or not active."
   }
   ```
 
@@ -237,28 +237,28 @@ Provide data for _published_ public status pages.
   - **Success Response (200 OK):**
     ```jsonc
     {
-      "heartbeatList": {
-        "1": [
-          // Monitor ID 1
-          { "status": 1, "time": "...", "msg": "OK", "ping": 55 }
-          // ... more heartbeats (up to 100 recent)
-        ],
-        "2": [
-          // Monitor ID 2
-          {
-            "status": 0,
-            "time": "...",
-            "msg": "Timeout",
-            "ping": null
-          }
-          // ...
-        ]
-      },
-      "uptimeList": {
-        "1_24": 0.9998, // Monitor ID 1, 24h uptime percentage
-        "2_24": 0.95 // Monitor ID 2, 24h uptime percentage
-        // ... potentially other periods if requested differently in future
-      }
+        "heartbeatList": {
+            "1": [
+                // Monitor ID 1
+                { "status": 1, "time": "...", "msg": "OK", "ping": 55 }
+                // ... more heartbeats (up to 100 recent)
+            ],
+            "2": [
+                // Monitor ID 2
+                {
+                    "status": 0,
+                    "time": "...",
+                    "msg": "Timeout",
+                    "ping": null
+                }
+                // ...
+            ]
+        },
+        "uptimeList": {
+            "1_24": 0.9998, // Monitor ID 1, 24h uptime percentage
+            "2_24": 0.95 // Monitor ID 2, 24h uptime percentage
+            // ... potentially other periods if requested differently in future
+        }
     }
     ```
   - **Error Response (404 Not Found):** If slug doesn't exist or status page is not published.
@@ -316,13 +316,13 @@ Real-time interaction occurs over Socket.io after successful authentication.
 
 ### General Flow
 
-1.  Client connects.
-2.  Server may send `loginRequired`.
-3.  Client sends `login` or `loginByToken`.
-4.  Server responds via callback.
-5.  If login OK, server sends initial data (`monitorList`, `heartbeatList`, etc.).
-6.  Client sends commands (e.g., `addMonitor`, `pauseMonitor`), server responds via callback.
-7.  Server pushes real-time updates (`heartbeat`, `avgPing`, `uptime`, list updates).
+1. Client connects.
+2. Server may send `loginRequired`.
+3. Client sends `login` or `loginByToken`.
+4. Server responds via callback.
+5. If login OK, server sends initial data (`monitorList`, `heartbeatList`, etc.).
+6. Client sends commands (e.g., `addMonitor`, `pauseMonitor`), server responds via callback.
+7. Server pushes real-time updates (`heartbeat`, `avgPing`, `uptime`, list updates).
 
 ### Client-Sent Events (Selected Detail)
 

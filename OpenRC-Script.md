@@ -1,5 +1,4 @@
-For Alpine/postmarketOS/Gentoo/Artix, you can create an OpenRC service as
-`/etc/init.d/uptime-kuma`:
+For Alpine/postmarketOS/Gentoo/Artix, you can create an OpenRC service as `/etc/init.d/uptime-kuma`:
 
 ```sh
 #!/sbin/openrc-run
