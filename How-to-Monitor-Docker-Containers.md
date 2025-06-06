@@ -31,6 +31,7 @@ Update the daemon configuration located at `/etc/docker/daemon.json`:
    #any additional parameters should be kept
 
    #Insecure option, only use this if you are running on a closed network
+   "tls": false,
    "hosts": ["unix:///var/run/docker.sock", "tcp://<host IP address>:2375"]
 
    #Secure option
