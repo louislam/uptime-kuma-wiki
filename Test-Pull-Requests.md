@@ -23,7 +23,19 @@ You can copy the name from here easily:
 
 Add `-v uptime-kuma-pr-test:/app/data` if you need a persistent storage.
 
-After started, go to http://localhost:3000
+After started, go to http://localhost:3000 (⚠️ not port 3001)
+
+The last message in the console will be `Open xxx:3001 in your browser`. I know it is confusing, but please use port 3000 instead. It is because the vite dev server is running on port 3000.
+
+### Slow during `npm install`?
+
+Sometimes if the test image is too old, `npm install` will be slow because it is trying to update those dependencies.
+
+Update the image might help:
+
+```bash
+docker pull louislam/uptime-kuma:pr-test2
+```
 
 ### Test v1.X PRs
 
