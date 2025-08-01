@@ -3,7 +3,7 @@ A list of 3rd party addons or applications, plugins or related side projects.
 Feel free to add your project here by making a pull request in [this wiki's repo](https://github.com/louislam/uptime-kuma-wiki):
 
 - [AutoKuma](https://github.com/BigBoot/AutoKuma) - Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.
-- [GEA](https://github.com/mrjones-plip/GEA) - A docker app that monitors your domains for expiration.  A JSON feed is exposed over HTTP which Uptime Kuma monitor and alert on via the `HTTP(s) Json Query` feature. 
+- [GEA](https://github.com/mrjones-plip/GEA) - A docker app that monitors your domains for expiration.  A JSON feed is exposed over HTTP which Uptime Kuma can monitor and alert on via the `HTTP(s) Json Query` feature. 
 - [KumaCompanion](https://github.com/Zerka30/KumaCompanion) - A Command Line Interface (CLI) for Uptime Kuma
 - [MMM-AuthenticatedUptimeKuma](https://github.com/totoluto/MMM-AuthenticatedUptimeKuma) - A MagicMirror² module which allows you to display the status of your monitors on your mirror in different ways
 - [Streamdeck Uptime Kuma](https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma) - An Uptime Kuma plugin for Elgato Streamdeck
