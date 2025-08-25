@@ -18,3 +18,4 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 - [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) - A wrapper for the Uptime Kuma Socket.IO API
 - [uptimekuma-migrator](https://github.com/Peppershade/uptimekuma-migrator) - Simple migrator from UptimeRobot to UptimeKuma
 - [xBarApp Uptime Kuma](https://github.com/mariogarridopt/xBar-Uptime-Kuma) - An Uptime Kuma plugin for xBarApp for Mac
+- [Home Assistant integration](https://www.home-assistant.io/integrations/uptime_kuma) - An integration for Home Assistant to view your monitors within Home Assistant. This allows you to utilise your Home Assistant ecosystem to create more complex monitors and automations that respond to your Uptime Kuma monitors.
