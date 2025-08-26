@@ -18,3 +18,4 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 - [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) - A wrapper for the Uptime Kuma Socket.IO API
 - [uptimekuma-migrator](https://github.com/Peppershade/uptimekuma-migrator) - Simple migrator from UptimeRobot to UptimeKuma
 - [xBarApp Uptime Kuma](https://github.com/mariogarridopt/xBar-Uptime-Kuma) - An Uptime Kuma plugin for xBarApp for Mac
+- [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) - A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.
