@@ -36,6 +36,7 @@ Update the daemon configuration located at `/etc/docker/daemon.json`:
 
    #Secure option
    "tls": true,
+   "tlscacert": "/var/docker/ca.pem",
    "tlscert": "/var/docker/server.pem",
    "tlskey": "/var/docker/serverkey.pem",
    "hosts": ["unix:///var/run/docker.sock", "tcp://<host IP address>:2376"]
