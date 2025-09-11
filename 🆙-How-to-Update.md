@@ -32,7 +32,7 @@ docker compose up -d --force-recreate
 cd <uptime-kuma-directory>
 
 # Update from git
-git fetch --all
+git fetch --all --tags
 git checkout 1.23.16 --force
 
 # Install dependencies and prebuilt
