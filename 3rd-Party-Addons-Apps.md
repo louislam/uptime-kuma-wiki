@@ -21,3 +21,4 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 - [Home Assistant integration](https://www.home-assistant.io/integrations/uptime_kuma) - An integration for Home Assistant to view your monitors within Home Assistant. This allows you to utilise your Home Assistant ecosystem to create more complex monitors and automations that respond to your Uptime Kuma monitors.
 - [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) - A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.
 - [Uptime Kuma Rest Api Library](https://github.com/vbsampath/uptime-kuma-rest-api) - A TypeScript library and client for accessing Uptime Kuma REST API
+- [trmnl-uptimekuma](https://github.com/bnussbau/trmnl-uptimekuma) – Monitor Uptime Kuma status pages on a TRMNL e-ink device
