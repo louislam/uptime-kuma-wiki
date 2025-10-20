@@ -19,21 +19,7 @@ docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUM
 
 #### Docker Tags Description
 
-<table>
-    <thead>
-      <tr>
-<td>Tag(s)</td>
-<td>Description </td>
-</tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>Latest stable (👍Recommended Tag)</td></tr>
-<tr><td>latest, 1, 1.*</td><td>Latest stable - debian</td></tr>
-<tr><td>debian, 1-debian, 1.*-debian</td><td>Latest stable - debian</td></tr>
-<tr><td>❌alpine, 1-alpine, 1.*-alpine</td><td>(❌Deprecated due to DNS issues) Latest stable - alpine</td></tr>
-<tr><td>nightly*</td><td>Development build, unstable</td></tr>
-</tbody>
-</table>
+Please go to <https://github.com/louislam/uptime-kuma/wiki/Migration-From-v1-To-v2#docker-tags>
 
 ### 🐳 Docker Compose
 
