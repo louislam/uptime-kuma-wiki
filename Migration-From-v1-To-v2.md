@@ -11,7 +11,6 @@
   - You should be able to view logs of the migration process in the console.
   - Do not interrupt the migration process.
   - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
-- Beta version is not stable and may contain bugs, especially for the first beta release.
 
 ## Breaking Changes
 
@@ -40,12 +39,6 @@
 
 ### Recommended Tags
 
-Not available yet.
-
-<!--
-
-
-
 | Tag        | Description                                      |
 |------------|--------------------------------------------------|
 | 2          | Latest version of v2 (Recommended)               |
@@ -69,8 +62,6 @@ Not available yet.
 | 2-slim-rootless | (Slim) Latest version of v2 (Rootless)          |
 | 2.x.x-rootless | Pinned to a specific release (Rootless)         |
 | 2.x.x-slim-rootless | (Slim) Pinned to a specific release (Rootless) |
-
--->
 
 ### Unstable Tags
 
@@ -143,10 +134,10 @@ docker stop uptime-kuma
 ```
 
 2. Backup your `data` directory.
-3. Change the image tag to `louislam/uptime-kuma:beta`.
+3. Change the image tag to `louislam/uptime-kuma:2`.
 
 ```bash
-docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:beta
+docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:2
 ```
 
 4. Check the logs to see the migration process.
@@ -165,12 +156,12 @@ docker compose down
 
 2. Backup your `data` directory.
 
-3. Change the image tag to `louislam/uptime-kuma:beta`.
+3. Change the image tag to `louislam/uptime-kuma:2`.
 
 ```yaml
 services:
     uptime-kuma:
-        image: louislam/uptime-kuma:beta
+        image: louislam/uptime-kuma:2
 ....
 ```
 
@@ -188,9 +179,7 @@ docker compose logs -f
 
 ## Migration Steps (Non-Docker)
 
-Beta is not available for non-docker yet.
 
-<!--
 1. Stop your Uptime Kuma.
 
 ```bash
@@ -198,12 +187,13 @@ pm2 stop uptime-kuma
 ```
 
 2. Backup your `data` directory.
-3. Check your Node.js version, the minimum supported version is 18. Node.js 20 is recommended.
+3. Check your Node.js version, Node.js >= 20.4 is required.
 
 ```bash
 node --version
 ```
--->
+
+4. Follow https://github.com/louislam/uptime-kuma/wiki/%F0%9F%86%99-How-to-Update#--non-docker to update
 
 ## FAQ
 
