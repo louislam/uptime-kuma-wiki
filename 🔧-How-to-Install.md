@@ -1,7 +1,7 @@
 ### 🐳 Docker
 
 ```bash
-docker run -d --restart=unless-stopped -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+docker run -d --restart=unless-stopped -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2
 ```
 
 Uptime Kuma is now running on http://localhost:3001
@@ -14,7 +14,7 @@ Browse to http://localhost:3001 after started.
 #### Changing Port or Volume
 
 ```bash
-docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:1
+docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUME>:/app/data --name uptime-kuma louislam/uptime-kuma:2
 ```
 
 #### Docker Tags Description
@@ -37,7 +37,7 @@ docker run -d --restart=unless-stopped -p <YOUR_PORT>:3001 -v <YOUR_DIR OR VOLUM
 
 ### 🐳 Docker Compose
 
-Example docker-compose template: [https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml](https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml)
+Example docker-compose template: <https://github.com/louislam/uptime-kuma/blob/master/compose.yaml>
 
 ```bash
 docker compose up -d
@@ -51,8 +51,7 @@ Requirements:
   - ✅ Major Linux distros such as Debian, Ubuntu, CentOS, Fedora and ArchLinux etc.
   - ✅ Windows 10 (x64), Windows Server 2012 R2 (x64) or higher
   - ❌ Replit / Heroku
-- [Node.js](https://nodejs.org/en/download/) 14 / 16 / 18 / 20.4
-- [npm](https://docs.npmjs.com/cli/) >= 9
+- [Node.js](https://nodejs.org/en/download/) >= 20.4
 - [Git](https://git-scm.com/downloads)
 - [pm2](https://pm2.keymetrics.io/) - For running Uptime Kuma in the background
 
