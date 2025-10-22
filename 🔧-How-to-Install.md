@@ -183,6 +183,10 @@ You can host uptime-kuma [with a single command at Fly.io](https://community.fly
 
 You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma.html) with [FlashPanel](https://flashpanel.io) (a server management control panel) for free on one server with up to 10 websites.
 
+#### [server.camp](https://server.camp)
+
+server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https://server.camp/product/uptimekuma) and other open-source software for startups, small- and large business. You can get a 7-day trial at no cost.
+
 ### Others
 
 #### uptime-kuma-helper
