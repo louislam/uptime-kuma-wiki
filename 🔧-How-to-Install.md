@@ -99,10 +99,6 @@ The Containerfile used to rebundle _uptime-kuma_: [rootless Containerfile](https
 
 https://github.com/k3rnelpan1c-dev/uptime-kuma-helm
 
-#### Ansible
-
-https://github.com/louislam/uptime-kuma/tree/ansible-unofficial/ansible
-
 #### Home Assistant Add-on
 
 https://github.com/hassio-addons/addon-uptime-kuma
