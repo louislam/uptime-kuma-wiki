@@ -26,14 +26,14 @@
   - **all non-matching variables are ignored**.
   - These are the supported variables: `name`, `msg`, `status`, `heartbeatJSON`, `monitorJSON`, `hostnameOrUrl`. We don't have documentation for these yet, but you can refer to the [source code](https://github.com/louislam/uptime-kuma/blob/master/server/model/monitor.js) for the data structure.
 
-### Docker only
+### Docker only Breaking Changes
 
 - Dropped support for Alpine based docker images (But you still can migrate to v2)
 - If your host is using Debian / Raspbian Buster, you should not upgrade. Due to a bug in the libseccomp2 library, it will run into a startup problem. Read more: https://github.com/louislam/uptime-kuma/issues/41#issuecomment-896164516
 
-### Non Docker
+### Non Docker Breaking Changes
 
-- Dropped support for Node.js 14 and 16. The minimum supported version of Node.js is 18. Node.js 20 is recommended.
+- Dropped support for Node.js 14, 16 and 18. The minimum supported version of Node.js is 20.4.
 
 ## Docker Tags
 
