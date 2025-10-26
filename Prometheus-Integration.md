@@ -27,6 +27,7 @@ Put the following into your Prometheus config:
       username: <your user>
       password: <your password>
 ```
+
 > [!TIP]
 > You can also authenticate using an [API Key](API-Keys.md#authenticating-using-an-api-key) instead.
 > As soon as you add your first API key, the use of basic authentication for the endpoint will be permanently disabled.
