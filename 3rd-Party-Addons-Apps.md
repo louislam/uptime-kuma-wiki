@@ -22,3 +22,4 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 - [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) - A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.
 - [Uptime Kuma Rest Api Library](https://github.com/vbsampath/uptime-kuma-rest-api) - A TypeScript library and client for accessing Uptime Kuma REST API
 - [trmnl-uptimekuma](https://github.com/bnussbau/trmnl-uptimekuma) – Monitor Uptime Kuma status pages on a TRMNL e-ink device
+- [S3 Health](https://github.com/hasherdk/s3-health) - Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups
