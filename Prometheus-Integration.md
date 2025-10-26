@@ -26,7 +26,6 @@ Put the following into your Prometheus config:
   basic_auth: # Only needed if authentication is enabled (default)
       username: <your user>
       password: <your password>
-
 ```
 > [!TIP]
 > You can also authenticate using an [API Key](API-Keys.md#authenticating-using-an-api-key) instead.
