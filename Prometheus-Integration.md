@@ -25,8 +25,12 @@ Put the following into your Prometheus config:
       - targets: ["uptime-kuma.url"]
   basic_auth: # Only needed if authentication is enabled (default)
       username: <your user>
-      password: <your api key>
+      password: <your password>
+
 ```
+> [!TIP]
+> You can also authentificated using an [API Key](API-Keys.md#authenticating-using-an-api-key) instead.
+> As soon as you add your first API key, the use of basic authentication for the endpoint will be permanently disabled.
 
 You should see the `monitor_response_time` and `monitor_status` metrics showing up in Prometheus
 
