@@ -25,7 +25,7 @@ Put the following into your Prometheus config:
       - targets: ["uptime-kuma.url"]
   basic_auth: # Only needed if authentication is enabled (default)
       username: <your user>
-      password: <your password>
+      password: <your api key>
 ```
 
 You should see the `monitor_response_time` and `monitor_status` metrics showing up in Prometheus
