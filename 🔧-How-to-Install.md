@@ -187,7 +187,7 @@ You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma
 
 server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https://server.camp/product/uptimekuma) and other open-source software for startups, small- and large business. You can get a 7-day trial at no cost.
 
-#### Uptime Kuma on Cloudron
+#### [Cloudron.io](https://www.cloudron.io/)
 
 [![Install](https://cloudron.io/img/button.svg)](https://www.cloudron.io/store/louislam.uptimekuma.app.html)
 
