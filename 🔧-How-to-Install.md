@@ -191,7 +191,7 @@ server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https
 
 [![Install](https://cloudron.io/img/button.svg)](https://www.cloudron.io/store/louislam.uptimekuma.app.html)
 
-One click installation with: [automated DNS setup](https://docs.cloudron.io/domains/#dns-providers) - [automated backups](https://docs.cloudron.io/backups/#storage-providers) - [pre-vetted updates](https://forum.cloudron.io/topic/5388/uptime-kuma-package-updates)
+One click installation with: [automated DNS setup](https://docs.cloudron.io/domains/#dns-providers) - [automated backups](https://docs.cloudron.io/backups/#storage-providers) - [pre-vetted updates](https://forum.cloudron.io/topic/5388/uptime-kuma-package-updates) and more
 
 ### Others
 
