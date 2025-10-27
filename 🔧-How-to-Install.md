@@ -187,6 +187,12 @@ You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma
 
 server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https://server.camp/product/uptimekuma) and other open-source software for startups, small- and large business. You can get a 7-day trial at no cost.
 
+#### Uptime Kuma on Cloudron
+
+[![Install](https://cloudron.io/img/button.svg)](https://www.cloudron.io/store/louislam.uptimekuma.app.html)
+
+One click installation with: [automated DNS setup](https://docs.cloudron.io/domains/#dns-providers) - [automated backups](https://docs.cloudron.io/backups/#storage-providers) - [pre-vetted updates](https://forum.cloudron.io/topic/5388/uptime-kuma-package-updates)
+
 ### Others
 
 #### uptime-kuma-helper
@@ -197,8 +203,3 @@ server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https
 
 See [this guide](https://nanonotables.blogspot.com/2025/04/uptime-kuma-on-pi-deploy-tutorial.html) on how to convert a rooted android smartphone into an uptime kuma instance.
 
-#### Uptime Kuma on Cloudron
-
-[![Install](https://cloudron.io/img/button.svg)](https://www.cloudron.io/store/louislam.uptimekuma.app.html)
-
-One click installation with: [automated DNS setup](https://docs.cloudron.io/domains/#dns-providers) - [automated backups](https://docs.cloudron.io/backups/#storage-providers) - [pre-vetted updates](https://forum.cloudron.io/topic/5388/uptime-kuma-package-updates)
