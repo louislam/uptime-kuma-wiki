@@ -1,16 +1,22 @@
 > [!WARNING]
 > It is a major version update. It contains some breaking changes. Please read the migration guide carefully if you want to upgrade from v1 to v2.
 
-## Before You Start
 
-- Stop your Uptime Kuma and:
-  - Backup your `data` directory.
-  - Make sure you have a backup of your `data` directory again.
-  - Make sure you have a backup of your `data` directory again and again.
-- The migration process could take some time to complete, depending on the size of your database.
-  - You should be able to view logs of the migration process in the console.
-  - Do not interrupt the migration process.
-  - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
+> [!NOTE]
+> # Before You Start
+> 
+> Stop your Uptime Kuma and:
+> - Backup your `data` directory.
+> - Make sure you have a backup of your `data` directory again.
+> - Make sure you have a backup of your `data` directory again and again.
+>
+> The migration process could take some time to complete, depending on the size of your database.
+> This is because we need to aggregate the heartbeat table into the new, more optimised format.
+>
+> - You should be able to view logs of the migration process in the console.
+> - Do NOT interrupt the migration process. *If the migration process is interrupted, you must restore from backup and retry the upgrade.*
+> - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
+>   *On slower hardware or with more monitors, this can take hours.*
 
 ## Breaking Changes
 
