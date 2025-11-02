@@ -1,16 +1,22 @@
 > [!WARNING]
 > It is a major version update. It contains some breaking changes. Please read the migration guide carefully if you want to upgrade from v1 to v2.
 
-## Before You Start
 
-- Stop your Uptime Kuma and:
-  - Backup your `data` directory.
-  - Make sure you have a backup of your `data` directory again.
-  - Make sure you have a backup of your `data` directory again and again.
-- The migration process could take some time to complete, depending on the size of your database.
-  - You should be able to view logs of the migration process in the console.
-  - Do not interrupt the migration process.
-  - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
+> [!NOTE]
+> # Before You Start
+> 
+> Stop your Uptime Kuma and:
+> - Backup your `data` directory.
+> - Make sure you have a backup of your `data` directory again.
+> - Make sure you have a backup of your `data` directory again and again.
+>
+> The migration process could take some time to complete, depending on the size of your database.
+> This is because we need to aggregate the heartbeat table into the new, more optimised format.
+>
+> - You should be able to view logs of the migration process in the console.
+> - Do NOT interrupt the migration process. *If the migration process is interrupted, you must restore from backup and retry the upgrade.*
+> - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
+>   *On slower hardware or with more monitors, this can take hours.*
 
 ## Breaking Changes
 
@@ -26,14 +32,14 @@
   - **all non-matching variables are ignored**.
   - These are the supported variables: `name`, `msg`, `status`, `heartbeatJSON`, `monitorJSON`, `hostnameOrUrl`. We don't have documentation for these yet, but you can refer to the [source code](https://github.com/louislam/uptime-kuma/blob/master/server/model/monitor.js) for the data structure.
 
-### Docker only
+### Docker only Breaking Changes
 
 - Dropped support for Alpine based docker images (But you still can migrate to v2)
 - If your host is using Debian / Raspbian Buster, you should not upgrade. Due to a bug in the libseccomp2 library, it will run into a startup problem. Read more: https://github.com/louislam/uptime-kuma/issues/41#issuecomment-896164516
 
-### Non Docker
+### Non Docker Breaking Changes
 
-- Dropped support for Node.js 14 and 16. The minimum supported version of Node.js is 18. Node.js 20 is recommended.
+- Dropped support for Node.js 14, 16 and 18. The minimum supported version of Node.js is 20.4.
 
 ## Docker Tags
 
