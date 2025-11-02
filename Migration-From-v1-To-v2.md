@@ -200,3 +200,4 @@ node --version
 ### Can I migrate my existing SQLite database to MariaDB?
 
 Cannot be done directly. You will need to export your data from SQLite and import it into MariaDB using 3rd party tools.
+A tested script is available at [sqlite3tomysql](https://github.com/harshavmb/sqlite3tomysql) exclusively tailored for migration of uptimekuma sqlite database.
