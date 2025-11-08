@@ -29,13 +29,6 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `NODE_TLS_REJECT_UNAUTHORIZED`                           |                               | Ignore all TLS errors                                                                                                                                                                                                                                                                                                                                                      |         `0` |
 | `NODE_OPTIONS`                                           |                               | Set it to `--insecure-http-parser`, if you encountered error `Invalid header value char` when your website using WAF                                                                                                                                                                                                                                                       |             |
 
-## Docker Specific Environment Variables
-
-| Environment Variable | Description                         | Default |
-| -------------------- | ----------------------------------- | ------: |
-| `PUID`               | User id to access the data storage  |  `1000` |
-| `PGID`               | Group id to access the data storage |  `1000` |
-
 ## For Development only
 
 | Environment variable                       | Server argument | Description                                                                     |    Default |
