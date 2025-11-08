@@ -29,16 +29,6 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `NODE_TLS_REJECT_UNAUTHORIZED`                           |                               | Ignore all TLS errors                                                                                                                                                                                                                                                                                                                                                      |         `0` |
 | `NODE_OPTIONS`                                           |                               | Set it to `--insecure-http-parser`, if you encountered error `Invalid header value char` when your website using WAF                                                                                                                                                                                                                                                       |             |
 
-## For Development only
-
-| Environment variable                       | Server argument | Description                                                                     |    Default |
-| ------------------------------------------ | --------------- | ------------------------------------------------------------------------------- | ---------: |
-| `NODE_ENV`                                 |                 | Set the NodeJS environment flag. `development`, `production`                    | production |
-| `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                 | Monitor ID - If provided, it will output the monitor's response to your console |            |
-| `UPTIME_KUMA_HIDE_LOG`                     |                 | (1.15.0) Examples: `debug_monitor,info_monitor,debug_cert,warn_monitor`         |            |
-| `SQL_LOG`                                  |                 | Set `1` to enable                                                               |            |
-| `UPTIME_KUMA_ENABLE_EMBEDDED_MARIADB`      |                 | (2.0.0) Set `1` to enable                                                       |            |
-| `UPTIME_KUMA_IN_CONTAINER`                 |                 | (1.23.0) Is Uptime Kuma inside a container?                                     |            |
 
 ## MariaDB Environment Variables
 
@@ -50,3 +40,15 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_DB_NAME`     | (2.0.0) Database name                      |
 | `UPTIME_KUMA_DB_USERNAME` | (2.0.0) Database username                  |
 | `UPTIME_KUMA_DB_PASSWORD` | (2.0.0) Database password                  |
+
+
+## For Development only
+
+| Environment variable                       | Server argument | Description                                                                     |    Default |
+| ------------------------------------------ | --------------- | ------------------------------------------------------------------------------- | ---------: |
+| `NODE_ENV`                                 |                 | Set the NodeJS environment flag. `development`, `production`                    | production |
+| `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                 | Monitor ID - If provided, it will output the monitor's response to your console |            |
+| `UPTIME_KUMA_HIDE_LOG`                     |                 | (1.15.0) Examples: `debug_monitor,info_monitor,debug_cert,warn_monitor`         |            |
+| `SQL_LOG`                                  |                 | Set `1` to enable                                                               |            |
+| `UPTIME_KUMA_ENABLE_EMBEDDED_MARIADB`      |                 | (2.0.0) Set `1` to enable                                                       |            |
+| `UPTIME_KUMA_IN_CONTAINER`                 |                 | (1.23.0) Is Uptime Kuma inside a container?                                     |            |
