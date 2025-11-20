@@ -23,3 +23,4 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 - [Uptime Kuma Rest Api Library](https://github.com/vbsampath/uptime-kuma-rest-api) - A TypeScript library and client for accessing Uptime Kuma REST API
 - [trmnl-uptimekuma](https://github.com/bnussbau/trmnl-uptimekuma) – Monitor Uptime Kuma status pages on a TRMNL e-ink device
 - [S3 Health](https://github.com/hasherdk/s3-health) - Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups
+- [KumaCub](https://github.com/toadstule/kumacub) - Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.
