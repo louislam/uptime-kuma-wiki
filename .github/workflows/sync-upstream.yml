@@ -35,7 +35,8 @@ jobs:
 
       - name: Merge upstream changes
         run: |
-          # Try to merge upstream changes
+          # Try to merge upstream changes from master branch
+          # (verified that upstream uses master as default branch)
           if git merge upstream/master --no-edit \
             -m "Merge updates from upstream wiki"; then
             echo "Merge successful"
@@ -47,9 +48,9 @@ jobs:
 
       - name: Push changes
         run: |
-          if git diff --quiet origin/${GITHUB_REF#refs/heads/}..HEAD; then
+          if git diff --quiet origin/${GITHUB_REF_NAME}..HEAD; then
             echo "No changes to push"
           else
-            git push origin HEAD:${GITHUB_REF#refs/heads/}
+            git push origin HEAD:${GITHUB_REF_NAME}
             echo "Changes pushed successfully"
           fi
