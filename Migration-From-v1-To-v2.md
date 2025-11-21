@@ -43,7 +43,13 @@
 
 ## Docker Tags
 
-See https://github.com/louislam/uptime-kuma/wiki/Docker-Tags
+There are some new tags available in `v2`, like `*-slim`, `*-rootless` tags.
+
+Please read https://github.com/louislam/uptime-kuma/wiki/Docker-Tags
+
+> [!WARNING]
+> Rootless images are not recommended for upgrading from v1 to v2, you will likely run into startup issues.
+
 
 ## Migration Steps (Docker)
 
