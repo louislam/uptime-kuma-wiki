@@ -1,0 +1,56 @@
+name: Sync with Upstream Wiki
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for proper merging
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream \
+            https://github.com/louislam/uptime-kuma.wiki.git || true
+          git remote -v
+
+      - name: Fetch upstream changes
+        run: git fetch upstream
+
+      - name: Merge upstream changes
+        run: |
+          # Try to merge upstream changes from master branch
+          # (verified that upstream uses master as default branch)
+          if git merge upstream/master --no-edit \
+            -m "Merge updates from upstream wiki"; then
+            echo "Merge successful"
+          else
+            echo "Merge failed - likely due to conflicts"
+            git merge --abort
+            exit 1
+          fi
+
+      - name: Push changes
+        run: |
+          if git diff --quiet origin/${GITHUB_REF_NAME}..HEAD; then
+            echo "No changes to push"
+          else
+            git push origin HEAD:${GITHUB_REF_NAME}
+            echo "Changes pushed successfully"
+          fi
