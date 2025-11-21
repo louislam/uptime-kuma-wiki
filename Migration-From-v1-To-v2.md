@@ -61,6 +61,12 @@
 
 ### Rootless Tags
 
+> [!WARNING]
+> Rootless images are not recommended for upgrading from v1 to v2, you will likely run into startup issues.
+
+> [!WARNING]
+> ⚠️ Rootless images are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
+
 
 | Tag        | Description                                      |
 |------------|--------------------------------------------------|
@@ -86,12 +92,6 @@
 | 2.x.x-beta-slim.x | (Slim) Pinned to a specific beta release |
 
 #### Beta Rootless Tags
-
-> [!WARNING]
-> Rootless images are not recommended for upgrading from v1 to v2, you will likely run into startup issues.
-
-> [!WARNING]
-> ⚠️ Rootless images are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
 
 | Tag                        | Description                                                 |
 | -------------------------- | ----------------------------------------------------------- |
