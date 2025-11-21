@@ -20,6 +20,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: master
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure Git
         run: |
@@ -32,5 +33,9 @@ jobs:
         run: |
           WIKI_URL="https://x-access-token:${GITHUB_TOKEN}@github.com"
           WIKI_URL="${WIKI_URL}/louislam/uptime-kuma.wiki.git"
-          git push "${WIKI_URL}" master:master
-          echo "Successfully pushed to wiki repository"
+          if git push "${WIKI_URL}" master:master; then
+            echo "Successfully pushed to wiki repository"
+          else
+            echo "Failed to push to wiki repository"
+            exit 1
+          fi
