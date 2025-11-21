@@ -1,0 +1,39 @@
+name: Push to Wiki
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+
+jobs:
+  push-to-wiki:
+    # Only run if the PR was merged (not just closed)
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: master
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add wiki remote
+        run: |
+          git remote add wiki \
+            https://github.com/louislam/uptime-kuma.wiki.git || true
+          git remote -v
+
+      - name: Push to wiki
+        run: |
+          git push wiki master:master
+          echo "Successfully pushed to wiki repository"
