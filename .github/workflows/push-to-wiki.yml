@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: master
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.WIKI_PAT }}
 
       - name: Configure Git
         run: |
@@ -29,7 +29,7 @@ jobs:
 
       - name: Push to wiki
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.WIKI_PAT }}
         run: |
           WIKI_URL="https://x-access-token:${GITHUB_TOKEN}@github.com"
           WIKI_URL="${WIKI_URL}/louislam/uptime-kuma.wiki.git"
