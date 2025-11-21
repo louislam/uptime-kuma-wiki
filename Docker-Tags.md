@@ -67,3 +67,29 @@
 | ----------------- | -------------------------- |
 | nightly2          | Development build          |
 | nightly2-rootless | Rootless development build |
+
+
+
+## Slim vs Full?
+
+Slim version has a smaller image size, it is about ~300MB to ~400MB smaller than the full version.
+
+| Full Version                                                                                                                | Slim Version                                                                                                                |
+| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| ✔️ Embedded MariaDB - Can be used as a low-maintenance, durable and performant storage backend                              | ❌ No embedded MariaDB - but you can still connect to an external MariaDB/MySQL database as storage backend                 |
+| ✔️ Embedded Chromium - Can be used for the "Browser Engine" monitor type. Some fonts are also included to improve rendering | ❌ No embedded Chromium - for the "Browser Engine" monitor type, an external chromium instance or further setup is required |
+
+Any big dependencies in the future may be included in the full version only too.
+
+If you don't need the above features, you can use the slim version.
+
+## Rootless vs Non-Rootless?
+
+Rootless tags are for users who wants to run Uptime Kuma without root privileges, but some features may not work as expected.
+
+Known issues:
+
+- ⚠️ Not recommended for upgrading from v1 to v2.
+- ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should make sure the ownership of the `data` directory is set to the `node:node (1000:1000)` user.
+- Docker monitor will not work without proper configuration, as by default it requires root privileges.
+- Embedded MariaDB doesn't seem to be working on Docker Desktop (Windows), if the `data` directory is mounted to a Windows folder.
