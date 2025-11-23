@@ -12,7 +12,7 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
 
 > [!TIP]
 > If you are using a reverse proxy (such as Nginx, Apache, etc.), please access the Uptime Kuma backend → 「Settings」→「Reverse Proxy」→「HTTP Headers」, and set `Trust Proxy` to Yes. This allows the system to trust the `X-Forwarded-*` headers, thereby obtaining the correct client IP address.
-
+ 
 - <details><summary>Nginx</summary>
 
   With SSL:
