@@ -10,6 +10,9 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
 >
 > If using Apache or NGINX, it is recommended to use CertBot to manage SSL for free, it uses Let’s Encrypt to get it’s certificates and keeps them renewed. You can also use your own certificates and place them as shown above. If using CertBot use the "Without SSL" settings and then run certbot on it and it will automatically configure auto-HTTPS redirection.
 
+> [!TIP]
+> If you are using a reverse proxy (such as Nginx, Apache, etc.), please access the Uptime Kuma backend → 「Settings」→「Reverse Proxy」→「HTTP Headers」, and set `Trust Proxy` to Yes. This allows the system to trust the `X-Forwarded-*` headers, thereby obtaining the correct client IP address.
+
 - <details><summary>Nginx</summary>
 
   With SSL:
