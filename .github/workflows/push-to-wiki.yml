@@ -1,10 +1,10 @@
 name: Push to Wiki
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   push-to-wiki:
