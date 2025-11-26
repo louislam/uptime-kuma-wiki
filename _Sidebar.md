@@ -18,7 +18,7 @@
 - [How to Monitor Docker Containers](https://github.com/louislam/uptime-kuma/wiki/How-to-Monitor-Docker-Containers)
 - [Maintenance](https://github.com/louislam/uptime-kuma/wiki/Maintenance)
 - [3rd Party Addons/Apps](https://github.com/louislam/uptime-kuma/wiki/3rd-Party-Addons-Apps)
-- [API Keys](https://github.com/louislam/uptime-kuma/wiki/API-Keys)
+- [Prometheus API Keys](https://github.com/louislam/uptime-kuma/wiki/Prometheus-API-Keys)
 
 ## Network
 
