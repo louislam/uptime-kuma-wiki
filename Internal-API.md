@@ -1,4 +1,4 @@
-# Uptime Kuma API Documentation (Detailed)
+# Internal API
 
 > **⚠️ IMPORTANT NOTE**: This documentation describes Uptime Kuma's internal API. This API is primarily designed for the application's own use and is not officially supported for third-party integrations. Breaking changes may occur between versions without prior notice. Use at your own risk.
 
