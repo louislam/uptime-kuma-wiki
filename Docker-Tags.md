@@ -63,10 +63,12 @@
 
 #### Nightly Tags
 
+Only for testing purposes.
+
 | Tag               | Description                |
 | ----------------- | -------------------------- |
-| nightly2          | Development build          |
-| nightly2-rootless | Rootless development build |
+| nightly2          | Development build (It will be updated daily)       |
+| nightly2-rootless | Rootless development build (It will be updated daily) |
 
 
 
