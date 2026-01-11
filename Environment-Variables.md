@@ -44,6 +44,12 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_DB_SSL`                  | (2.1.0) Optional. Enable SSL for database connection (`true`/`false`, default: `false`) |
 | `UPTIME_KUMA_DB_CA`                   | (2.1.0) Optional. CA certificate content in PEM format for SSL connection |
 
+The following Variables are also avaliable in the `*_FILE` variant, which can be usefull for using docker secrets.
+Other than that they are loaded from this path, they are identical.
+- `UPTIME_KUMA_DB_PASSWORD_FILE`
+- `UPTIME_KUMA_DB_USERNAME_FILE`
+- `UPTIME_KUMA_DB_CA_FILE`
+
 
 
 ## For Development only
