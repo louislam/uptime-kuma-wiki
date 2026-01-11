@@ -41,6 +41,8 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_DB_NAME`                 | (2.0.0) Database name                                                  |
 | `UPTIME_KUMA_DB_USERNAME`             | (2.0.0) Database username                                              |
 | `UPTIME_KUMA_DB_PASSWORD`             | (2.0.0) Database password                                              |
+| `UPTIME_KUMA_DB_SSL`                  | (2.1.0) Optional. Enable SSL for database connection (`true`/`false`, default: `false`) |
+| `UPTIME_KUMA_DB_CA`                   | (2.1.0) Optional. CA certificate content in PEM format for SSL connection |
 
 
 
