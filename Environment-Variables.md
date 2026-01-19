@@ -37,6 +37,7 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `UPTIME_KUMA_DB_TYPE`                 | (2.0.0) Database Type `sqlite`, `mariadb`                              |
 | `UPTIME_KUMA_DB_HOSTNAME`             | (2.0.0) Database hostname. for mariadb                                 |
 | `UPTIME_KUMA_DB_PORT`                 | (2.0.0) Database port. for mariadb, `3306`                             |
+| `UPTIME_KUMA_DB_SOCKET`               | (2.1.0) Database Unix socket. If used, `hostname` and `port` are ignored |
 | `UPTIME_KUMA_DB_POOL_MAX_CONNECTIONS` | (2.1.0) Maximum number of concurrent pool connections, `10` by default |
 | `UPTIME_KUMA_DB_NAME`                 | (2.0.0) Database name                                                  |
 | `UPTIME_KUMA_DB_USERNAME`             | (2.0.0) Database username                                              |
