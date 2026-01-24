@@ -4,8 +4,7 @@
 - Status page will cache results for 5 minutes
 - Status page is just like a traditional web page. Updates won't be as responsive as the dashboard.
 - Status page will refresh the page every 5 minutes
-- `default` is a special slug
-- `http://example.com/status` is pointing to `http://example.com/status/default`
+- `default` is a reserved slug for backward compatibility (`http://example.com/status` is pointing to `http://example.com/status/default`)
 
 ## Multiple Status Pages
 
