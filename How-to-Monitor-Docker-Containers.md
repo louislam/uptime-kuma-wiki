@@ -9,14 +9,14 @@ By default, a docker container is self-contained, which means Uptime Kuma cannot
 Command argument:
 
 ```bash
--v /var/run/docker.sock:/var/run/docker.sock
+-v /var/run/docker.sock:/var/run/docker.sock:ro
 ```
 
 docker-compose:
 
 ```yml
 volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
+    - /var/run/docker.sock:/var/run/docker.sock:ro
 ```
 
 ### (Method 2) TCP - Bridge Mode
