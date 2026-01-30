@@ -4,6 +4,11 @@
 
 By default, a docker container is self-contained, which means Uptime Kuma cannot access your host. You need to bind the /var/run/docker.sock to your container.
 
+> [!CAUTION]
+> Exposing the Docker socket or TCP port to Uptime Kuma, gives that full control over the Docker daemon on the host. 
+> If the container is compromised, an attacker could gain control over it.
+> It is NOT recommended to expose Uptime Kuma to the Internet when using this monitor type.
+
 ### (Method 1) Share docker.sock with Uptime Kuma Container
 
 Command argument:
