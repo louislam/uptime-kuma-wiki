@@ -119,6 +119,12 @@ Replicator Kuma extends the uptime-kuma project by adding support for replicatin
 
 https://github.com/Sid-Sun/replicator-kuma
 
+### Native Debian Package
+
+Native package / apt repository for Debian 13 systems, runs Uptime Kuma as hardened systemd service:
+
+https://codeberg.org/c8h4/uptime-kuma-deb
+
 ### Server Hosting Platforms
 
 One-click deployment on various platforms.
