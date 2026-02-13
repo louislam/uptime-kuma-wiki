@@ -27,13 +27,24 @@ jobs:
         id: get_version
         run: |
           # Fetch the latest release from uptime-kuma repo
-          LATEST_VERSION=$(curl -s https://api.github.com/repos/louislam/uptime-kuma/releases/latest | jq -r '.tag_name')
+          HTTP_CODE=$(curl -s -w "%{http_code}" -o /tmp/release.json https://api.github.com/repos/louislam/uptime-kuma/releases/latest)
+          
+          # Check if curl succeeded
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "Error: GitHub API request failed with HTTP code $HTTP_CODE"
+            exit 1
+          fi
+          
+          LATEST_VERSION=$(jq -r '.tag_name' /tmp/release.json)
           
           # Validate that we got a valid version
           if [ -z "$LATEST_VERSION" ] || [ "$LATEST_VERSION" = "null" ]; then
-            echo "Error: Failed to fetch latest version from GitHub API"
+            echo "Error: Failed to parse version from GitHub API response"
             exit 1
           fi
+          
+          # Strip 'v' prefix if present to ensure consistent version format
+          LATEST_VERSION="${LATEST_VERSION#v}"
           
           echo "Latest version: $LATEST_VERSION"
           echo "latest_version=$LATEST_VERSION" >> $GITHUB_OUTPUT
