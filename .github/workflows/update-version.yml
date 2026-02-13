@@ -55,8 +55,8 @@ jobs:
           FILE="🆙-How-to-Update.md"
           LATEST_VERSION="${{ steps.get_version.outputs.latest_version }}"
           
-          # Get current version from file using standard grep with extended regex
-          CURRENT_VERSION=$(grep -oE '[0-9]+\.[0-9]+\.[0-9]+' "$FILE" | head -n 1 || echo "")
+          # Get current version from the specific git checkout line
+          CURRENT_VERSION=$(grep -oE 'git checkout [0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.]+)? --force' "$FILE" | grep -oE '[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.]+)?' || echo "")
           echo "Current version in file: $CURRENT_VERSION"
           echo "Latest version: $LATEST_VERSION"
           
@@ -66,8 +66,8 @@ jobs:
             echo "updated=false" >> $GITHUB_OUTPUT
           else
             echo "Updating version from $CURRENT_VERSION to $LATEST_VERSION"
-            # Update the version in the file using extended regex for consistency
-            sed -i -E "s/git checkout [0-9]+\.[0-9]+\.[0-9]+ --force/git checkout ${LATEST_VERSION} --force/" "$FILE"
+            # Update the version in the file - matches the specific git checkout line
+            sed -i -E "s/git checkout [0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.]+)? --force/git checkout ${LATEST_VERSION} --force/" "$FILE"
             echo "updated=true" >> $GITHUB_OUTPUT
           fi
 
