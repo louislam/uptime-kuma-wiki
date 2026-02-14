@@ -25,3 +25,4 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 - [S3 Health](https://github.com/hasherdk/s3-health) - Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups
 - [KumaCub](https://github.com/toadstule/kumacub) - Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.
 - [UptimeKuma Agent](https://github.com/luyii-code-1/UptimeKuma_Agent) - A client that lets UptimeKuma monitor everything via Push—Bash commands, websites, Systemd status, and even Mi Home sensor statuses.
+- [Uptime Kuma Notifier](https://github.com/unicornops/uptime-kuma-notifier) - A macOS menu bar app that displays the status of your Uptime Kuma monitors and sends notifications when their status changes.
