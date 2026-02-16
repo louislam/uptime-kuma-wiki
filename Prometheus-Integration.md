@@ -34,8 +34,6 @@ Put the following into your Prometheus config:
 
 You should see the `monitor_response_time` and `monitor_status` metrics showing up in Prometheus
 
-There is also a [Grafana Dashboard](https://github.com/louislam/uptime-kuma/tree/unofficial/grafana-dashboard) available to import into your Grafana installation to get the metrics integrated with your other monitoring tools.
-
 # Example PromQL queries
 
 Assuming we have HTTP monitors in place for bbc.co.uk and google.com:
