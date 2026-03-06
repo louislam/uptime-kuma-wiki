@@ -26,3 +26,9 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 - [KumaCub](https://github.com/toadstule/kumacub) - Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.
 - [UptimeKuma Agent](https://github.com/luyii-code-1/UptimeKuma_Agent) - A client that lets UptimeKuma monitor everything via Push—Bash commands, websites, Systemd status, and even Mi Home sensor statuses.
 - [Uptime Kuma Notifier](https://github.com/unicornops/uptime-kuma-notifier) - A macOS menu bar app that displays the status of your Uptime Kuma monitors and sends notifications when their status changes.
+
+## Guides & Comparisons
+
+- [How to Self-Host Uptime Kuma with Docker Compose](https://selfhosting.sh/apps/uptime-kuma/) - Complete setup guide covering installation, configuration, and notification setup.
+- [Uptime Kuma vs Beszel](https://selfhosting.sh/compare/uptime-kuma-vs-beszel/) - Feature comparison between Uptime Kuma and Beszel for homelab monitoring.
+- [Uptime Kuma vs Grafana](https://selfhosting.sh/compare/uptime-kuma-vs-grafana/) - Comparing Uptime Kuma with Grafana for self-hosted monitoring.
