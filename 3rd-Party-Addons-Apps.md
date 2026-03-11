@@ -26,3 +26,4 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 - [KumaCub](https://github.com/toadstule/kumacub) - Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.
 - [UptimeKuma Agent](https://github.com/luyii-code-1/UptimeKuma_Agent) - A client that lets UptimeKuma monitor everything via Push—Bash commands, websites, Systemd status, and even Mi Home sensor statuses.
 - [Uptime Kuma Notifier](https://github.com/unicornops/uptime-kuma-notifier) - A macOS menu bar app that displays the status of your Uptime Kuma monitors and sends notifications when their status changes.
+- [KumaUptime (macOS)](https://github.com/CallumJRobertson/Kuma-Uptime-Manager-MacOS) - A native macOS menu bar app for monitoring Uptime Kuma servers. Supports private API mode, public status pages, notifications, and in-app monitor creation.
