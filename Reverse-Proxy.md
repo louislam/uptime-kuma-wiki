@@ -135,9 +135,9 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
   }
   ```
 
-  **with Docker-compose
+  with Docker Compose
 
-  If you run Uptime Kuma using Docker-Compose and don't already have a reverse proxy, this is a simple way to configure Caddy. You only need to replace 'status.example.org' with your domain.
+  If you run Uptime Kuma using Docker Compose and don't already have a reverse proxy, this is a simple way to configure Caddy. You only need to replace 'status.example.org' with your domain.
 
   ```yml
   version: "3"
