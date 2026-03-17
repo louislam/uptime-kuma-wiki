@@ -20,9 +20,16 @@
 
 ## Breaking Changes
 
-- The `:duration` of these badge endpoints now accept values `24`, `24h`, `30d`, `1y` only
+- To preserve accuracy, the `:duration` of these badge endpoints now accept values like `24`, `24h`, `30d`, `1y` only.
+  
+  As a reminder, these are the badge endpoints:
   - `<kuma-url>/api/badge/:monitorID/ping/:duration`
   - `<kuma-url>/api/badge/:monitorID/uptime/:duration`
+  
+  Concretely, we added these limits:
+  - Hourly allows up to 720h
+  - Minutes up to 1440m
+  - Days up to 365d
 - Dropped support for legacy browsers
 - Removed deprecated feature [Backup/Restore from JSON](https://github.com/louislam/uptime-kuma/pull/3892). Backing up the `data` directory is currently the only supported backup method.
 - Removed deprecated feature [DNS Cache for HTTP monitors](https://github.com/louislam/uptime-kuma/issues/3762). Consider using the bundled `nscd` for docker installation.
