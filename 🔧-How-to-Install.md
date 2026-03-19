@@ -99,6 +99,10 @@ The Containerfile used to rebundle _uptime-kuma_: [rootless Containerfile](https
 
 https://github.com/k3rnelpan1c-dev/uptime-kuma-helm
 
+#### AWS Terraform Module (Unofficial)
+
+Serverless deployment of uptime-kuma on AWS using Terraform: https://github.com/paliwalvimal/uptime-kuma-aws
+
 #### Home Assistant Add-on
 
 https://github.com/hassio-addons/addon-uptime-kuma
