@@ -146,7 +146,7 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
           name: "proxy_network"
   services:
       uptime-kuma:
-          image: louislam/uptime-kuma:1
+          image: louislam/uptime-kuma:2
           restart: unless-stopped
           volumes:
               - /srv/uptime:/app/data
@@ -195,7 +195,7 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
               - https-portal-data:/var/lib/https-portal
 
       uptime-kuma:
-          image: louislam/uptime-kuma:1
+          image: louislam/uptime-kuma:2
           container_name: uptime-kuma
           volumes:
               - ./uptime-kuma:/app/data
@@ -213,7 +213,7 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
   1. Bind IP to localhost when starting Kuma
 
   ```bash
-  docker run -d --restart=always -p 127.0.0.1:3002:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+  docker run -d --restart=always -p 127.0.0.1:3002:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2
   ```
 
   2. On your NAS, open _Control Panel_ and then _Login Portal_
