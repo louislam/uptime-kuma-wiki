@@ -90,16 +90,10 @@ Please read wiki for more info: https://github.com/louislam/uptime-kuma/wiki/Rev
 
 ### Deployment Tools
 
-#### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
+#### ☸️ Kubernetes Helm Chart with HelmForge (Unofficial)
 
 > [!NOTE]
-> This Chart relies on a repackaged OCI Container Image, which lets _uptime-kuma_ run as **non-root** user. The entire repackage process is automated via GitHub Actions and renovate-bot keeps everything up to date. (feel free to audit it yourself)
-
-The Containerfile used to rebundle _uptime-kuma_: [rootless Containerfile](https://github.com/k3rnelpan1c-dev/uptime-kuma-helm/blob/main/container/Containerfile)
-
-https://github.com/k3rnelpan1c-dev/uptime-kuma-helm
-
-#### ☸️ Kubernetes Helm Chart with HelmForge (Unofficial)
+> This chart uses the official `louislam/uptime-kuma` image — no custom or repackaged container.
 
 Community-maintained Helm chart for Kubernetes users:
 
@@ -119,14 +113,12 @@ Or install via OCI:
 helm install uptime-kuma oci://ghcr.io/helmforgedev/helm/uptime-kuma
 ```
 
-Notable differences compared to the OpenShift/rootless chart above:
+Features:
 
-- actively maintained
+- uses the official upstream `louislam/uptime-kuma` image with pinned version tags
 - supports both SQLite and MariaDB backends
 - includes built-in S3-compatible backup workflows
-- published via both Helm repository and OCI
-
-There are multiple community Helm chart efforts for Kubernetes users. The OpenShift/rootless chart above is focused on non-root OpenShift-compatible operation, while the HelmForge chart is focused on more general Kubernetes defaults and backup-oriented operations.
+- published via both Helm repository and OCI with Cosign signatures
 
 #### AWS Terraform Module (Unofficial)
 
