@@ -90,12 +90,7 @@ Please read wiki for more info: https://github.com/louislam/uptime-kuma/wiki/Rev
 
 ### Deployment Tools
 
-#### ☸️ Kubernetes Helm Chart with HelmForge (Unofficial)
-
-> [!NOTE]
-> This chart uses the official `louislam/uptime-kuma` image — no custom or repackaged container.
-
-Community-maintained Helm chart for Kubernetes users:
+#### Kubernetes Helm Chart with HelmForge (Unofficial)
 
 - Chart source: https://github.com/helmforgedev/charts/tree/main/charts/uptime-kuma
 - Artifact Hub: https://artifacthub.io/packages/helm/helmforge/uptime-kuma
@@ -107,18 +102,15 @@ helm repo add helmforge https://repo.helmforge.dev
 helm install uptime-kuma helmforge/uptime-kuma
 ```
 
-Or install via OCI:
+Or via OCI
 
 ```bash
 helm install uptime-kuma oci://ghcr.io/helmforgedev/helm/uptime-kuma
 ```
 
 Features:
-
-- uses the official upstream `louislam/uptime-kuma` image with pinned version tags
 - supports both SQLite and MariaDB backends
 - includes built-in S3-compatible backup workflows
-- published via both Helm repository and OCI with Cosign signatures
 
 #### AWS Terraform Module (Unofficial)
 
