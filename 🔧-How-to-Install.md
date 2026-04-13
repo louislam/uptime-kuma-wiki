@@ -167,6 +167,10 @@ Unofficial tutorial by Leandro: https://www.leandroscardua.com/blog/deploy-uptim
 
 Or with persistent storage: bicep deployment script by Yannick Zwijsen: https://github.com/yzwijsen/deploy-uptime-kuma-azure
 
+#### FreeBSD
+
+Unofficial FreeBSD install script, including an rc service script by Victor Tschetter: https://github.com/tschettervictor/bsd-apps/tree/main/uptime-kuma
+
 #### Railway
 
 SQLite S3 persistent storage with Litestream.io
