@@ -12,11 +12,11 @@ Unlike other web apps, Uptime Kuma is based on WebSocket. You need two more head
 
 > [!TIP]
 > If you’re running Uptime Kuma **fully** behind a reverse proxy (such as Nginx, Apache, etc.) and it is only accessible through that proxy due to firewall restrictions, you can enable trusted proxy headers.
-> 
+>
 > Go to `Settings` → `Reverse Proxy` → `HTTP Headers` and set `Trust Proxy` to Yes.
-> 
+>
 > This allows the system to trust the `X-Forwarded-*` headers, ensuring that the correct client IP address appears in the logs.
- 
+
 - <details><summary>Nginx</summary>
 
   With SSL:

@@ -1,31 +1,30 @@
 > [!WARNING]
 > It is a major version update. It contains some breaking changes. Please read the migration guide carefully if you want to upgrade from v1 to v2.
 
-
 > [!NOTE]
+>
 > # Before You Start
-> 
+>
 > Stop your Uptime Kuma and:
+>
 > - Backup your `data` directory.
 > - Make sure you have a backup of your `data` directory again.
 > - Make sure you have a backup of your `data` directory again and again.
 >
-> The migration process could take some time to complete, depending on the size of your database.
-> This is because we need to aggregate the heartbeat table into the new, more optimised format.
+> The migration process could take some time to complete, depending on the size of your database. This is because we need to aggregate the heartbeat table into the new, more optimised format.
 >
 > - You should be able to view logs of the migration process in the console.
-> - Do NOT interrupt the migration process. *If the migration process is interrupted, you must restore from backup and retry the upgrade.*
-> - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate.
->   *On slower hardware or with more monitors, this can take hours.*
+> - Do NOT interrupt the migration process. _If the migration process is interrupted, you must restore from backup and retry the upgrade._
+> - FYI: My Uptime Kuma had 20 monitors and 90 days of data, and it took around 7 minutes to migrate. _On slower hardware or with more monitors, this can take hours._
 
 ## Breaking Changes
 
 - To preserve accuracy, the `:duration` of these badge endpoints now accept values like `24`, `24h`, `30d`, `1y` only.
-  
+
   As a reminder, these are the badge endpoints:
   - `<kuma-url>/api/badge/:monitorID/ping/:duration`
   - `<kuma-url>/api/badge/:monitorID/uptime/:duration`
-  
+
   Concretely, we added these limits:
   - Hourly allows up to 720h
   - Minutes up to 1440m
@@ -56,7 +55,6 @@ Please read https://github.com/louislam/uptime-kuma/wiki/Docker-Tags
 
 > [!WARNING]
 > Rootless images are not recommended for upgrading from v1 to v2, you will likely run into startup issues.
-
 
 ## Migration Steps (Docker)
 
@@ -112,7 +110,6 @@ docker compose logs -f
 
 ## Migration Steps (Non-Docker)
 
-
 1. Stop your Uptime Kuma.
 
 ```bash
@@ -132,9 +129,7 @@ node --version
 
 ### Can I migrate my existing SQLite database to MariaDB?
 
- Cannot be done directly and is not supported by us.
-You will need to export your data from SQLite and import it into MariaDB using 3rd party tools such as [sqlite3tomysql](https://github.com/harshavmb/sqlite3tomysql).
+Cannot be done directly and is not supported by us. You will need to export your data from SQLite and import it into MariaDB using 3rd party tools such as [sqlite3tomysql](https://github.com/harshavmb/sqlite3tomysql).
 
 > [!IMPORTANT]
-> We don't have the capacity to deal with issues that come from such migrations.
-> If you run into any issues afterwards, please reproduce that your issue is caused by us and not the migration you did using a fresh installation first.
+> We don't have the capacity to deal with issues that come from such migrations. If you run into any issues afterwards, please reproduce that your issue is caused by us and not the migration you did using a fresh installation first.

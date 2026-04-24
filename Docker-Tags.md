@@ -6,19 +6,19 @@
 
 ### Recommended Tags
 
-| Tag        | Description                                      |
-|------------|--------------------------------------------------|
-| 2          | Latest version of v2 (Recommended)               |
-| 2-slim     | (Slim) Latest version of v2                      |
+| Tag    | Description                        |
+| ------ | ---------------------------------- |
+| 2      | Latest version of v2 (Recommended) |
+| 2-slim | (Slim) Latest version of v2        |
 
 ### Other Tags
 
-| Tag        | Description                                      |
-|------------|--------------------------------------------------|
-| 2.x.x      | Version pinned to a specific release             |
+| Tag        | Description                                              |
+| ---------- | -------------------------------------------------------- |
+| 2.x.x      | Version pinned to a specific release                     |
 | 2.x.x-slim | (Slim) Latest version of v2 pinned to a specific release |
-| next       | Latest version of Uptime Kuma                    |
-| next-slim  | (Slim) Latest version of Uptime Kuma             |
+| next       | Latest version of Uptime Kuma                            |
+| next-slim  | (Slim) Latest version of Uptime Kuma                     |
 
 ### Rootless Tags
 
@@ -28,12 +28,11 @@
 > [!WARNING]
 > ⚠️ Rootless images are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
 
-
-| Tag        | Description                                      |
-|------------|--------------------------------------------------|
-| 2-rootless | Latest version of v2 (Rootless)                  |
-| 2-slim-rootless | (Slim) Latest version of v2 (Rootless)          |
-| 2.x.x-rootless | Pinned to a specific release (Rootless)         |
+| Tag                 | Description                                    |
+| ------------------- | ---------------------------------------------- |
+| 2-rootless          | Latest version of v2 (Rootless)                |
+| 2-slim-rootless     | (Slim) Latest version of v2 (Rootless)         |
+| 2.x.x-rootless      | Pinned to a specific release (Rootless)        |
 | 2.x.x-slim-rootless | (Slim) Pinned to a specific release (Rootless) |
 
 ### Unstable Tags
@@ -65,12 +64,10 @@
 
 Only for testing purposes.
 
-| Tag               | Description                |
-| ----------------- | -------------------------- |
-| nightly2          | Development build (It will be updated daily)       |
+| Tag               | Description                                           |
+| ----------------- | ----------------------------------------------------- |
+| nightly2          | Development build (It will be updated daily)          |
 | nightly2-rootless | Rootless development build (It will be updated daily) |
-
-
 
 ## Slim vs Full?
 
