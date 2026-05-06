@@ -129,7 +129,9 @@ node --version
 
 ### Can I migrate my existing SQLite database to MariaDB?
 
-Cannot be done directly and is not supported by us. You will need to export your data from SQLite and import it into MariaDB using 3rd party tools such as [sqlite3tomysql](https://github.com/harshavmb/sqlite3tomysql).
+**CANNOT** be done directly and is not supported by official. You will need to export your data from SQLite and import it into MariaDB using 3rd party tools.
+
+- ❌ `sqlite3tomysql` is not recommended, it doesn't create all necessary indexes. Performance will be affected significantly. 
 
 > [!IMPORTANT]
 > We don't have the capacity to deal with issues that come from such migrations. If you run into any issues afterwards, please reproduce that your issue is caused by us and not the migration you did using a fresh installation first.
