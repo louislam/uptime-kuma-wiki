@@ -144,6 +144,12 @@
             "githubRepo": "https://github.com/mariogarridopt/xBar-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for xBarApp for Mac",
             "githubStars": 33
+        },
+        {
+            "name": "KumaBroadcast",
+            "githubRepo": "https://github.com/ourpxi/KumaBroadcast",
+            "description": "A simple python script to post incident and maintenance updates to Dscord via webhooks",
+            "githubStars": 0
         }
     ]
 }
