@@ -1,4 +1,8 @@
 {
+    "tasks": {
+        "update-unofficial-apps": "deno run --allow-all src/update-unofficial-apps.ts"
+    },
+
     // Run `deno fmt` to format
     "fmt": {
         "indentWidth": 4,
