@@ -54,7 +54,8 @@ const header = `| Name | Description | GitHub Stars |\n| --- | --- | --- |\n`;
 
 // Markdown table rows
 const rows = obj.apps.map(item => {
-    const name = item.githubRepo ? `[${item.name}](${item.githubRepo})` : item.name;
+    const url = item.githubRepo ? item.githubRepo : item.url;
+    const name =`[${item.name}](${url})`;
     const description = item.description || "";
     const stars = (item.githubRepo) ? item.githubStars || 0 : "N/A";
     return `| ${name} | ${description} | ${stars} |`;

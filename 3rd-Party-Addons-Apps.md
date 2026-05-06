@@ -25,7 +25,7 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 | [kuma-repoter](https://github.com/ghinknet/kuma-repoter) | A simple go reporter to send requests to Uptime Kuma's "Push" monitor | 1 |
 | [KumaCub](https://github.com/toadstule/kumacub) | Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma. | 1 |
 | [UptimeKumaRemoteProbe](https://github.com/zimbres/UptimeKumaRemoteProbe) | A Remote Probe to work with Uptime Kuma "Push" monitor type. | 1 |
-| Home Assistant integration | An integration for Home Assistant to view your monitors within Home Assistant. This allows you to utilise your Home Assistant ecosystem to create more complex monitors and automations that respond to your Uptime Kuma monitors. | N/A |
+| [Home Assistant integration](https://www.home-assistant.io/integrations/uptime_kuma) | An integration for Home Assistant to view your monitors within Home Assistant. This allows you to utilise your Home Assistant ecosystem to create more complex monitors and automations that respond to your Uptime Kuma monitors. | N/A |
 | [KumaBroadcast](https://github.com/ourpxi/KumaBroadcast) | A simple python script to post incident and maintenance updates to Dscord via webhooks | 0 |
-| Uptime Kuma Manager | An iOS app that allows you to connect to your Uptime Kuma servers and monitor the services directly from your phone. | N/A |
-| Wuma - Uptime Kuma iOs Manager | An iOS app that allows you to monitor Uptime Kuma from your iPhone, iPad, and Apple Watch. Wuma adds iOS widgets and provides real-time notifications when services go down. | N/A |
+| [Uptime Kuma Manager](https://apps.apple.com/us/app/uptime-kuma-manager/id6446004887) | An iOS app that allows you to connect to your Uptime Kuma servers and monitor the services directly from your phone. | N/A |
+| [Wuma - Uptime Kuma iOs Manager](https://apps.apple.com/app/wuma-uptime-kuma-manager/id1662404144) | An iOS app that allows you to monitor Uptime Kuma from your iPhone, iPad, and Apple Watch. Wuma adds iOS widgets and provides real-time notifications when services go down. | N/A |
