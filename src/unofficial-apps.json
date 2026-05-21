@@ -134,6 +134,12 @@
             "githubStars": 1
         },
         {
+            "name": "KumaAlert",
+            "url": "https://apps.apple.com/gb/app/kumaalert/id6760863575",
+            "description": "iOS Companion App that extends features of UptimeKuma, including Live Activities, notifications, widgets",
+            "githubStars": 0
+        },
+        {
             "name": "Wuma - Uptime Kuma iOs Manager",
             "url": "https://apps.apple.com/app/wuma-uptime-kuma-manager/id1662404144",
             "description": "An iOS app that allows you to monitor Uptime Kuma from your iPhone, iPad, and Apple Watch. Wuma adds iOS widgets and provides real-time notifications when services go down.",
