@@ -33,7 +33,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add src/unofficial-apps.json
-          git commit -m "chore: update src/unofficial-apps.json"
+          git add -A
+          git commit -m "chore: update unofficial apps list"
           git push origin master
 
