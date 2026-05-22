@@ -1,0 +1,32 @@
+name: Update Unofficial Apps
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - src/unofficial-apps.json
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: lts
+
+      - name: Run update task
+        run: deno task update-unofficial-apps
+
+      - name: Commit and push changes
+        run: |
+          git add src/unofficial-apps.json
+          git commit -m "chore: update unofficial apps"
+          git push origin master
+
