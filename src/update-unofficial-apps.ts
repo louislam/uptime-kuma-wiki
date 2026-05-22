@@ -9,13 +9,23 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 if (new Date(obj.lastUpdate).getTime() < new Date().getTime() - 7 * 24 * 60 * 60 * 1000) {
     console.log("Updating unofficial apps data...");
 
+    const githubToken = Deno.env.get("GITHUB_TOKEN");
+    const headers: HeadersInit = {};
+    if (!githubToken) {
+        throw new Error("GITHUB_TOKEN environment variable is not set.");
+    }
+
+    headers["Authorization"] = `token ${githubToken}`;
+
     // Update github star count
     for (const item of obj.apps) {
         if (item.githubRepo) {
             console.log(`Fetching data for ${item.githubRepo}...`);
             const url = item.githubRepo.replace("https://github.com/", "https://api.github.com/repos/");
             try {
-                const response = await fetch(url);
+                const response = await fetch(url, {
+                    headers,
+                });
                 if (response.ok) {
                     const data = await response.json();
                     item.githubStars = data.stargazers_count;
