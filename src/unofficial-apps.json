@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-05-06T12:04:03.312Z",
+    "lastUpdate": "2026-05-22T23:52:22.877Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 814
+            "githubStars": 825
         },
         {
             "name": "GEA",
@@ -23,7 +23,7 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 753
+            "githubStars": 768
         },
         {
             "name": "kuma-repoter",
@@ -36,6 +36,18 @@
             "githubRepo": "https://github.com/Coronon/kuma-sentinel",
             "description": "Provides advanced push-based monitor types for even more insights and control.",
             "githubStars": 9
+        },
+        {
+            "name": "KumaAlert",
+            "url": "https://apps.apple.com/gb/app/kumaalert/id6760863575",
+            "description": "iOS Companion App that extends features of UptimeKuma, including Live Activities, notifications, widgets",
+            "githubStars": 0
+        },
+        {
+            "name": "KumaBroadcast",
+            "githubRepo": "https://github.com/ourpxi/KumaBroadcast",
+            "description": "A simple python script to post incident and maintenance updates to Dscord via webhooks",
+            "githubStars": 0
         },
         {
             "name": "KumaCompanion",
@@ -107,13 +119,13 @@
             "name": "Uptime Mate",
             "githubRepo": "https://github.com/schech1/uptime-buddy",
             "description": "An Uptime Kuma monitoring tool for Apple Watch.",
-            "githubStars": 182
+            "githubStars": 183
         },
         {
             "name": "uptime-kuma-api (Python)",
             "githubRepo": "https://github.com/lucasheld/uptime-kuma-api",
             "description": "A wrapper for the Uptime Kuma Socket.IO API",
-            "githubStars": 385
+            "githubStars": 388
         },
         {
             "name": "UptimeKuma Agent",
@@ -125,19 +137,13 @@
             "name": "uptimekuma-migrator",
             "githubRepo": "https://github.com/Peppershade/uptimekuma-migrator",
             "description": "Simple migrator from UptimeRobot to UptimeKuma",
-            "githubStars": 13
+            "githubStars": 14
         },
         {
             "name": "UptimeKumaRemoteProbe",
             "githubRepo": "https://github.com/zimbres/UptimeKumaRemoteProbe",
             "description": "A Remote Probe to work with Uptime Kuma \"Push\" monitor type.",
             "githubStars": 1
-        },
-        {
-            "name": "KumaAlert",
-            "url": "https://apps.apple.com/gb/app/kumaalert/id6760863575",
-            "description": "iOS Companion App that extends features of UptimeKuma, including Live Activities, notifications, widgets",
-            "githubStars": 0
         },
         {
             "name": "Wuma - Uptime Kuma iOs Manager",
@@ -150,12 +156,6 @@
             "githubRepo": "https://github.com/mariogarridopt/xBar-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for xBarApp for Mac",
             "githubStars": 33
-        },
-        {
-            "name": "KumaBroadcast",
-            "githubRepo": "https://github.com/ourpxi/KumaBroadcast",
-            "description": "A simple python script to post incident and maintenance updates to Dscord via webhooks",
-            "githubStars": 0
         }
     ]
 }
