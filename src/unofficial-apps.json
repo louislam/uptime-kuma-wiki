@@ -1,17 +1,19 @@
 {
-    "lastUpdate": "2026-05-22T23:52:22.877Z",
+    "lastUpdate": "2026-05-28T11:39:21.616Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 825
+            "githubStars": 828,
+            "lastUpdate": "2026-05-25"
         },
         {
             "name": "GEA",
             "githubRepo": "https://github.com/mrjones-plip/GEA",
             "description": "A docker app that monitors your domains for expiration. A JSON feed is exposed over HTTP which Uptime Kuma can monitor and alert on via the `HTTP(s) Json Query` feature.",
-            "githubStars": 5
+            "githubStars": 5,
+            "lastUpdate": "2025-08-02"
         },
         {
             "name": "Home Assistant integration",
@@ -23,19 +25,22 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 768
+            "githubStars": 767,
+            "lastUpdate": "2026-05-28"
         },
         {
             "name": "kuma-repoter",
             "githubRepo": "https://github.com/ghinknet/kuma-repoter",
             "description": "A simple go reporter to send requests to Uptime Kuma's \"Push\" monitor",
-            "githubStars": 1
+            "githubStars": 1,
+            "lastUpdate": "2025-12-24"
         },
         {
             "name": "kuma-sentinel",
             "githubRepo": "https://github.com/Coronon/kuma-sentinel",
             "description": "Provides advanced push-based monitor types for even more insights and control.",
-            "githubStars": 9
+            "githubStars": 9,
+            "lastUpdate": "2025-06-18"
         },
         {
             "name": "KumaAlert",
@@ -47,49 +52,57 @@
             "name": "KumaBroadcast",
             "githubRepo": "https://github.com/ourpxi/KumaBroadcast",
             "description": "A simple python script to post incident and maintenance updates to Dscord via webhooks",
-            "githubStars": 0
+            "githubStars": 0,
+            "lastUpdate": "2026-05-06"
         },
         {
             "name": "KumaCompanion",
             "githubRepo": "https://github.com/Zerka30/KumaCompanion",
             "description": "A Command Line Interface (CLI) for Uptime Kuma",
-            "githubStars": 43
+            "githubStars": 43,
+            "lastUpdate": "2026-03-09"
         },
         {
             "name": "KumaCub",
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
-            "githubStars": 1
+            "githubStars": 1,
+            "lastUpdate": "2026-04-27"
         },
         {
             "name": "KumaUptime (macOS)",
             "githubRepo": "https://github.com/CallumJRobertson/Kuma-Uptime-Manager-MacOS",
             "description": "A native macOS menu bar app for monitoring Uptime Kuma servers. Supports private API mode, public status pages, notifications, and in-app monitor creation.",
-            "githubStars": 4
+            "githubStars": 4,
+            "lastUpdate": "2026-03-21"
         },
         {
             "name": "MMM-AuthenticatedUptimeKuma",
             "githubRepo": "https://github.com/totoluto/MMM-AuthenticatedUptimeKuma",
             "description": "A MagicMirror² module which allows you to display the status of your monitors on your mirror in different ways",
-            "githubStars": 2
+            "githubStars": 2,
+            "lastUpdate": "2024-12-02"
         },
         {
             "name": "S3 Health",
             "githubRepo": "https://github.com/hasherdk/s3-health",
             "description": "Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups",
-            "githubStars": 9
+            "githubStars": 9,
+            "lastUpdate": "2026-05-25"
         },
         {
             "name": "Streamdeck Uptime Kuma",
             "githubRepo": "https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for Elgato Streamdeck",
-            "githubStars": 57
+            "githubStars": 57,
+            "lastUpdate": "2024-02-04"
         },
         {
             "name": "swatchdog",
             "githubRepo": "https://github.com/imsingee/swatchdog",
             "description": "A simple requester to send periodically requests to Uptime Kuma's \"Push\" monitor",
-            "githubStars": 22
+            "githubStars": 22,
+            "lastUpdate": "2025-08-07"
         },
         {
             "name": "Uptime Kuma Manager",
@@ -101,49 +114,57 @@
             "name": "Uptime Kuma Notifier",
             "githubRepo": "https://github.com/unicornops/uptime-kuma-notifier",
             "description": "A macOS menu bar app that displays the status of your Uptime Kuma monitors and sends notifications when their status changes.",
-            "githubStars": 4
+            "githubStars": 4,
+            "lastUpdate": "2026-04-26"
         },
         {
             "name": "Uptime Kuma Push Agent",
             "githubRepo": "https://github.com/manprinsen/uptime-kuma-agent",
             "description": "A lightweight monitoring agent with Go, Python, and shell implementations, designed to send network uptime data to Uptime Kuma's Push Monitor.",
-            "githubStars": 19
+            "githubStars": 20,
+            "lastUpdate": "2025-12-08"
         },
         {
             "name": "Uptime Kuma Rest Api Library",
             "githubRepo": "https://github.com/vbsampath/uptime-kuma-rest-api",
             "description": "A TypeScript library and client for accessing Uptime Kuma REST API",
-            "githubStars": 3
+            "githubStars": 3,
+            "lastUpdate": "2025-10-07"
         },
         {
             "name": "Uptime Mate",
             "githubRepo": "https://github.com/schech1/uptime-buddy",
             "description": "An Uptime Kuma monitoring tool for Apple Watch.",
-            "githubStars": 183
+            "githubStars": 183,
+            "lastUpdate": "2026-04-09"
         },
         {
             "name": "uptime-kuma-api (Python)",
             "githubRepo": "https://github.com/lucasheld/uptime-kuma-api",
             "description": "A wrapper for the Uptime Kuma Socket.IO API",
-            "githubStars": 388
+            "githubStars": 388,
+            "lastUpdate": "2024-04-05"
         },
         {
             "name": "UptimeKuma Agent",
             "githubRepo": "https://github.com/luyii-code-1/UptimeKuma_Agent",
             "description": "A client that lets UptimeKuma monitor everything via Push—Bash commands, websites, Systemd status, and even Mi Home sensor statuses.",
-            "githubStars": 3
+            "githubStars": 3,
+            "lastUpdate": "2026-03-12"
         },
         {
             "name": "uptimekuma-migrator",
             "githubRepo": "https://github.com/Peppershade/uptimekuma-migrator",
             "description": "Simple migrator from UptimeRobot to UptimeKuma",
-            "githubStars": 14
+            "githubStars": 14,
+            "lastUpdate": "2023-05-24"
         },
         {
             "name": "UptimeKumaRemoteProbe",
             "githubRepo": "https://github.com/zimbres/UptimeKumaRemoteProbe",
             "description": "A Remote Probe to work with Uptime Kuma \"Push\" monitor type.",
-            "githubStars": 1
+            "githubStars": 1,
+            "lastUpdate": "2026-05-09"
         },
         {
             "name": "Wuma - Uptime Kuma iOs Manager",
@@ -155,7 +176,8 @@
             "name": "xBarApp Uptime Kuma",
             "githubRepo": "https://github.com/mariogarridopt/xBar-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for xBarApp for Mac",
-            "githubStars": 33
+            "githubStars": 33,
+            "lastUpdate": "2023-02-23"
         }
     ]
 }
