@@ -29,7 +29,12 @@ if (new Date(obj.lastUpdate).getTime() < new Date().getTime() - 7 * 24 * 60 * 60
                 if (response.ok) {
                     const data = await response.json();
                     item.githubStars = data.stargazers_count;
-                    item.lastUpdate = (typeof data.pushed_at === "string" && data.pushed_at.length >= 10) ? data.pushed_at.slice(0, 10) : "N/A";
+                    if (typeof data.pushed_at === "string") {
+                        const pushedAtDate = new Date(data.pushed_at);
+                        item.lastUpdate = !Number.isNaN(pushedAtDate.getTime()) ? pushedAtDate.toISOString().slice(0, 10) : "N/A";
+                    } else {
+                        item.lastUpdate = "N/A";
+                    }
                 } else {
                     console.error(`Failed to fetch data for ${item.githubRepo}: ${response.statusText}`);
                 }
