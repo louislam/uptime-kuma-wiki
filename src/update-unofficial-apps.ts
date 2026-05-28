@@ -29,6 +29,8 @@ if (new Date(obj.lastUpdate).getTime() < new Date().getTime() - 7 * 24 * 60 * 60
                 if (response.ok) {
                     const data = await response.json();
                     item.githubStars = data.stargazers_count;
+                    item.lastUpdate = (new Date(data.pushed_at)).toISOString().slice(0, 10);
+        
                 } else {
                     console.error(`Failed to fetch data for ${item.githubRepo}: ${response.statusText}`);
                 }
@@ -59,8 +61,8 @@ obj.apps.sort((a, b) => {
 });
 
 // Markdown table header
-// | [Name](GitHub Repo) | Description | GitHub Stars |
-const header = `| Name | Description | GitHub Stars |\n| --- | --- | --- |\n`;
+// | [Name](GitHub Repo) | Description | GitHub Stars | Last Update |
+const header = `| Name | Description | GitHub Stars | Last Update |\n| --- | --- | --- | --- |\n`;
 
 // Markdown table rows
 const rows = obj.apps.map(item => {
@@ -68,7 +70,8 @@ const rows = obj.apps.map(item => {
     const name =`[${item.name}](${url})`;
     const description = item.description || "";
     const stars = (item.githubRepo) ? item.githubStars || 0 : "N/A";
-    return `| ${name} | ${description} | ${stars} |`;
+    const lastUpdate = item.lastUpdate || "N/A";
+    return `| ${name} | ${description} | ${stars} | ${lastUpdate} |`;
 }).join("\n");
 
 output += header + rows;
