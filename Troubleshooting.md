@@ -34,7 +34,7 @@ For docker compose, this is as simple as adding a network with IPv6 enabled to y
 ```diff
   services:
     uptime-kuma:
-      image: louislam/uptime-kuma:1
+      image: louislam/uptime-kuma:2
       volumes:
         - ./data:/app/data
       ports:
