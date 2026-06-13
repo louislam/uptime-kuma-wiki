@@ -28,3 +28,24 @@ ping google.com
 
 If you are running Uptime Kuma on top of Docker and the service can only be access via IPv6. Please follow the Docker's [official wiki](https://docs.docker.com/config/daemon/ipv6/) to enable IPv6 support.\
 IPv6 are not supported out of the box on Docker.
+
+For docker compose, this is as simple as adding a network with IPv6 enabled to your compose file. Upating the template from the project would look like this:
+
+```yaml
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    volumes:
+      - ./data:/app/data
+    ports:
+      # <Host Port>:<Container Port>
+      - 3001:3001
+    restart: unless-stopped
+    networks:
+      - uptime-kuma-net
+networks:
+  uptime-kuma-net:
+    enable_ipv6: true
+```
+
+The network is created at the bottom, with `enable_ipv6: true` and then added to the service. 
