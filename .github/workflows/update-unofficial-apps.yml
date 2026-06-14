@@ -7,6 +7,8 @@ on:
     paths:
       - src/unofficial-apps.json
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'
 
 jobs:
   update:

@@ -51,7 +51,7 @@
         {
             "name": "KumaBroadcast",
             "githubRepo": "https://github.com/ourpxi/KumaBroadcast",
-            "description": "A simple python script to post incident and maintenance updates to Dscord via webhooks",
+            "description": "A simple python script to post incident and maintenance updates to Discord via webhooks",
             "githubStars": 0,
             "lastUpdate": "2026-05-06"
         },

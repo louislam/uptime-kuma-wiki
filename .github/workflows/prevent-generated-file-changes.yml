@@ -1,0 +1,30 @@
+name: Prevent edits to generated files
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '3rd-Party-Addons-Apps.md'
+
+jobs:
+  fail-on-generated-file-change:
+    if: github.repository == 'louislam/uptime-kuma-wiki'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Comment
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const repo = { owner: context.repo.owner, repo: context.repo.repo };
+            const isPR = !!context.payload.pull_request;
+            const issueNumber = isPR ? context.payload.pull_request.number : context.payload.issue.number;
+            
+            const body = `This pull request modifies the auto-generated file \`3rd-Party-Addons-Apps.md\`.\n\nInstead, you have to update the source file \`src/unofficial-apps.json\`.`;
+            await github.rest.issues.createComment({ ...repo, issue_number: issueNumber, body });
+
+      - name: Fail
+        run: |
+          exit 1
+
