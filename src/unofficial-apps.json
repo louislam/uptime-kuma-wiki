@@ -1,6 +1,14 @@
 {
     "lastUpdate": "2026-06-21T00:32:12.772Z",
     "apps": [
+
+        {
+            "name": "Kuma Zabbix Bridge",
+            "githubRepo": "https://github.com/Hacking-Lab/kuma-zabbix-bridge",
+            "description": "Bringing Zabbix Status to Kuma (Kuma to Zabbix Bridge)",
+            "githubStars": 0,
+            "lastUpdate": "2026-06-22"
+        },
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
