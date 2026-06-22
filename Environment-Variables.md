@@ -59,6 +59,7 @@ The following Variables are also avaliable in the `*_FILE` variant, which can be
 | `NODE_ENV`                                 |                 |        | Set the NodeJS environment flag. `development`, `production`                    | production |
 | `UPTIME_KUMA_LOG_RESPONSE_BODY_MONITOR_ID` |                 |        | Monitor ID - If provided, it will output the monitor's response to your console |            |
 | `UPTIME_KUMA_HIDE_LOG`                     |                 | 1.15.0 | Examples: `debug_monitor,info_monitor,debug_cert,warn_monitor`                  |            |
+| `UPTIME_KUMA_LOG_FORMAT`                   |                 | 2.2.0  | Set to `json` to output logs in JSON format                                     |            |
 | `SQL_LOG`                                  |                 |        | Set `1` to enable                                                               |            |
 | `UPTIME_KUMA_ENABLE_EMBEDDED_MARIADB`      |                 | 2.0.0  | Set `1` to enable                                                               |            |
 | `UPTIME_KUMA_IN_CONTAINER`                 |                 | 1.23.0 | Is Uptime Kuma inside a container?                                              |            |
