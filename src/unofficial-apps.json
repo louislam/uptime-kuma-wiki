@@ -1,19 +1,11 @@
 {
-    "lastUpdate": "2026-06-21T00:32:12.772Z",
+    "lastUpdate": "2026-06-22T07:29:25.597Z",
     "apps": [
-
-        {
-            "name": "Kuma Zabbix Bridge",
-            "githubRepo": "https://github.com/Hacking-Lab/kuma-zabbix-bridge",
-            "description": "Bringing Zabbix Status to Kuma (Kuma to Zabbix Bridge)",
-            "githubStars": 0,
-            "lastUpdate": "2026-06-22"
-        },
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 836,
+            "githubStars": 837,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -34,6 +26,13 @@
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
             "githubStars": 775,
+            "lastUpdate": "2026-06-18"
+        },
+        {
+            "name": "Kuma Zabbix Bridge",
+            "githubRepo": "https://github.com/Hacking-Lab/kuma-zabbix-bridge",
+            "description": "Bringing Zabbix Status to Kuma (Kuma to Zabbix Bridge)",
+            "githubStars": 0,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -75,7 +74,7 @@
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
             "githubStars": 1,
-            "lastUpdate": "2026-06-18"
+            "lastUpdate": "2026-06-22"
         },
         {
             "name": "KumaUptime (macOS)",
@@ -123,7 +122,7 @@
             "githubRepo": "https://github.com/unicornops/uptime-kuma-notifier",
             "description": "A macOS menu bar app that displays the status of your Uptime Kuma monitors and sends notifications when their status changes.",
             "githubStars": 5,
-            "lastUpdate": "2026-04-26"
+            "lastUpdate": "2026-06-21"
         },
         {
             "name": "Uptime Kuma Push Agent",
@@ -150,7 +149,7 @@
             "name": "uptime-kuma-api (Python)",
             "githubRepo": "https://github.com/lucasheld/uptime-kuma-api",
             "description": "A wrapper for the Uptime Kuma Socket.IO API",
-            "githubStars": 388,
+            "githubStars": 389,
             "lastUpdate": "2024-04-05"
         },
         {
