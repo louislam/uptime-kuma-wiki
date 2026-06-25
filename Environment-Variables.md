@@ -63,3 +63,4 @@ The following Variables are also avaliable in the `*_FILE` variant, which can be
 | `SQL_LOG`                                  |                 |        | Set `1` to enable                                                               |            |
 | `UPTIME_KUMA_ENABLE_EMBEDDED_MARIADB`      |                 | 2.0.0  | Set `1` to enable                                                               |            |
 | `UPTIME_KUMA_IN_CONTAINER`                 |                 | 1.23.0 | Is Uptime Kuma inside a container?                                              |            |
+| `UPTIME_KUMA_DEBUG_INSPECTOR`              |                 | 2.4.1  | Set `1` to enable Enable Node.js Inspector (bind to 127.0.0.1:9229)             |            |  
