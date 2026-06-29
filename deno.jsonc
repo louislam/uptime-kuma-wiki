@@ -1,7 +1,10 @@
 {
     "tasks": {
-        "update-unofficial-apps": "deno run --allow-all src/update-unofficial-apps.ts"
+        "update-unofficial-apps": "deno run --allow-all src/update-unofficial-apps.ts",
+        "update-download-stats": "deno run --allow-all src/update-download-stats.ts"
     },
+
+        "lock": false,
 
     // Run `deno fmt` to format
     "fmt": {

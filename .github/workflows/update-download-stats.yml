@@ -1,0 +1,33 @@
+name: Update Download Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 */2 *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    if: github.repository == 'louislam/uptime-kuma-wiki'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: lts
+
+      - name: Run update task
+        run: deno task update-download-stats
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add -A
+          git commit -m "chore: update download stats"
+          git push origin master
