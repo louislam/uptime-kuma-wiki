@@ -117,6 +117,11 @@ Features:
 
 Deployment template of uptime-kuma on AWS using Terraform: https://github.com/paliwalvimal/uptime-kuma-aws
 
+### Zenith Hosting 
+[![Deploy with Zenith](https://cdn.zenith.hosting/buttons/deploy-with-zenith.svg)](https://zenith.hosting/host/uptime-kuma?ref=gh)
+
+One-click deployment for Uptime Kuma, extremely cheap. 
+
 #### Home Assistant Add-on
 
 https://github.com/hassio-addons/addon-uptime-kuma
