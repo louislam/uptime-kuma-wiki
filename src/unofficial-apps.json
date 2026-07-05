@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-06-28T00:28:06.220Z",
+    "lastUpdate": "2026-07-05T00:25:03.866Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 845,
+            "githubStars": 851,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -25,8 +25,8 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 781,
-            "lastUpdate": "2026-06-27"
+            "githubStars": 786,
+            "lastUpdate": "2026-07-02"
         },
         {
             "name": "Kuma Zabbix Bridge",
@@ -101,7 +101,7 @@
             "name": "Streamdeck Uptime Kuma",
             "githubRepo": "https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for Elgato Streamdeck",
-            "githubStars": 58,
+            "githubStars": 57,
             "lastUpdate": "2024-02-04"
         },
         {
