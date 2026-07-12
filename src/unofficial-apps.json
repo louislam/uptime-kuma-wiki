@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-07-05T00:25:03.866Z",
+    "lastUpdate": "2026-07-12T01:44:52.456Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 851,
+            "githubStars": 850,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -25,8 +25,8 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 786,
-            "lastUpdate": "2026-07-02"
+            "githubStars": 790,
+            "lastUpdate": "2026-07-09"
         },
         {
             "name": "Kuma Zabbix Bridge",
@@ -60,7 +60,7 @@
             "githubRepo": "https://github.com/ourpxi/KumaBroadcast",
             "description": "A simple python script to post incident and maintenance updates to Discord via webhooks",
             "githubStars": 0,
-            "lastUpdate": "2026-05-06"
+            "lastUpdate": "2026-07-08"
         },
         {
             "name": "KumaCompanion",
@@ -74,7 +74,7 @@
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
             "githubStars": 2,
-            "lastUpdate": "2026-06-22"
+            "lastUpdate": "2026-07-08"
         },
         {
             "name": "KumaUptime (macOS)",
@@ -135,7 +135,7 @@
             "name": "Uptime Kuma Rest Api Library",
             "githubRepo": "https://github.com/vbsampath/uptime-kuma-rest-api",
             "description": "A TypeScript library and client for accessing Uptime Kuma REST API",
-            "githubStars": 3,
+            "githubStars": 4,
             "lastUpdate": "2025-10-07"
         },
         {
@@ -149,7 +149,7 @@
             "name": "uptime-kuma-api (Python)",
             "githubRepo": "https://github.com/lucasheld/uptime-kuma-api",
             "description": "A wrapper for the Uptime Kuma Socket.IO API",
-            "githubStars": 390,
+            "githubStars": 392,
             "lastUpdate": "2024-04-05"
         },
         {
@@ -163,7 +163,7 @@
             "name": "uptimekuma-migrator",
             "githubRepo": "https://github.com/Peppershade/uptimekuma-migrator",
             "description": "Simple migrator from UptimeRobot to UptimeKuma",
-            "githubStars": 14,
+            "githubStars": 13,
             "lastUpdate": "2023-05-24"
         },
         {
