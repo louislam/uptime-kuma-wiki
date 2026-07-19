@@ -4,9 +4,9 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 
 | Name | Description | GitHub Stars | Last Update |
 | --- | --- | --- | --- |
-| [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 850 | 2026-06-18 |
-| [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 790 | 2026-07-09 |
-| [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) | A wrapper for the Uptime Kuma Socket.IO API | 392 | 2024-04-05 |
+| [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 853 | 2026-06-18 |
+| [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 792 | 2026-07-16 |
+| [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) | A wrapper for the Uptime Kuma Socket.IO API | 393 | 2024-04-05 |
 | [Uptime Mate](https://github.com/schech1/uptime-buddy) | An Uptime Kuma monitoring tool for Apple Watch. | 185 | 2026-04-09 |
 | [Streamdeck Uptime Kuma](https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma) | An Uptime Kuma plugin for Elgato Streamdeck | 57 | 2024-02-04 |
 | [KumaCompanion](https://github.com/Zerka30/KumaCompanion) | A Command Line Interface (CLI) for Uptime Kuma | 43 | 2026-03-09 |
