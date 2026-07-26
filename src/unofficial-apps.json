@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-07-19T01:42:33.331Z",
+    "lastUpdate": "2026-07-26T01:47:53.752Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 853,
+            "githubStars": 857,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -25,8 +25,8 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 792,
-            "lastUpdate": "2026-07-16"
+            "githubStars": 793,
+            "lastUpdate": "2026-07-23"
         },
         {
             "name": "Kuma Zabbix Bridge",
@@ -59,7 +59,7 @@
             "name": "KumaBroadcast",
             "githubRepo": "https://github.com/ourpxi/KumaBroadcast",
             "description": "A simple python script to post incident and maintenance updates to Discord via webhooks",
-            "githubStars": 0,
+            "githubStars": 1,
             "lastUpdate": "2026-07-08"
         },
         {
@@ -74,7 +74,7 @@
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
             "githubStars": 2,
-            "lastUpdate": "2026-07-08"
+            "lastUpdate": "2026-07-21"
         },
         {
             "name": "KumaUptime (macOS)",
@@ -101,7 +101,7 @@
             "name": "Streamdeck Uptime Kuma",
             "githubRepo": "https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for Elgato Streamdeck",
-            "githubStars": 57,
+            "githubStars": 58,
             "lastUpdate": "2024-02-04"
         },
         {
@@ -149,7 +149,7 @@
             "name": "uptime-kuma-api (Python)",
             "githubRepo": "https://github.com/lucasheld/uptime-kuma-api",
             "description": "A wrapper for the Uptime Kuma Socket.IO API",
-            "githubStars": 393,
+            "githubStars": 394,
             "lastUpdate": "2024-04-05"
         },
         {
@@ -170,7 +170,7 @@
             "name": "UptimeKumaRemoteProbe",
             "githubRepo": "https://github.com/zimbres/UptimeKumaRemoteProbe",
             "description": "A Remote Probe to work with Uptime Kuma \"Push\" monitor type.",
-            "githubStars": 1,
+            "githubStars": 2,
             "lastUpdate": "2026-06-23"
         },
         {
