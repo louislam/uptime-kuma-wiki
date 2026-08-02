@@ -117,11 +117,6 @@ Features:
 
 Deployment template of uptime-kuma on AWS using Terraform: https://github.com/paliwalvimal/uptime-kuma-aws
 
-### Zenith Hosting 
-[![Deploy with Zenith](https://cdn.zenith.hosting/buttons/deploy-with-zenith.svg)](https://zenith.hosting/host/uptime-kuma?ref=gh)
-
-One-click deployment for Uptime Kuma, extremely cheap. 
-
 #### Home Assistant Add-on
 
 https://github.com/hassio-addons/addon-uptime-kuma
@@ -224,6 +219,11 @@ server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https
 [![Install](https://cloudron.io/img/button.svg)](https://www.cloudron.io/store/louislam.uptimekuma.app.html)
 
 One-click installation with: [automated DNS setup](https://docs.cloudron.io/domains/#dns-providers) - [automated backups](https://docs.cloudron.io/backups/#storage-providers) - [pre-vetted updates](https://forum.cloudron.io/topic/5388/uptime-kuma-package-updates) and more
+
+### Zenith Hosting 
+[![Deploy with Zenith](https://cdn.zenith.hosting/buttons/deploy-with-zenith.svg)](https://zenith.hosting/host/uptime-kuma?ref=gh)
+
+One-click deployment for Uptime Kuma. 
 
 ### Others
 
