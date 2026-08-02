@@ -220,6 +220,11 @@ server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https
 
 One-click installation with: [automated DNS setup](https://docs.cloudron.io/domains/#dns-providers) - [automated backups](https://docs.cloudron.io/backups/#storage-providers) - [pre-vetted updates](https://forum.cloudron.io/topic/5388/uptime-kuma-package-updates) and more
 
+### Zenith Hosting 
+[![Deploy with Zenith](https://cdn.zenith.hosting/buttons/deploy-with-zenith.svg)](https://zenith.hosting/host/uptime-kuma?ref=gh)
+
+One-click deployment for Uptime Kuma. 
+
 ### Others
 
 #### uptime-kuma-helper
