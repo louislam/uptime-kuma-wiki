@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-08-02T01:47:15.776Z",
+    "lastUpdate": "2026-08-09T00:54:06.778Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 862,
+            "githubStars": 869,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -25,8 +25,8 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 793,
-            "lastUpdate": "2026-07-30"
+            "githubStars": 798,
+            "lastUpdate": "2026-08-06"
         },
         {
             "name": "Kuma Zabbix Bridge",
@@ -94,7 +94,7 @@
             "name": "S3 Health",
             "githubRepo": "https://github.com/hasherdk/s3-health",
             "description": "Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups",
-            "githubStars": 10,
+            "githubStars": 11,
             "lastUpdate": "2026-06-08"
         },
         {
@@ -183,7 +183,7 @@
             "name": "xBarApp Uptime Kuma",
             "githubRepo": "https://github.com/mariogarridopt/xBar-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for xBarApp for Mac",
-            "githubStars": 33,
+            "githubStars": 32,
             "lastUpdate": "2023-02-23"
         }
     ]

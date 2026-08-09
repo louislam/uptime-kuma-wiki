@@ -4,17 +4,17 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 
 | Name | Description | GitHub Stars | Last Update |
 | --- | --- | --- | --- |
-| [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 862 | 2026-06-18 |
-| [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 793 | 2026-07-30 |
+| [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 869 | 2026-06-18 |
+| [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 798 | 2026-08-06 |
 | [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) | A wrapper for the Uptime Kuma Socket.IO API | 394 | 2024-04-05 |
 | [Uptime Mate](https://github.com/schech1/uptime-buddy) | An Uptime Kuma monitoring tool for Apple Watch. | 185 | 2026-04-09 |
 | [Streamdeck Uptime Kuma](https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma) | An Uptime Kuma plugin for Elgato Streamdeck | 58 | 2024-02-04 |
 | [KumaCompanion](https://github.com/Zerka30/KumaCompanion) | A Command Line Interface (CLI) for Uptime Kuma | 43 | 2026-03-09 |
-| [xBarApp Uptime Kuma](https://github.com/mariogarridopt/xBar-Uptime-Kuma) | An Uptime Kuma plugin for xBarApp for Mac | 33 | 2023-02-23 |
+| [xBarApp Uptime Kuma](https://github.com/mariogarridopt/xBar-Uptime-Kuma) | An Uptime Kuma plugin for xBarApp for Mac | 32 | 2023-02-23 |
 | [swatchdog](https://github.com/imsingee/swatchdog) | A simple requester to send periodically requests to Uptime Kuma's "Push" monitor | 22 | 2025-08-07 |
 | [Uptime Kuma Push Agent](https://github.com/manprinsen/uptime-kuma-agent) | A lightweight monitoring agent with Go, Python, and shell implementations, designed to send network uptime data to Uptime Kuma's Push Monitor. | 21 | 2025-12-08 |
 | [uptimekuma-migrator](https://github.com/Peppershade/uptimekuma-migrator) | Simple migrator from UptimeRobot to UptimeKuma | 13 | 2023-05-24 |
-| [S3 Health](https://github.com/hasherdk/s3-health) | Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups | 10 | 2026-06-08 |
+| [S3 Health](https://github.com/hasherdk/s3-health) | Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups | 11 | 2026-06-08 |
 | [kuma-sentinel](https://github.com/Coronon/kuma-sentinel) | Provides advanced push-based monitor types for even more insights and control. | 9 | 2025-06-18 |
 | [KumaUptime (macOS)](https://github.com/CallumJRobertson/Kuma-Uptime-Manager-MacOS) | A native macOS menu bar app for monitoring Uptime Kuma servers. Supports private API mode, public status pages, notifications, and in-app monitor creation. | 6 | 2026-03-21 |
 | [GEA](https://github.com/mrjones-plip/GEA) | A docker app that monitors your domains for expiration. A JSON feed is exposed over HTTP which Uptime Kuma can monitor and alert on via the `HTTP(s) Json Query` feature. | 5 | 2025-08-02 |
