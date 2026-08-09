@@ -16,7 +16,7 @@ You could make a pull request in this wiki repo: https://github.com/louislam/upt
 
 ## History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=louislam/uptime-kuma&type=Date)](https://star-history.com/#louislam/uptime-kuma&Date)
+![Star History Chart](star-history.svg)
 
 - (2026-07-01) ⭐88,607 🐳(docker.io) 163,264,119 + (ghcr.io) 6,168,005 = 169,432,124
 - (2026-06-29) ⭐88,559 🐳(docker.io) 162,902,219 + (ghcr.io) 6,119,747 = 169,021,966

@@ -1,10 +1,17 @@
 {
     "tasks": {
         "update-unofficial-apps": "deno run --allow-all src/update-unofficial-apps.ts",
-        "update-download-stats": "deno run --allow-all src/update-download-stats.ts"
+        "update-download-stats": "deno run --allow-all src/update-download-stats.ts",
+        "gen-star-history": "deno run --allow-all --env-file src/gen-star-history.ts"
     },
 
-        "lock": false,
+    "lock": false,
+
+    "nodeModulesDir": "auto",
+
+    "compilerOptions": {
+        "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
+    },
 
     // Run `deno fmt` to format
     "fmt": {
@@ -15,5 +22,19 @@
         "exclude": [
             "Badge.md" // Formatting not stable for this file
         ]
+    },
+    "imports": {
+        "@types/d3-axis": "npm:@types/d3-axis@^3.0.6",
+        "@types/d3-scale": "npm:@types/d3-scale@^4.0.9",
+        "@types/d3-selection": "npm:@types/d3-selection@^3.0.11",
+        "@types/d3-shape": "npm:@types/d3-shape@^3.1.8",
+        "d3-axis": "npm:d3-axis@^3.0.0",
+        "d3-scale": "npm:d3-scale@^4.0.2",
+        "d3-selection": "npm:d3-selection@^3.0.0",
+        "d3-shape": "npm:d3-shape@^3.2.0",
+        "dayjs": "npm:dayjs@^1.11.21",
+        "jsdom": "npm:jsdom@^26.1.0",
+        "lodash": "npm:lodash@^4.18.1",
+        "svgo": "npm:svgo@^3.3.4"
     }
 }
