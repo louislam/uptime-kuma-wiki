@@ -1,0 +1,39 @@
+name: Update Star History
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "0 0 * * *"
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        if: github.repository == 'louislam/uptime-kuma-wiki'
+        permissions:
+            contents: write
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Deno
+              uses: denoland/setup-deno@v2
+              with:
+                  deno-version: lts
+
+            - name: Run gen-star-history
+              env:
+                  STAR_HISTORY_GITHUB_TOKEN: ${{ secrets.STAR_HISTORY_GITHUB_TOKEN }}
+              run: deno task gen-star-history
+
+            - name: Commit and push if changed
+              run: |
+                  if git diff --quiet -- star-history.svg; then
+                    echo "No changes to commit."
+                    exit 0
+                  fi
+
+                  git config user.name "github-actions[bot]"
+                  git config user.email "github-actions[bot]@users.noreply.github.com"
+                  git add star-history.svg
+                  git commit -m "chore: update star history"
+                  git push origin master
