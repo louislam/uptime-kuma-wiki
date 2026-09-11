@@ -1,9 +1,7 @@
-Uptime Kuma supports a lot of notifications.
+Uptime Kuma supports a wide range of notification services.
 
-For native support platforms, please read here:
+For natively supported notification platforms, see:
+https://github.com/louislam/uptime-kuma/tree/master/server/notification-providers
 
-[https://github.com/louislam/uptime-kuma/tree/master/server/notification-providers](https://github.com/louislam/uptime-kuma/tree/master/server/notification-providers)
-
-Uptime Kuma is integrated Apprise which supports up to 78+ notification services. You can read the full list here:
-
+Uptime Kuma also integrates with Apprise, which provides support for additional notification services. See the full list here:
 https://github.com/caronc/apprise/wiki
