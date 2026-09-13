@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-09-06T01:50:58.956Z",
+    "lastUpdate": "2026-09-13T01:59:39.434Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 893,
+            "githubStars": 896,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -25,8 +25,8 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 810,
-            "lastUpdate": "2026-09-03"
+            "githubStars": 812,
+            "lastUpdate": "2026-09-10"
         },
         {
             "name": "Kuma Zabbix Bridge",
@@ -74,13 +74,13 @@
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
             "githubStars": 2,
-            "lastUpdate": "2026-08-18"
+            "lastUpdate": "2026-09-10"
         },
         {
             "name": "KumaUptime (macOS)",
             "githubRepo": "https://github.com/CallumJRobertson/Kuma-Uptime-Manager-MacOS",
             "description": "A native macOS menu bar app for monitoring Uptime Kuma servers. Supports private API mode, public status pages, notifications, and in-app monitor creation.",
-            "githubStars": 7,
+            "githubStars": 8,
             "lastUpdate": "2026-03-21"
         },
         {
@@ -95,7 +95,7 @@
             "githubRepo": "https://github.com/hasherdk/s3-health",
             "description": "Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups",
             "githubStars": 11,
-            "lastUpdate": "2026-06-08"
+            "lastUpdate": "2026-09-06"
         },
         {
             "name": "Streamdeck Uptime Kuma",
@@ -121,7 +121,7 @@
             "name": "Uptime Kuma Notifier",
             "githubRepo": "https://github.com/unicornops/uptime-kuma-notifier",
             "description": "A macOS menu bar app that displays the status of your Uptime Kuma monitors and sends notifications when their status changes.",
-            "githubStars": 5,
+            "githubStars": 6,
             "lastUpdate": "2026-06-21"
         },
         {
