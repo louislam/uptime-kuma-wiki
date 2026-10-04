@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-09-27T02:26:33.429Z",
+    "lastUpdate": "2026-10-04T03:20:38.938Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 904,
+            "githubStars": 906,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -25,14 +25,14 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 818,
-            "lastUpdate": "2026-09-24"
+            "githubStars": 819,
+            "lastUpdate": "2026-10-01"
         },
         {
             "name": "Kuma Zabbix Bridge",
             "githubRepo": "https://github.com/Hacking-Lab/kuma-zabbix-bridge",
             "description": "Bringing Zabbix Status to Kuma (Kuma to Zabbix Bridge)",
-            "githubStars": 0,
+            "githubStars": 1,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -74,7 +74,7 @@
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
             "githubStars": 2,
-            "lastUpdate": "2026-09-21"
+            "lastUpdate": "2026-10-03"
         },
         {
             "name": "KumaUptime (macOS)",
@@ -94,7 +94,7 @@
             "name": "S3 Health",
             "githubRepo": "https://github.com/hasherdk/s3-health",
             "description": "Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups",
-            "githubStars": 11,
+            "githubStars": 12,
             "lastUpdate": "2026-09-06"
         },
         {
@@ -149,7 +149,7 @@
             "name": "uptime-kuma-api (Python)",
             "githubRepo": "https://github.com/lucasheld/uptime-kuma-api",
             "description": "A wrapper for the Uptime Kuma Socket.IO API",
-            "githubStars": 396,
+            "githubStars": 394,
             "lastUpdate": "2024-04-05"
         },
         {
@@ -163,7 +163,7 @@
             "name": "uptimekuma-migrator",
             "githubRepo": "https://github.com/Peppershade/uptimekuma-migrator",
             "description": "Simple migrator from UptimeRobot to UptimeKuma",
-            "githubStars": 12,
+            "githubStars": 13,
             "lastUpdate": "2023-05-24"
         },
         {
@@ -171,7 +171,7 @@
             "githubRepo": "https://github.com/zimbres/UptimeKumaRemoteProbe",
             "description": "A Remote Probe to work with Uptime Kuma \"Push\" monitor type.",
             "githubStars": 5,
-            "lastUpdate": "2026-08-27"
+            "lastUpdate": "2026-10-01"
         },
         {
             "name": "Wuma - Uptime Kuma iOs Manager",
