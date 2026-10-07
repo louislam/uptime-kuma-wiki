@@ -225,6 +225,12 @@ One-click installation with: [automated DNS setup](https://docs.cloudron.io/doma
 
 One-click deployment for Uptime Kuma. 
 
+#### [podway](https://podway.io)
+
+podway offers paid, EU-based [hosting of Uptime Kuma](https://podway.io/start?app=uptime-kuma&ref=docs-uptime-kuma) from $4/month. The pod runs 24/7; podway takes a snapshot before every upgrade and rolls back automatically if the new version fails its health check. You get a $15 credit when you add a card.
+
+[![Deploy on podway](https://podway.io/img/deploy-on-podway.svg)](https://podway.io/start?app=uptime-kuma&ref=docs-uptime-kuma)
+
 ### Others
 
 #### uptime-kuma-helper
