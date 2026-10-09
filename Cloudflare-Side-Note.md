@@ -2,6 +2,9 @@
 
 By default, Cloudflare is not API friendly including Uptime Kuma. Cloudflare may block requests from Uptime Kuma.
 
+> [!NOTE]
+> All methods below require access to the Cloudflare account of the monitored site. If you are monitoring a site you do not administer, monitor an endpoint that is not challenged instead. If the monitor fails with `429` rather than a challenge, see [Troubleshooting](https://github.com/louislam/uptime-kuma/wiki/Troubleshooting#monitor-reports-down-with-http-429), as that is rate limiting rather than bot protection.
+
 You need to disable or bypass "Browser Integrity Check" in Cloudflare Dashboard via one of these methods:
 
 - (Easiest) Add your Uptime Kuma host IP address to [IP Access rules](https://developers.cloudflare.com/waf/tools/ip-access-rules/) as an Allowed address, optionally across every domain in your Cloudflare account
