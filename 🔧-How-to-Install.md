@@ -225,6 +225,12 @@ One-click installation with: [automated DNS setup](https://docs.cloudron.io/doma
 
 One-click deployment for Uptime Kuma. 
 
+#### Pethost
+
+Run with one click on [Pethost](https://pethost.dev/): managed Docker hosting in the EU, with nightly backups.
+
+[![Deploy on Pethost](https://pethost.dev/button.svg)](https://console.pethost.dev/?template=uptime-kuma)
+
 ### Others
 
 #### uptime-kuma-helper
