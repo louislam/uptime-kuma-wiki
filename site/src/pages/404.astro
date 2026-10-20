@@ -1,0 +1,13 @@
+---
+import Layout from "@/components/layout.astro";
+import { BASE } from "@/lib/base";
+---
+
+<Layout title="Page not found" noindex>
+	<main class="uk-404">
+		<img src={`${BASE}/icon.svg`} alt="" width={64} height={64} />
+		<h1>404</h1>
+		<p>This page is not part of the Uptime Kuma documentation.</p>
+		<a href={`${BASE}/`}>Back to the docs</a>
+	</main>
+</Layout>

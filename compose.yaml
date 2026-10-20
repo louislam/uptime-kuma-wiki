@@ -1,0 +1,17 @@
+# Docs site, deployed by `git push kuma-pet master` (docker compose up -d --build).
+services:
+    docs:
+        build: .
+        restart: unless-stopped
+        networks:
+            - website
+
+# cloudflared lives in the uptime-kuma-website stack; /docs is routed to http://docs:80.
+networks:
+    website:
+        external: true
+        name: uptime-kuma-website_default
+
+x-dockge:
+    urls:
+        - https://uptime.kuma.pet/docs

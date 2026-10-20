@@ -1,0 +1,14 @@
+.git
+.github
+.idea
+.env
+.env.*
+
+site/node_modules
+site/dist
+site/.astro
+
+# generated during the build
+site/content/docs
+site/public/img
+site/public/star-history.svg

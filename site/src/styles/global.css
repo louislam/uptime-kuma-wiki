@@ -1,0 +1,261 @@
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+
+/* palette from uptime-kuma src/assets/vars.scss */
+:root {
+	--uk-green: #5cdd8b;
+	--uk-green-ink: #17864a;
+	--uk-yellow: #f8a306;
+	--uk-red: #dc3545;
+
+	--color-fd-background: #ffffff;
+	--color-fd-foreground: #10151c;
+	--color-fd-muted: #f3f7f4;
+	--color-fd-muted-foreground: #55606d;
+	--color-fd-popover: #ffffff;
+	--color-fd-popover-foreground: #10151c;
+	--color-fd-card: #f6faf7;
+	--color-fd-card-foreground: #10151c;
+	--color-fd-border: rgba(16, 21, 28, 0.12);
+	--color-fd-primary: var(--uk-green-ink);
+	--color-fd-primary-foreground: #ffffff;
+	--color-fd-secondary: #eef4f0;
+	--color-fd-secondary-foreground: #10151c;
+	--color-fd-accent: rgba(92, 221, 139, 0.18);
+	--color-fd-accent-foreground: #10151c;
+	--color-fd-ring: var(--uk-green);
+}
+
+.dark {
+	--color-fd-background: #0d1117;
+	--color-fd-foreground: #e8eef4;
+	--color-fd-muted: #161b22;
+	--color-fd-muted-foreground: #b1b8c0;
+	--color-fd-popover: #11161d;
+	--color-fd-popover-foreground: #e8eef4;
+	--color-fd-card: #11161d;
+	--color-fd-card-foreground: #e8eef4;
+	--color-fd-border: #1d2634;
+	--color-fd-primary: var(--uk-green);
+	--color-fd-primary-foreground: #06120a;
+	--color-fd-secondary: #161b22;
+	--color-fd-secondary-foreground: #e8eef4;
+	--color-fd-accent: rgba(92, 221, 139, 0.14);
+	--color-fd-accent-foreground: #e8eef4;
+	--color-fd-ring: var(--uk-green);
+}
+
+html {
+	scrollbar-gutter: stable;
+	background-color: var(--color-fd-background);
+	color-scheme: light;
+}
+
+html.dark {
+	color-scheme: dark;
+}
+
+/* no layout shift when a dialog locks body scroll */
+html > body[data-scroll-locked] {
+	margin-right: 0 !important;
+	--removed-body-scroll-bar-size: 0px !important;
+}
+
+/* header brand */
+.uk-brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+
+.uk-brand img {
+	width: 1.75rem;
+	height: 1.75rem;
+	border-radius: 0.4rem;
+}
+
+.uk-brand-sub {
+	color: var(--color-fd-muted-foreground);
+	font-weight: 500;
+}
+
+/* page heading; the wiki markdown often has no h1 */
+.uk-page-title {
+	font-size: 2rem;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	margin-bottom: 1.5rem;
+}
+
+/* some wiki pages bring their own h1 */
+.prose h1 {
+	font-size: 1.5rem;
+	margin-top: 2.5rem;
+}
+
+/* callouts from > [!NOTE]; undo the blockquote quote marks and italics */
+.prose .uk-callout {
+	margin: 1.5rem 0;
+	padding: 0.85rem 1rem;
+	border: 1px solid var(--color-fd-border);
+	border-inline-start: 4px solid var(--color-fd-border);
+	border-radius: 0.5rem;
+	background: var(--color-fd-card);
+	color: var(--color-fd-foreground);
+	font-style: normal;
+	font-weight: 400;
+	quotes: none;
+}
+
+.prose .uk-callout p:first-of-type::before,
+.prose .uk-callout p:last-of-type::after {
+	content: none;
+}
+
+.prose .uk-callout > :last-child {
+	margin-bottom: 0;
+}
+
+.prose .uk-callout-title {
+	margin: 0 0 0.35rem;
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.prose .uk-callout--note {
+	border-inline-start-color: #3b82f6;
+}
+.prose .uk-callout--note .uk-callout-title {
+	color: #2563eb;
+}
+
+.prose .uk-callout--tip {
+	border-inline-start-color: var(--uk-green-ink);
+}
+.prose .uk-callout--tip .uk-callout-title {
+	color: var(--uk-green-ink);
+}
+
+.prose .uk-callout--important {
+	border-inline-start-color: #8b5cf6;
+}
+.prose .uk-callout--important .uk-callout-title {
+	color: #7c3aed;
+}
+
+.prose .uk-callout--warning {
+	border-inline-start-color: var(--uk-yellow);
+}
+.prose .uk-callout--warning .uk-callout-title {
+	color: #a86800;
+}
+
+.prose .uk-callout--caution {
+	border-inline-start-color: var(--uk-red);
+}
+.prose .uk-callout--caution .uk-callout-title {
+	color: #b3253a;
+}
+
+.dark .prose .uk-callout--note .uk-callout-title {
+	color: #93c5fd;
+}
+.dark .prose .uk-callout--important .uk-callout-title {
+	color: #c4b5fd;
+}
+.dark .prose .uk-callout--warning .uk-callout-title {
+	color: #fbbf24;
+}
+.dark .prose .uk-callout--caution .uk-callout-title {
+	color: #fca5a5;
+}
+.dark .prose .uk-callout--tip .uk-callout-title {
+	color: var(--uk-green);
+}
+
+/* code blocks: rehypeCode emits a bare <pre class="shiki">, so give it the box */
+.prose pre.shiki {
+	margin: 1.5rem 0;
+	padding: 1rem 0;
+	border: 1px solid var(--color-fd-border);
+	border-radius: 0.5rem;
+	background: var(--color-fd-card);
+	overflow-x: auto;
+	font-size: 0.85rem;
+	line-height: 1.6;
+}
+
+.prose pre.shiki code {
+	background: transparent;
+	border: 0;
+	padding: 0;
+	color: inherit;
+	font-size: inherit;
+}
+
+.prose pre.shiki .line {
+	display: block;
+}
+
+/* scrollable tables */
+.uk-table-scroll {
+	margin: 1.5rem 0;
+	overflow-x: auto;
+}
+
+.uk-table-scroll > table {
+	margin: 0;
+	width: 100%;
+}
+
+/* <details> blocks from the wiki */
+.prose details {
+	margin: 1rem 0;
+	padding: 0.65rem 0.9rem;
+	border: 1px solid var(--color-fd-border);
+	border-radius: 0.5rem;
+}
+
+.prose details > summary {
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.prose details[open] > summary {
+	margin-bottom: 0.5rem;
+}
+
+.prose img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* 404 */
+.uk-404 {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75rem;
+	text-align: center;
+	padding: 2rem;
+}
+
+.uk-404 h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.uk-404 a {
+	color: var(--color-fd-primary);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}

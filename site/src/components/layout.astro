@@ -1,0 +1,68 @@
+---
+import { ClientRouter } from "astro:transitions";
+import "@/styles/global.css";
+import { BASE } from "@/lib/base";
+
+interface Props {
+	/** Page title, without the site suffix. */
+	title?: string;
+	/** Render the bare site title (landing page and 404). */
+	siteTitleOnly?: boolean;
+	description?: string;
+	/** Absolute or base-relative path to the page's social card. */
+	image?: string;
+	noindex?: boolean;
+}
+
+const SITE_NAME = "Uptime Kuma Docs";
+const { title = SITE_NAME, siteTitleOnly = false, description, image, noindex = false } = Astro.props;
+const pageTitle = siteTitleOnly || title === SITE_NAME ? SITE_NAME : `${title} | ${SITE_NAME}`;
+const canonicalPath = Astro.url.pathname.endsWith("/") ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonical = new URL(canonicalPath, Astro.site).href;
+const ogImage = image ? new URL(image, Astro.site).href : undefined;
+---
+
+<!doctype html>
+<html lang="en" transition:animate="none">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{pageTitle}</title>
+		{description && <meta name="description" content={description} />}
+		<link rel="canonical" href={canonical} />
+		<link rel="icon" type="image/svg+xml" href={`${BASE}/icon.svg`} />
+		<meta name="theme-color" content="#5cdd8b" />
+		{noindex && <meta name="robots" content="noindex" />}
+
+		<!-- The layout island remounts on every navigation, and next-themes drops the class
+		     for a frame while it re-reads the theme; restore it before the browser paints. -->
+		<script is:inline>
+			(() => {
+				const root = document.documentElement;
+				let theme = root.className;
+				document.addEventListener("astro:before-swap", () => {
+					theme = root.className;
+				});
+				document.addEventListener("astro:after-swap", () => {
+					if (!root.classList.contains("dark") && !root.classList.contains("light")) root.className = theme;
+				});
+			})();
+		</script>
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={SITE_NAME} />
+		<meta property="og:title" content={title} />
+		{description && <meta property="og:description" content={description} />}
+		<meta property="og:url" content={canonical} />
+		{ogImage && <meta property="og:image" content={ogImage} />}
+		<meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+		<meta name="twitter:title" content={title} />
+		{description && <meta name="twitter:description" content={description} />}
+		{ogImage && <meta name="twitter:image" content={ogImage} />}
+
+		<ClientRouter />
+	</head>
+	<body transition:persist transition:animate="none" transition:name="page-layout">
+		<slot />
+	</body>
+</html>

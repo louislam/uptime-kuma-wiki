@@ -1,0 +1,5 @@
+# The docs live under /docs; /robots.txt at the host root belongs to the main website.
+User-agent: *
+Allow: /
+
+Sitemap: https://uptime.kuma.pet/docs/sitemap-index.xml

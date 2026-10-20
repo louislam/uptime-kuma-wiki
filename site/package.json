@@ -1,0 +1,33 @@
+{
+	"name": "uptime-kuma-docs",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Static docs site for Uptime Kuma, built from the uptime-kuma-wiki markdown",
+	"scripts": {
+		"content": "node scripts/build-content.mjs",
+		"dev": "npm run content && astro dev",
+		"build": "npm run content && astro build && node scripts/check-links.mjs",
+		"preview": "astro preview",
+		"check:content": "node scripts/build-content.mjs && node scripts/check-links.mjs --content-only",
+		"check:links": "node scripts/check-links.mjs"
+	},
+	"dependencies": {
+		"@astrojs/markdown-remark": "~7.3.2",
+		"@astrojs/react": "~7.0.1",
+		"@astrojs/sitemap": "~3.7.4",
+		"astro": "~7.3.8",
+		"fumadocs-core": "~16.17.3",
+		"fumadocs-ui": "npm:@fumadocs/base-ui@~16.17.3",
+		"react": "~19.3.1",
+		"react-dom": "~19.3.1",
+		"sharp": "~0.35.5",
+		"takumi-js": "~2.16.2"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "~4.3.3",
+		"@types/react": "~19.3.0",
+		"@types/react-dom": "~19.3.0",
+		"tailwindcss": "~4.3.3"
+	}
+}
