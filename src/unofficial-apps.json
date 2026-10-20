@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-10-18T02:03:20.008Z",
+    "lastUpdate": "2026-10-20T06:17:10.454Z",
     "apps": [
         {
             "name": "AutoKuma",
@@ -82,6 +82,13 @@
             "description": "A native macOS menu bar app for monitoring Uptime Kuma servers. Supports private API mode, public status pages, notifications, and in-app monitor creation.",
             "githubStars": 9,
             "lastUpdate": "2026-03-21"
+        },
+        {
+            "name": "KumaWatch",
+            "url": "https://kumawatch.app",
+            "description": "The native mobile companion for your self-hosted Uptime Kuma monitoring. iOS/iPadOS/Android available.",
+            "githubStars": 0,
+            "lastUpdate": "2026-09-16"
         },
         {
             "name": "MMM-AuthenticatedUptimeKuma",
@@ -185,13 +192,6 @@
             "description": "An Uptime Kuma plugin for xBarApp for Mac",
             "githubStars": 32,
             "lastUpdate": "2023-02-23"
-        },
-        {
-            "name": "KumaWatch",
-            "url": "https://kumawatch.app",
-            "description": "The native mobile companion for your self-hosted Uptime Kuma monitoring. iOS/iPadOS/Android available.",
-            "githubStars": 0,
-            "lastUpdate": "2026-09-16"
         }
     ]
 }
