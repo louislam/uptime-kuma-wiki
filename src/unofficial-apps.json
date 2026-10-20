@@ -185,6 +185,13 @@
             "description": "An Uptime Kuma plugin for xBarApp for Mac",
             "githubStars": 32,
             "lastUpdate": "2023-02-23"
+        },
+        {
+            "name": "KumaWatch",
+            "url": "https://kumawatch.app",
+            "description": "The native mobile companion for your self-hosted Uptime Kuma monitoring. iOS/iPadOS/Android available.",
+            "githubStars": 0,
+            "lastUpdate": "2026-09-16"
         }
     ]
 }
