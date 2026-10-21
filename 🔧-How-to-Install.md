@@ -231,6 +231,14 @@ Run with one click on [Pethost](https://pethost.dev/): managed Docker hosting in
 
 [![Deploy on Pethost](https://pethost.dev/button.svg)](https://console.pethost.dev/?template=uptime-kuma)
 
+#### Hostim
+
+Run with one click on [Hostim](https://hostim.dev/): managed Docker hosting in the EU, with a managed MySQL database, a persistent volume and HTTPS.
+
+[![Deploy on Hostim](https://hostim.dev/img/deploy-button.svg)](https://console.hostim.dev/dashboard?preview=1&modal=1&template=uptime-kuma)
+
+[Setup guide](https://hostim.dev/docs/templates/uptime-kuma/)
+
 ### Others
 
 #### uptime-kuma-helper
