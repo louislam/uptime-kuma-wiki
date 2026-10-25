@@ -70,6 +70,12 @@
             "lastUpdate": "2026-08-10"
         },
         {
+            "name": "KumaStatusBar",
+            "url": "https://defingo.net/kumastatusbar/",
+            "description": "Native macOS menu bar and iPhone app that watches Uptime Kuma status pages without a login, with widgets, home/away routing and Cloudflare Access support. Free.",
+            "githubStars": 0
+        },
+        {
             "name": "KumaCub",
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
