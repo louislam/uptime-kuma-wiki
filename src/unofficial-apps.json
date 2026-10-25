@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-10-20T06:17:10.454Z",
+    "lastUpdate": "2026-10-25T02:14:05.458Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 912,
+            "githubStars": 918,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -25,8 +25,8 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 821,
-            "lastUpdate": "2026-10-15"
+            "githubStars": 824,
+            "lastUpdate": "2026-10-24"
         },
         {
             "name": "Kuma Zabbix Bridge",
@@ -74,7 +74,7 @@
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
             "githubStars": 2,
-            "lastUpdate": "2026-10-13"
+            "lastUpdate": "2026-10-22"
         },
         {
             "name": "KumaUptime (macOS)",
@@ -149,7 +149,7 @@
             "name": "Uptime Mate",
             "githubRepo": "https://github.com/schech1/uptime-buddy",
             "description": "An Uptime Kuma monitoring tool for Apple Watch.",
-            "githubStars": 184,
+            "githubStars": 183,
             "lastUpdate": "2026-04-09"
         },
         {
@@ -191,7 +191,7 @@
             "githubRepo": "https://github.com/mariogarridopt/xBar-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for xBarApp for Mac",
             "githubStars": 32,
-            "lastUpdate": "2023-02-23"
+            "lastUpdate": "2026-10-23"
         }
     ]
 }
