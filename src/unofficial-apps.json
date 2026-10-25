@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-10-25T02:14:05.458Z",
+    "lastUpdate": "2026-10-25T16:20:12.808Z",
     "apps": [
         {
             "name": "AutoKuma",
@@ -26,7 +26,7 @@
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
             "githubStars": 824,
-            "lastUpdate": "2026-10-24"
+            "lastUpdate": "2026-10-25"
         },
         {
             "name": "Kuma Zabbix Bridge",
@@ -70,17 +70,17 @@
             "lastUpdate": "2026-08-10"
         },
         {
-            "name": "KumaStatusBar",
-            "url": "https://defingo.net/kumastatusbar/",
-            "description": "Native macOS menu bar and iPhone app that watches Uptime Kuma status pages without a login, with widgets, home/away routing and Cloudflare Access support. Free.",
-            "githubStars": 0
-        },
-        {
             "name": "KumaCub",
             "githubRepo": "https://github.com/toadstule/kumacub",
             "description": "Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma.",
             "githubStars": 2,
             "lastUpdate": "2026-10-22"
+        },
+        {
+            "name": "KumaStatusBar",
+            "url": "https://defingo.net/kumastatusbar/",
+            "description": "Native macOS menu bar and iPhone app that watches Uptime Kuma status pages without a login, with widgets, home/away routing and Cloudflare Access support. Free.",
+            "githubStars": 0
         },
         {
             "name": "KumaUptime (macOS)",

@@ -5,7 +5,7 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 | Name | Description | GitHub Stars | Last Update |
 | --- | --- | --- | --- |
 | [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 918 | 2026-06-18 |
-| [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 824 | 2026-10-24 |
+| [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 824 | 2026-10-25 |
 | [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) | A wrapper for the Uptime Kuma Socket.IO API | 396 | 2024-04-05 |
 | [Uptime Mate](https://github.com/schech1/uptime-buddy) | An Uptime Kuma monitoring tool for Apple Watch. | 183 | 2026-04-09 |
 | [Streamdeck Uptime Kuma](https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma) | An Uptime Kuma plugin for Elgato Streamdeck | 59 | 2024-02-04 |
@@ -29,6 +29,7 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 | [KumaBroadcast](https://github.com/ourpxi/KumaBroadcast) | A simple python script to post incident and maintenance updates to Discord via webhooks | 1 | 2026-10-08 |
 | [Home Assistant integration](https://www.home-assistant.io/integrations/uptime_kuma) | An integration for Home Assistant to view your monitors within Home Assistant. This allows you to utilise your Home Assistant ecosystem to create more complex monitors and automations that respond to your Uptime Kuma monitors. | N/A | N/A |
 | [KumaAlert](https://kumaalert.app) | Native app for iPhone, iPad, Android, Apple Watch and Wear OS. Critical Alerts that cut through Silent mode and Focus, home-screen widgets, Live Activities and heartbeat history. One-time purchase, no subscription. | N/A | N/A |
+| [KumaStatusBar](https://defingo.net/kumastatusbar/) | Native macOS menu bar and iPhone app that watches Uptime Kuma status pages without a login, with widgets, home/away routing and Cloudflare Access support. Free. | N/A | N/A |
 | [KumaWatch](https://kumawatch.app) | The native mobile companion for your self-hosted Uptime Kuma monitoring. iOS/iPadOS/Android available. | N/A | 2026-09-16 |
 | [Uptime Kuma Manager](https://apps.apple.com/us/app/uptime-kuma-manager/id6446004887) | An iOS app that allows you to connect to your Uptime Kuma servers and monitor the services directly from your phone. | N/A | N/A |
 | [Wuma - Uptime Kuma iOs Manager](https://apps.apple.com/app/wuma-uptime-kuma-manager/id1662404144) | An iOS app that allows you to monitor Uptime Kuma from your iPhone, iPad, and Apple Watch. Wuma adds iOS widgets and provides real-time notifications when services go down. | N/A | N/A |
