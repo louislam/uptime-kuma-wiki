@@ -111,6 +111,13 @@
             "lastUpdate": "2026-09-06"
         },
         {
+            "name": "self-host",
+            "githubRepo": "https://github.com/ajnart/self-host",
+            "description": "Installs Uptime Kuma and 90+ other self-hosted apps with Docker Compose and sets them up: admin accounts, API keys and the apps connected to each other (such as Uptime Kuma monitors in Homarr).",
+            "githubStars": 0,
+            "lastUpdate": "2026-10-28"
+        },
+        {
             "name": "Streamdeck Uptime Kuma",
             "githubRepo": "https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma",
             "description": "An Uptime Kuma plugin for Elgato Streamdeck",
