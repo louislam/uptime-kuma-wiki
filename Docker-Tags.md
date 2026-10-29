@@ -28,12 +28,13 @@
 > [!WARNING]
 > ⚠️ Rootless images are for users who want to run Uptime Kuma without root privileges, but some features may not work as expected.
 
-| Tag                 | Description                                    |
-| ------------------- | ---------------------------------------------- |
-| 2-rootless          | Latest version of v2 (Rootless)                |
-| 2-slim-rootless     | (Slim) Latest version of v2 (Rootless)         |
-| 2.x.x-rootless      | Pinned to a specific release (Rootless)        |
-| 2.x.x-slim-rootless | (Slim) Pinned to a specific release (Rootless) |
+| Tag                 | Description                                     |
+| ------------------- | ----------------------------------------------- |
+| 2-rootless          | Latest version of v2 (Rootless)                 |
+| 2-slim-rootless     | (Slim) Latest version of v2 (Rootless)          |
+| 2.x.x-rootless      | Pinned to a specific release (Rootless)         |
+| 2.x.x-slim-rootless | (Slim) Pinned to a specific release (Rootless)  |
+| next-slim-rootless  | (Slim) Latest version of Uptime Kuma (Rootless) |
 
 ### Unstable Tags
 
