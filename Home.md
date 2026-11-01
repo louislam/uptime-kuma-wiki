@@ -18,6 +18,7 @@ You could make a pull request in this wiki repo: https://github.com/louislam/upt
 
 ![Star History Chart](star-history.svg)
 
+- (2026-11-01) ⭐93,126 🐳(docker.io) 198,885,085 + (ghcr.io) 10,470,041 = 209,355,126
 - (2026-09-01) ⭐90,810 🐳(docker.io) 178,419,546 + (ghcr.io) 8,021,764 = 186,441,310
 - (2026-08-22) ⭐90,464 🐳(docker.io) 175,939,667 + (ghcr.io) 7,693,441 = 183,633,108
 - (2026-07-01) ⭐88,607 🐳(docker.io) 163,264,119 + (ghcr.io) 6,168,005 = 169,432,124
