@@ -239,6 +239,12 @@ Run with one click on [Hostim](https://hostim.dev/): managed Docker hosting in t
 
 [Setup guide](https://hostim.dev/docs/templates/uptime-kuma/)
 
+#### Varity
+
+Run with one click on [Varity](https://varity.so/templates/uptime-kuma/): Uptime Kuma on its own HTTPS address with a 2 GB persistent volume for monitor history and settings, kept across restarts and redeploys. The monthly maximum is shown before you deploy, with no traffic fees.
+
+[Deploy Uptime Kuma on Varity](https://developer.store.varity.so/dashboard/deploy/?workload=application&template=uptime-kuma&utm_source=uptime-kuma-wiki&utm_medium=directory&utm_campaign=templates)
+
 ### Others
 
 #### uptime-kuma-helper
