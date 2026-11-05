@@ -245,6 +245,10 @@ Run with one click on [Varity](https://varity.so/templates/uptime-kuma/): Uptime
 
 [Deploy Uptime Kuma on Varity](https://developer.store.varity.so/dashboard/deploy/?workload=application&template=uptime-kuma&utm_source=uptime-kuma-wiki&utm_medium=directory&utm_campaign=templates)
 
+#### Simafri
+
+[Self-host Uptime Kuma on a Simafri Managed VPS](https://www.simafri.com/en/guides/self-host-uptime-kuma/): Simafri's team keeps the server up to date, watches it 24/7 and backs it up every night, encrypted and off the machine. The guide runs the official image with Docker Compose behind an HTTPS reverse proxy that passes WebSocket, following this wiki. Uptime Kuma, its settings and its data stay yours.
+
 ### Others
 
 #### uptime-kuma-helper
