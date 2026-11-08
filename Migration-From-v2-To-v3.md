@@ -18,7 +18,7 @@
 ## Breaking Changes
 
 - Prometheus: `/metrics` is disabled by default. Enable it in **Settings** → **General** → **Prometheus API**.
-- (Docker) 32-bit ARM images are gone. Only `linux/amd64` and `linux/arm64` are published.
+- (Docker) `linux/arm/v7` is no longer supported since Node.js 24.0.0. If you are running Uptime Kuma on Raspberry Pi 2 or older, you should be aware.
 - (Non-Docker) Node.js 26.2.0 or newer is required.
 - (Non-Docker) Start with `node --run start`. Plain `node server/server.js` no longer works.
 - (Non-Docker) PM2 users should use `pm2 start` instead of `pm2 start server/server.js`.
