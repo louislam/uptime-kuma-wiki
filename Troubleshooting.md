@@ -1,3 +1,28 @@
+## Monitor reports `DOWN` with HTTP `429`
+
+`429` is rate limiting rather than bot protection, and it is frequently applied per route, because rendering a full page costs the origin much more than serving a small file. Changing the User-Agent, switching to the Real Browser monitor type or lowering the check interval often does not help, because the limit may be shared with other customers of your hosting provider.
+
+To find out, request two different paths and compare:
+
+```bash
+curl -o /dev/null -w '%{http_code}\n' https://example.com/
+curl -o /dev/null -w '%{http_code}\n' https://example.com/robots.txt
+```
+
+If one path returns `200` while the other returns `429`, only the route differs, so your client is not blocked. Point the monitor at a lighter endpoint that is still served by the application rather than from a cache, and that is not disallowed in the site's `robots.txt`. If you administer the monitored site yourself, a dedicated health endpoint excluded from rate limiting is the better fix.
+
+The response body usually identifies the limiter and is worth reading:
+
+```bash
+curl -i https://example.com/
+```
+
+> [!TIP]
+> Since 2.1.0, enabling **Save error response** on the monitor retains the body of a failed check and makes it available to notification templates.
+
+> [!CAUTION]
+> Adding `429` to **Accepted Status Codes** hides the alert instead of fixing it. The monitor will then report `UP` during a real outage that returns `429`.
+
 ## Uptime Kuma reports `DOWN`, but the service can be accessed
 
 > [!TIP]
