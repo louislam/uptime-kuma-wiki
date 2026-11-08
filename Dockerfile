@@ -19,7 +19,8 @@ FROM node:26-trixie-slim
 RUN apt-get update \
     && apt-get install -y --no-install-recommends nginx git rsync ca-certificates \
     && rm -rf /var/lib/apt/lists/* \
-    && rm -f /etc/nginx/sites-enabled/default
+    && rm -f /etc/nginx/sites-enabled/default \
+    && sed -i 's/^[[:space:]]*gzip on;.*/# gzip on (set in conf.d)/' /etc/nginx/nginx.conf
 
 WORKDIR /app
 
