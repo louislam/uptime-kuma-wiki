@@ -8,7 +8,7 @@ UPTIME_KUMA_PORT=8080
 Server Argument Usage:
 
 ```bash
-node server/server.js --host=127.0.0.1 --port=8080
+node --run start-server -- --host=127.0.0.1 --port=8080
 ```
 
 ## Server Environment Variables
@@ -31,6 +31,11 @@ node server/server.js --host=127.0.0.1 --port=8080
 | `NODE_OPTIONS`                                           |                               |        | Set it to `--insecure-http-parser`, if you encountered error `Invalid header value char` when your website using WAF                                                                                                                                                                                                                                                       |             |
 | `NOTIFICATION_PROXY`                                     |                               | 2.0.0  | Specify a network proxy to be used for sending out notifications. The proxy must be given as a full URL, for example: `http://proxy.example.com:8080`. The following protocols are supported: `http:`, `https:`, `socks:`, `socks4:`, `socks5:` and `socks5h:`.                                                                                                            |             |
 | `UPTIME_KUMA_DISABLE_LEAK_PWD_CHECK`                     | `--disable-leak-pwd-check=`   | 3.0.0  | Disable the leak password check.                                                                                                                                                                                                                                                                                                                                           |             |
+| `UK_INITIAL_ADMIN_USERNAME`                              |                               | 3.0.0  | Username of the initial admin user. Only used when no user exists yet; ignored after the first init. Must be set together with `UK_INITIAL_ADMIN_PASSWORD`.                                                                                                                                                                                                                |             |
+| `UK_INITIAL_ADMIN_PASSWORD`                              |                               | 3.0.0  | Password of the initial admin user. Only used when no user exists yet; ignored after the first init. Must be set together with `UK_INITIAL_ADMIN_USERNAME`.                                                                                                                                                                                                                |             |
+
+`UK_INITIAL_ADMIN_USERNAME` and `UK_INITIAL_ADMIN_PASSWORD` only apply on the first start with an empty database; the setup wizard is skipped.
+Changing them later does not change the existing admin password; use the [reset password CLI](https://github.com/louislam/uptime-kuma/wiki/Reset-Password-via-CLI) instead.
 
 ## MariaDB Environment Variables
 
