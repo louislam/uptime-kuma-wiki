@@ -1,13 +1,6 @@
 > [!WARNING]
 > **`3.0.0-beta.0` is a beta release.**
 >
-> Do not upgrade production yet. Test on a copy.
->
-> Report bugs at https://github.com/louislam/uptime-kuma/issues.
->
-> This guide may change before the final 3.0.0 release.
-
-> [!WARNING]
 > This is a major version update. It has breaking changes. Read this guide first.
 
 > [!NOTE]
@@ -37,10 +30,10 @@ v3 has its own beta tags. They are separate from the v2 tags.
 | Tag                  | Description                              |
 | -------------------- | ---------------------------------------- |
 | `beta`               | Latest v3 beta (recommended for testing) |
-| `3.0.0-beta.0`       | Pinned to this beta release              |
 | `beta-slim`          | (Slim) Latest v3 beta                    |
 | `beta-rootless`      | Latest v3 beta (Rootless)                |
 | `beta-slim-rootless` | (Slim) Latest v3 beta (Rootless)         |
+| `nightly` | Daily build |
 
 ## Migration Steps (Docker)
 
@@ -97,7 +90,7 @@ docker compose logs -f
 
 6. Open the web UI and log in.
 
-## Migration Steps (Non-Docker)
+## Migration Steps (Non-Docker / PM2)
 
 1. Stop Uptime Kuma.
 
@@ -126,15 +119,13 @@ npm install --omit dev --no-audit
 npm run download-dist
 ```
 
-6. Restart with `node --run start`.
-
-7. (Optional) PM2 users: remove the existing process first.
+6. Remove the existing process first.
 
 ```bash
 pm2 delete uptime-kuma
 ```
 
-The old `pm2 start server/server.js` no longer works. Start it with this:
+7. The old `pm2 start server/server.js` no longer works. Start it with this:
 
 ```bash
 pm2 start
@@ -147,17 +138,15 @@ pm2 save
 
 ### Can I upgrade directly from v1 to v3?
 
-Yes. The v1 to v2 and v2 to v3 migrations both run.
+Yes. Of course, back up the `data` directory first.
 
-Back up the `data` directory first.
+### Can I downgrade to v2/v1?
 
-### Can I downgrade to v2?
-
-No. The database is upgraded in place. Restore the backup you made before upgrading. Then run the v2 image.
+No. The database is upgraded in place. Restore the backup you made before upgrading.
 
 ### Which Docker tag should I use?
 
-Use `louislam/uptime-kuma:beta` during the beta. Or pin `louislam/uptime-kuma:3.0.0-beta.0`.
+Use `louislam/uptime-kuma:beta` during the beta.
 
 ### Why did my armv7 device stop working?
 
