@@ -18,7 +18,7 @@
 ## Breaking Changes
 
 - Prometheus: `/metrics` is disabled by default. Enable it in **Settings** → **General** → **Prometheus API**.
-- (Docker) `linux/arm/v7` is no longer supported since Node.js 24.0.0 (Docker image). If you are running Uptime Kuma (Docker) on Raspberry Pi 2 or older, you should be aware.
+- `linux/arm/v7` is no longer supported since Node.js 24. If you are running Uptime Kuma on armv7 devices like Raspberry Pi 2 or older, you should not update to v3.
 - (Non-Docker) Node.js 26.2.0 or newer is required.
 - (Non-Docker) Start with `node --run start`. Plain `node server/server.js` no longer works.
 - (Non-Docker) PM2 users should use `pm2 start` instead of `pm2 start server/server.js`.
@@ -149,6 +149,9 @@ No. The database is upgraded in place. Restore the backup you made before upgrad
 
 Use `louislam/uptime-kuma:beta` during the beta.
 
-### Why did my armv7 device stop working on Docker?
+### What should I do, if I am using a armv7 device?
 
-v3 does not publish `linux/arm/v7` images. Stay on v2, or move to non-Docker setup, or move to a 64-bit OS.
+`linux/arm/v7` is no longer supported since Node.js 24. Unfortunately, there are not many choices:
+
+- Stay on v2
+- Move to a 64-bit OS
