@@ -22,6 +22,7 @@
 - (Non-Docker) Node.js 26.2.0 or newer is required.
 - (Non-Docker) Start with `node --run start`. Plain `node server/server.js` no longer works.
 - (Non-Docker) PM2 users should use `pm2 start` instead of `pm2 start server/server.js`.
+- Migrated to Better Auth, it won't affect for normal users. However, if you used any 3rd party apps, it will probably be broken, due to the new auth method.
 
 ## Docker Tags
 
