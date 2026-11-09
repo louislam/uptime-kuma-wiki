@@ -104,6 +104,13 @@
             "lastUpdate": "2024-12-02"
         },
         {
+            "name": "OpsiMate",
+            "githubRepo": "https://github.com/OpsiMate/OpsiMate",
+            "description": "Alert management for NOC and DevOps teams. Receives Uptime Kuma notifications through a webhook, puts them in one queue next to Grafana, Datadog and Zabbix alerts, assigns owners, mutes known noise and resolves the alert when the monitor comes back up.",
+            "githubStars": 290,
+            "lastUpdate": "2026-11-09"
+        },
+        {
             "name": "S3 Health",
             "githubRepo": "https://github.com/hasherdk/s3-health",
             "description": "Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups",
