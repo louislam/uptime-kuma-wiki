@@ -107,8 +107,14 @@ XYChart(
 );
 
 const svgContent = fixJsdomSvgCasing(svg.outerHTML);
-const optimized = optimize(svgContent, { multipass: true }).data;
+// Pretty-print so a daily update only diffs the lines that actually change,
+// instead of rewriting the whole file as one 64 KB line.
+const optimized = optimize(svgContent, {
+    multipass: true,
+    js2svg: { pretty: true, indent: 2 },
+}).data;
+const output = optimized.endsWith("\n") ? optimized : `${optimized}\n`;
 
-await Deno.writeTextFile("star-history.svg", optimized);
-console.log(`Generated star-history.svg (${(optimized.length / 1024).toFixed(1)} KB)`);
+await Deno.writeTextFile("star-history.svg", output);
+console.log(`Generated star-history.svg (${(output.length / 1024).toFixed(1)} KB)`);
 console.log(`Repos: ${repos.join(", ")}`);
