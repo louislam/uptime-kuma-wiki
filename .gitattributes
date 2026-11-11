@@ -1,0 +1,6 @@
+# Normalize text files to LF: CI runs on Linux, local dev on Windows.
+* text=auto eol=lf
+
+# Regenerated daily by the "Update Star History" workflow.
+# LF keeps a daily commit to the lines that actually changed.
+star-history.svg text eol=lf
