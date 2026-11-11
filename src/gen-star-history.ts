@@ -113,7 +113,9 @@ const optimized = optimize(svgContent, {
     multipass: true,
     js2svg: { pretty: true, indent: 2 },
 }).data;
-const output = optimized.endsWith("\n") ? optimized : `${optimized}\n`;
+// Always write LF. A file saved with CRLF makes git see every line as changed
+// on the Linux CI runner, which defeats the point of pretty-printing.
+const output = `${optimized.replace(/\r\n?/g, "\n").trimEnd()}\n`;
 
 await Deno.writeTextFile("star-history.svg", output);
 console.log(`Generated star-history.svg (${(output.length / 1024).toFixed(1)} KB)`);

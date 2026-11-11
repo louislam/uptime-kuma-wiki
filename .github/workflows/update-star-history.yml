@@ -25,6 +25,14 @@ jobs:
                   STAR_HISTORY_GITHUB_TOKEN: ${{ secrets.STAR_HISTORY_GITHUB_TOKEN }}
               run: deno task gen-star-history
 
+            - name: Verify LF line endings
+              run: |
+                  if grep -q $'\r' star-history.svg; then
+                    echo "::error::star-history.svg contains CRLF, expected LF."
+                    echo "A CRLF file makes every line look changed in the daily commit."
+                    exit 1
+                  fi
+
             - name: Commit and push if changed
               run: |
                   if git diff --quiet -- star-history.svg; then
@@ -32,6 +40,7 @@ jobs:
                     exit 0
                   fi
 
+                  git diff --numstat -- star-history.svg
                   git config user.name "github-actions[bot]"
                   git config user.email "github-actions[bot]@users.noreply.github.com"
                   git add star-history.svg
