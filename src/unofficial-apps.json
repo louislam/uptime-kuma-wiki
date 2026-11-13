@@ -104,6 +104,13 @@
             "lastUpdate": "2024-12-02"
         },
         {
+            "name": "Nightbell",
+            "githubRepo": "https://github.com/riveerxd/nightbell",
+            "description": "Android app that reads Uptime Kuma's /metrics and rings like a phone call when an urgent monitor goes down, until you acknowledge it. Can also run its own HTTP, ping, TCP and UDP checks from the phone. Free and open source.",
+            "githubStars": 70,
+            "lastUpdate": "2026-11-10"
+        },
+        {
             "name": "S3 Health",
             "githubRepo": "https://github.com/hasherdk/s3-health",
             "description": "Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups",
