@@ -50,6 +50,13 @@
             "lastUpdate": "2025-06-18"
         },
         {
+            "name": "kuma-sla",
+            "githubRepo": "https://github.com/falagutera/kuma-sla",
+            "description": "A self-hosted, read-only SLA dashboard for Uptime Kuma: per-service uptime over today / 7d / 30d / 90d / 6m / 1y, with per-domain YAML routing.",
+            "githubStars": 0,
+            "lastUpdate": "2026-11-13"
+        },
+        {
             "name": "KumaAlert",
             "url": "https://kumaalert.app",
             "description": "Native app for iPhone, iPad, Android, Apple Watch and Wear OS. Critical Alerts that cut through Silent mode and Focus, home-screen widgets, Live Activities and heartbeat history. One-time purchase, no subscription.",
