@@ -4,10 +4,11 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 
 | Name | Description | GitHub Stars | Last Update |
 | --- | --- | --- | --- |
-| [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 925 | 2026-06-18 |
-| [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 824 | 2026-11-05 |
-| [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) | A wrapper for the Uptime Kuma Socket.IO API | 396 | 2024-04-05 |
+| [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 930 | 2026-06-18 |
+| [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 826 | 2026-11-12 |
+| [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) | A wrapper for the Uptime Kuma Socket.IO API | 397 | 2024-04-05 |
 | [Uptime Mate](https://github.com/schech1/uptime-buddy) | An Uptime Kuma monitoring tool for Apple Watch. | 183 | 2026-04-09 |
+| [Nightbell](https://github.com/riveerxd/nightbell) | Android app that reads Uptime Kuma's /metrics and rings like a phone call when an urgent monitor goes down, until you acknowledge it. Can also run its own HTTP, ping, TCP and UDP checks from the phone. Free and open source. | 70 | 2026-11-10 |
 | [Streamdeck Uptime Kuma](https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma) | An Uptime Kuma plugin for Elgato Streamdeck | 59 | 2024-02-04 |
 | [KumaCompanion](https://github.com/Zerka30/KumaCompanion) | A Command Line Interface (CLI) for Uptime Kuma | 46 | 2026-08-10 |
 | [xBarApp Uptime Kuma](https://github.com/mariogarridopt/xBar-Uptime-Kuma) | An Uptime Kuma plugin for xBarApp for Mac | 32 | 2026-10-23 |
@@ -24,7 +25,7 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 | [UptimeKuma Agent](https://github.com/luyii-code-1/UptimeKuma_Agent) | A client that lets UptimeKuma monitor everything via Push—Bash commands, websites, Systemd status, and even Mi Home sensor statuses. | 3 | 2026-03-12 |
 | [KumaCub](https://github.com/toadstule/kumacub) | Schedule and run local (Nagios-compatible) checks; push results to Uptime Kuma. | 2 | 2026-11-03 |
 | [MMM-AuthenticatedUptimeKuma](https://github.com/totoluto/MMM-AuthenticatedUptimeKuma) | A MagicMirror² module which allows you to display the status of your monitors on your mirror in different ways | 2 | 2024-12-02 |
-| [Kuma Zabbix Bridge](https://github.com/Hacking-Lab/kuma-zabbix-bridge) | Bringing Zabbix Status to Kuma (Kuma to Zabbix Bridge) | 1 | 2026-06-18 |
+| [Kuma Zabbix Bridge](https://github.com/Hacking-Lab/kuma-zabbix-bridge) | Bringing Zabbix Status to Kuma (Kuma to Zabbix Bridge) | 1 | 2026-11-11 |
 | [kuma-repoter](https://github.com/ghinknet/kuma-repoter) | A simple go reporter to send requests to Uptime Kuma's "Push" monitor | 1 | 2025-12-24 |
 | [KumaBroadcast](https://github.com/ourpxi/KumaBroadcast) | A simple python script to post incident and maintenance updates to Discord via webhooks | 1 | 2026-10-08 |
 | [Home Assistant integration](https://www.home-assistant.io/integrations/uptime_kuma) | An integration for Home Assistant to view your monitors within Home Assistant. This allows you to utilise your Home Assistant ecosystem to create more complex monitors and automations that respond to your Uptime Kuma monitors. | N/A | N/A |

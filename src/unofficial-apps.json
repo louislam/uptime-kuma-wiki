@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-11-08T03:16:09.937Z",
+    "lastUpdate": "2026-11-13T11:34:51.798Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 925,
+            "githubStars": 930,
             "lastUpdate": "2026-06-18"
         },
         {
@@ -25,15 +25,15 @@
             "name": "Kuma Mieru",
             "githubRepo": "https://github.com/Alice39s/kuma-mieru",
             "description": "A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts.",
-            "githubStars": 824,
-            "lastUpdate": "2026-11-05"
+            "githubStars": 826,
+            "lastUpdate": "2026-11-12"
         },
         {
             "name": "Kuma Zabbix Bridge",
             "githubRepo": "https://github.com/Hacking-Lab/kuma-zabbix-bridge",
             "description": "Bringing Zabbix Status to Kuma (Kuma to Zabbix Bridge)",
             "githubStars": 1,
-            "lastUpdate": "2026-06-18"
+            "lastUpdate": "2026-11-11"
         },
         {
             "name": "kuma-repoter",
@@ -169,7 +169,7 @@
             "name": "uptime-kuma-api (Python)",
             "githubRepo": "https://github.com/lucasheld/uptime-kuma-api",
             "description": "A wrapper for the Uptime Kuma Socket.IO API",
-            "githubStars": 396,
+            "githubStars": 397,
             "lastUpdate": "2024-04-05"
         },
         {
