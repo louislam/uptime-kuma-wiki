@@ -188,13 +188,11 @@ Follow the deployment guide to deploy Uptime Kuma on Alibaba Cloud. Both domesti
 - [Deployment Guide in English](https://computenest.console.aliyun.com/service/detail/ap-southeast-1/service-6a4ce994c30c49b1ae6b/2?type=user&isRecommend=true)
 - [中文部署文档](https://computenest.console.aliyun.com/service/detail/cn-hangzhou/service-34d66f31479747cd9957/2?type=user&isRecommend=true)
 
-#### Zeabur
+#### Zenavo
 
-Run with one click on [Zeabur](https://zeabur.com/).
+Run with one click on [Zenavo](https://zenavo.app/), with a persistent volume for `/app/data`.
 
-[![Deploy on Zeabur](https://github.com/louislam/uptime-kuma-wiki/assets/22755963/c1e546a0-f313-44fd-8550-f3ec4fc64ab0)](https://zeabur.com/docs/marketplace/uptime-kuma)
-
-[https://docs.zeabur.com/marketplace/uptime-kuma](https://zeabur.com/docs/marketplace/uptime-kuma)
+[![Deploy on Zenavo](https://zenavo.app/deploy-button.svg)](https://zenavo.app/templates/uptime-kuma)
 
 #### Sealos
 
