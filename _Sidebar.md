@@ -8,7 +8,7 @@
 - [Environment Variables](https://github.com/louislam/uptime-kuma/wiki/Environment-Variables)
 - [Docker Tags](https://github.com/louislam/uptime-kuma/wiki/Docker-Tags)
 - [Migration from v1 to v2](https://github.com/louislam/uptime-kuma/wiki/Migration-From-v1-To-v2)
-- [Migration from v2 to v3](https://github.com/louislam/uptime-kuma/wiki/Migration-From-v2-To-v3)
+- [(Beta) Migration from v2 to v3](https://github.com/louislam/uptime-kuma/wiki/Migration-From-v2-To-v3)
 
 ## Features
 
