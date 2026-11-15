@@ -139,7 +139,11 @@ pm2 save
 
 ### Can I upgrade directly from v1 to v3?
 
-Yes. Of course, back up the `data` directory first.
+Yes, you can.
+
+Of course, back up the `data` directory first.
+
+Also, be sure you have read https://github.com/louislam/uptime-kuma/wiki/Migration-From-v1-To-v2.
 
 ### Can I downgrade to v2/v1?
 
