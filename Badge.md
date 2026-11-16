@@ -63,6 +63,9 @@ There are options to customize the **status** badge's appearance:
 | ![image](img/badge/status-label.png) | `<kuma-url>/api/badge/<monitorId>/status?upLabel=<upLabel>&downLabel=<downLabel>` |
 | ![image](img/badge/status-bw.png) | `<kuma-url>/api/badge/<monitorId>/status?upColor=white&downColor=black` |
 
+### Informational monitors
+For informational monitors, the status badge shows `Online` when the latest check is up and `Offline` when it is down. These are the default labels; `upLabel` and `downLabel` can still be used to customize them. The default colors are cyan for online and grey for offline; `upColor` and `downColor` can override them.
+
 ## Ping, uptime, avg-response and response badge
 
 There are options to customize the **ping**, **uptime**, **avg-response** and **response** badge's text:
@@ -99,6 +102,9 @@ The given time interval at `Badge Duration (in hours)` has to be in 'hours', but
 | Badge | Url |
 |-------|-----|
 | ![image](img/badge/duration.png) | `<kuma-url>/api/badge/1/uptime/720?label=30&labelSuffix=d` |
+
+### Informational monitors
+Uptime is not calculated for informational monitors, so their uptime badge displays `N/A`.
 
 ## Certificate Expire badge
 
