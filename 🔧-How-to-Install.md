@@ -255,6 +255,12 @@ Run with one click on [xCloud](https://xcloud.host/): Uptime Kuma runs in Docker
 
 [Deploy Uptime Kuma on xCloud](https://xcloud.host/uptime-kuma-hosting/)
 
+#### Zenavo
+
+Run with one click on [Zenavo](https://zenavo.app/): the official `louislam/uptime-kuma:2` image on a Linux server you connect, with a persistent volume for `/app/data`, automatic HTTPS for your domain and volume backups from the dashboard. On first open, choose SQLite, then create the admin account.
+
+[![Deploy on Zenavo](https://zenavo.app/deploy-button.svg)](https://zenavo.app/templates/uptime-kuma)
+
 ### Others
 
 #### uptime-kuma-helper
