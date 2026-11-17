@@ -17,7 +17,7 @@
 
 ## Breaking Changes
 
-- Prometheus: `/metrics` is disabled by default. Enable it in **Settings** → **General** → **Prometheus API**.
+- Prometheus: `/metrics` is disabled by default (Due to the CPU usage). Enable it in **Settings** → **General** → **Prometheus API**.
 - `linux/arm/v7` is no longer supported since Node.js 24. If you are running Uptime Kuma on armv7 devices like Raspberry Pi 2 or older, you should not update to v3.
 - (Non-Docker) Node.js 26.2.0 or newer is required.
 - (Non-Docker) Start with `node --run start`. Plain `node server/server.js` no longer works.
