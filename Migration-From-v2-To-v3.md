@@ -1,5 +1,5 @@
 > [!WARNING]
-> **`3.0.0-beta.0` is a beta release.**
+> **`3.0.0-beta.1` is a beta release.**
 >
 > This is a major version update. It has breaking changes. Read this guide first.
 
@@ -110,7 +110,7 @@ node --version
 
 ```bash
 git fetch --all --tags
-git checkout 3.0.0-beta.0 --force
+git checkout 3.0.0-beta.1 --force
 ```
 
 5. Install dependencies and the prebuilt frontend.
