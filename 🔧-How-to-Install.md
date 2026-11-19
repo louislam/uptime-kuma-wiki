@@ -261,6 +261,12 @@ Run with one click on [Zenavo](https://zenavo.app/): the official `louislam/upti
 
 [![Deploy on Zenavo](https://zenavo.app/deploy-button.svg)](https://zenavo.app/templates/uptime-kuma)
 
+#### Spring Winter
+
+Deploy into your own AWS account with [Spring Winter](https://springwinter.dev/): the official `louislam/uptime-kuma` image runs on AWS behind an HTTPS address, with an Amazon RDS MySQL database (over verified TLS) for monitor history and settings, kept across restarts and redeploys. The platform is free for open-source apps; AWS bills your account directly for the resources. On first open, create the admin account.
+
+[Deploy Uptime Kuma on Spring Winter](https://docs.springwinter.dev/deploy/open-source/uptime-kuma)
+
 ### Others
 
 #### uptime-kuma-helper
