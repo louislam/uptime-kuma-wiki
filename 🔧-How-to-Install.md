@@ -214,6 +214,12 @@ You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma
 
 server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https://server.camp/product/uptimekuma) and other open-source software for startups, small- and large business. You can get a 7-day trial at no cost.
 
+#### Podway
+
+Run Uptime Kuma on [Podway](https://podway.io/): the official `louislam/uptime-kuma` image (pinned, currently 2.5.5) on its own small server, with a persistent volume for `/app/data`, an HTTPS address and nightly backups. Before each update Podway takes a snapshot, and puts the old version back if the new one fails to start. SQLite and the admin account are set up for you; the admin password is in your Podway Secrets tab.
+
+[Deploy Uptime Kuma on Podway](https://podway.io/start?app=uptime-kuma&ref=docs-uptime-kuma)
+
 #### [Cloudron.io](https://www.cloudron.io/)
 
 [![Install](https://cloudron.io/img/button.svg)](https://www.cloudron.io/store/louislam.uptimekuma.app.html)
