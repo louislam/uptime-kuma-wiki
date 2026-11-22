@@ -214,6 +214,12 @@ You can [host uptime-kuma](https://flashpanel.io/docs/v2/en/tutorial/uptime-kuma
 
 server.camp offers paid, EU-based, GDPR-compliant [hosting of uptime-kuma](https://server.camp/product/uptimekuma) and other open-source software for startups, small- and large business. You can get a 7-day trial at no cost.
 
+#### Podway
+
+Run Uptime Kuma on [Podway](https://podway.io/): the official `louislam/uptime-kuma` image (pinned, currently 2.5.5) on its own small server, with a persistent volume for `/app/data`, an HTTPS address and nightly backups. Before each update Podway takes a snapshot, and puts the old version back if the new one fails to start. SQLite and the admin account are set up for you; the admin password is in your Podway Secrets tab.
+
+[Deploy Uptime Kuma on Podway](https://podway.io/start?app=uptime-kuma&ref=docs-uptime-kuma)
+
 #### [Cloudron.io](https://www.cloudron.io/)
 
 [![Install](https://cloudron.io/img/button.svg)](https://www.cloudron.io/store/louislam.uptimekuma.app.html)
@@ -224,54 +230,6 @@ One-click installation with: [automated DNS setup](https://docs.cloudron.io/doma
 [![Deploy with Zenith](https://cdn.zenith.hosting/buttons/deploy-with-zenith.svg)](https://zenith.hosting/host/uptime-kuma?ref=gh)
 
 One-click deployment for Uptime Kuma. 
-
-#### Pethost
-
-Run with one click on [Pethost](https://pethost.dev/): managed Docker hosting in the EU, with nightly backups.
-
-[![Deploy on Pethost](https://pethost.dev/button.svg)](https://console.pethost.dev/?template=uptime-kuma)
-
-#### Hostim
-
-Run with one click on [Hostim](https://hostim.dev/): managed Docker hosting in the EU, with a managed MySQL database, a persistent volume and HTTPS.
-
-[![Deploy on Hostim](https://hostim.dev/img/deploy-button.svg)](https://console.hostim.dev/dashboard?preview=1&modal=1&template=uptime-kuma)
-
-[Setup guide](https://hostim.dev/docs/templates/uptime-kuma/)
-
-#### Varity
-
-Run with one click on [Varity](https://varity.so/templates/uptime-kuma/): Uptime Kuma on its own HTTPS address with a 2 GB persistent volume for monitor history and settings, kept across restarts and redeploys. The monthly maximum is shown before you deploy, with no traffic fees.
-
-[Deploy Uptime Kuma on Varity](https://developer.store.varity.so/dashboard/deploy/?workload=application&template=uptime-kuma&utm_source=uptime-kuma-wiki&utm_medium=directory&utm_campaign=templates)
-
-#### Simafri
-
-[Self-host Uptime Kuma on a Simafri Managed VPS](https://www.simafri.com/en/guides/self-host-uptime-kuma/): Simafri's team keeps the server up to date, watches it 24/7 and backs it up every night, encrypted and off the machine. The guide runs the official image with Docker Compose behind an HTTPS reverse proxy that passes WebSocket, following this wiki. Uptime Kuma, its settings and its data stay yours.
-
-#### xCloud
-
-Run with one click on [xCloud](https://xcloud.host/): Uptime Kuma runs in Docker on your own server or an xCloud Cloud VPS, with free SSL on your domain and scheduled backups from the dashboard.
-
-[Deploy Uptime Kuma on xCloud](https://xcloud.host/uptime-kuma-hosting/)
-
-#### Zenavo
-
-Run with one click on [Zenavo](https://zenavo.app/): the official `louislam/uptime-kuma:2` image on a Linux server you connect, with a persistent volume for `/app/data`, automatic HTTPS for your domain and volume backups from the dashboard. On first open, choose SQLite, then create the admin account.
-
-[![Deploy on Zenavo](https://zenavo.app/deploy-button.svg)](https://zenavo.app/templates/uptime-kuma)
-
-#### Spring Winter
-
-Deploy into your own AWS account with [Spring Winter](https://springwinter.dev/): the official `louislam/uptime-kuma` image runs on AWS behind an HTTPS address, with an Amazon RDS MySQL database (over verified TLS) for monitor history and settings, kept across restarts and redeploys. The platform is free for open-source apps; AWS bills your account directly for the resources. On first open, create the admin account.
-
-[Deploy Uptime Kuma on Spring Winter](https://docs.springwinter.dev/deploy/open-source/uptime-kuma)
-
-#### Podway
-
-Run Uptime Kuma on [Podway](https://podway.io/): the official `louislam/uptime-kuma` image (pinned, currently 2.5.5) on its own small server, with a persistent volume for `/app/data`, an HTTPS address and nightly backups. Before each update Podway takes a snapshot, and puts the old version back if the new one fails to start. SQLite and the admin account are set up for you; the admin password is in your Podway Secrets tab.
-
-[Deploy Uptime Kuma on Podway](https://podway.io/start?app=uptime-kuma&ref=docs-uptime-kuma)
 
 ### Others
 
