@@ -36,6 +36,13 @@
             "lastUpdate": "2026-11-11"
         },
         {
+            "name": "kuma-gate",
+            "githubRepo": "https://github.com/falagutera/kuma-gate",
+            "description": "A sign-in in front of Uptime Kuma for several people: local accounts with password and TOTP, a Mastodon instance or any OpenID Connect provider, with an allowlist. Status pages, badges and push URLs stay public.",
+            "githubStars": 0,
+            "lastUpdate": "2026-11-23"
+        },
+        {
             "name": "kuma-repoter",
             "githubRepo": "https://github.com/ghinknet/kuma-repoter",
             "description": "A simple go reporter to send requests to Uptime Kuma's \"Push\" monitor",
