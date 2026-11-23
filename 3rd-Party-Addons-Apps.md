@@ -4,7 +4,7 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 
 | Name | Description | GitHub Stars | Last Update |
 | --- | --- | --- | --- |
-| [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 936 | 2026-06-18 |
+| [AutoKuma](https://github.com/BigBoot/AutoKuma) | Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma. | 938 | 2026-06-18 |
 | [Kuma Mieru](https://github.com/Alice39s/kuma-mieru) | A 3rd-party Uptime Kuma monitoring dashboard built on Next.js, TypeScript and Recharts. | 827 | 2026-11-19 |
 | [uptime-kuma-api (Python)](https://github.com/lucasheld/uptime-kuma-api) | A wrapper for the Uptime Kuma Socket.IO API | 397 | 2024-04-05 |
 | [Uptime Mate](https://github.com/schech1/uptime-buddy) | An Uptime Kuma monitoring tool for Apple Watch. | 183 | 2026-04-09 |
@@ -29,6 +29,7 @@ Feel free to add your project here by making a pull request in [this wiki's repo
 | [kuma-repoter](https://github.com/ghinknet/kuma-repoter) | A simple go reporter to send requests to Uptime Kuma's "Push" monitor | 1 | 2025-12-24 |
 | [KumaBroadcast](https://github.com/ourpxi/KumaBroadcast) | A simple python script to post incident and maintenance updates to Discord via webhooks | 1 | 2026-10-08 |
 | [Home Assistant integration](https://www.home-assistant.io/integrations/uptime_kuma) | An integration for Home Assistant to view your monitors within Home Assistant. This allows you to utilise your Home Assistant ecosystem to create more complex monitors and automations that respond to your Uptime Kuma monitors. | N/A | N/A |
+| [kuma-gate](https://github.com/falagutera/kuma-gate) | A sign-in in front of Uptime Kuma for several people: local accounts with password and TOTP, a Mastodon instance or any OpenID Connect provider, with an allowlist. Status pages, badges and push URLs stay public. | 0 | 2026-11-23 |
 | [kuma-sla](https://github.com/falagutera/kuma-sla) | A self-hosted, read-only SLA dashboard for Uptime Kuma: per-service uptime over today / 7d / 30d / 90d / 6m / 1y, with per-domain YAML routing. | 0 | 2026-11-13 |
 | [KumaAlert](https://kumaalert.app) | Native app for iPhone, iPad, Android, Apple Watch and Wear OS. Critical Alerts that cut through Silent mode and Focus, home-screen widgets, Live Activities and heartbeat history. One-time purchase, no subscription. | N/A | N/A |
 | [KumaStatusBar](https://defingo.net/kumastatusbar/) | Native macOS menu bar and iPhone app that watches Uptime Kuma status pages without a login, with widgets, home/away routing and Cloudflare Access support. Free. | N/A | N/A |

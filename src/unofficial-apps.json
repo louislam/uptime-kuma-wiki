@@ -1,11 +1,11 @@
 {
-    "lastUpdate": "2026-11-22T03:58:39.064Z",
+    "lastUpdate": "2026-11-23T16:11:13.099Z",
     "apps": [
         {
             "name": "AutoKuma",
             "githubRepo": "https://github.com/BigBoot/AutoKuma",
             "description": "Automates the creation of Monitors based on Docker container labels. Additionally provides a CLI for Uptime Kuma.",
-            "githubStars": 936,
+            "githubStars": 938,
             "lastUpdate": "2026-06-18"
         },
         {
