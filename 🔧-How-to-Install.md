@@ -277,7 +277,7 @@ Deploy into your own AWS account with [Spring Winter](https://springwinter.dev/)
 
 Run Uptime Kuma on [Selfhost.dev](https://selfhost.dev/): the official `louislam/uptime-kuma` image (pinned, currently 2.5.12) on a server Selfhost.dev runs for you, with SQLite preset, a persistent volume for its data and HTTPS from the start. When a newer release is pinned, the console shows the update and applies it in one click. Daily backups can be turned on in the console. Open it right after deploy and create the admin account.
 
-[Deploy Uptime Kuma on Selfhost.dev](https://selfhost.dev/deploy/uptime-kuma/?utm_source=uptime-kuma&utm_medium=wiki&utm_campaign=oss_partnerships)
+[![Deploy on Selfhost.dev](https://selfhost.dev/logos/deploy-on-selfhost.svg)](https://selfhost.dev/deploy/uptime-kuma/?utm_source=uptime-kuma&utm_medium=wiki&utm_campaign=oss_partnerships)
 
 ### Others
 
