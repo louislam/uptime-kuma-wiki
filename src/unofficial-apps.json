@@ -125,6 +125,12 @@
             "lastUpdate": "2026-11-16"
         },
         {
+            "name": "pingaling",
+            "url": "https://www.threeluckystars.com/pingaling",
+            "description": "iPhone and iPad app for homelabs. With pingaling Pro, paste one link into Uptime Kuma's Webhook notification and its alerts arrive on your iPhone and iPad. It also watches headscale, Tailscale or NetBird networks and websites from a watcher in your own free Cloudflare account. Free to download; pingaling Pro is a one-time purchase.",
+            "githubStars": 0
+        },
+        {
             "name": "S3 Health",
             "githubRepo": "https://github.com/hasherdk/s3-health",
             "description": "Monitor buckets in Amazon S3, MinIO or other compatible services for storage usage, updated data etc., eg. checking for up-to-date backups",
