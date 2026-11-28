@@ -93,3 +93,29 @@ Known issues:
 - ⚠️ If file permission is not set correctly, Uptime Kuma will run into startup issues. You should make sure the ownership of the `data` directory is set to the `node:node (1000:1000)` user.
 - Docker monitor will not work without proper configuration, as by default it requires root privileges.
 - Embedded MariaDB doesn't seem to be working on Docker Desktop (Windows), if the `data` directory is mounted to a Windows folder.
+
+### Rootless Docker Compose Example
+
+The rootless image does not support `PUID` / `PGID`. Use the native `user:` option of Docker Compose instead, and make sure the `data` directory is owned by that user.
+
+```yaml
+services:
+    uptime-kuma:
+        image: louislam/uptime-kuma:2-rootless
+        container_name: uptime-kuma
+        # Must match the owner of ./data on the host (UID:GID)
+        user: "1000:1000"
+        restart: unless-stopped
+        volumes:
+            - ./data:/app/data
+        ports:
+            - "3001:3001"
+```
+
+```bash
+mkdir -p data
+sudo chown -R 1000:1000 data
+docker compose up -d
+```
+
+If you use a different UID/GID, change both `user:` and the `chown` command. If the `data` directory is not writable by that user, Uptime Kuma fails to start with `EACCES: permission denied, mkdir 'data/upload/'`.
